@@ -1,0 +1,26 @@
+﻿Soit F1 et F2 deux vecteurs : F1 . F2 = x1 * x2 - y1 * y2
+0
+Soit F1 et F2 deux vecteurs : F1 . F2 = F1 * F2 * cos⁡(F1,F2)
+1
+Soit F1 et F2 deux vecteurs : F1 ∧ F2 = F1 * F2 * sin⁡(F1,F2)
+1
+Les lignes d'un champ magnétique vont toujours du pôle sud vers le pôle nord
+0
+La mécanique quantique est la science du très grand.
+0
+Les rayons ayant une longueur d'onde inférieur à 400 m sont des UltraViolets
+0
+Les rayons ayant une longueur d'onde supérieur à 800 nm sont des InfraRouges
+1
+Un photon est le plus petit élément observable d'un champ électromagnétique
+1
+De Broglie est à l'origine de la theory quantique de l'énergie E = hv où h = 6.63 × 10^(-34) J.s
+0
+En 1905, Einstein décrit le phénomène d'effet photoélectrique
+1
+En language C ++, deux méthodes peuvent avoir le même nom
+1
+En language C ++, le constructeur et destructeur d'une variable sont présent par défaut
+1
+En language C ++, une classe ne peut pas être dérivée d'une autre classe
+0
