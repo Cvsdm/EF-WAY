@@ -4,6 +4,6 @@ public class MenuScreenController : MonoBehaviour
 {
 	public void StartGame()
 	{
-		UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Quizz");
 	}
 }

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 
@@ -57,19 +54,19 @@ public class MainMenu : MonoBehaviour
     public void onCreditClick()
     {
         NavigationOnClick(1);
-        Debug.Log("Credit button has been clicked !");
+        //Debug.Log("Credit button has been clicked !");
     }
 
     public void OnParametresClick()
     {
         NavigationOnClick(2);
-        Debug.Log("Parametres button has been clicked !");
+        //Debug.Log("Parametres button has been clicked !");
     }
 
     public void ReturnToMenu ()
     {
         NavigationOnClick(0);
-        Debug.Log("Return button has been clicked !");
+        //Debug.Log("Return button has been clicked !");
     }
 
 }

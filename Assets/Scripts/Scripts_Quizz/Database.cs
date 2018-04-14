@@ -2,22 +2,30 @@
 using System.IO;
 using System;
 
-
 public class Database : MonoBehaviour
 {
     public QuestionData[] allquestions = new QuestionData[14];
-    //private string gameDataFileName = "data.db";
-    private string gameDataFileName = "data_concours.txt";
+   // private string gameDataFileName;// = "data_concours.txt";
 
-    void Start()
+    public void Create_Database(string gameDataFileName)
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
-
+        string originalPath = Path.Combine(Application.streamingAssetsPath, gameDataFileName);
+        string databasePath = originalPath;
         int counter = 0;
         string line;
 
-        // Read the file and display it line by line.  
-        System.IO.StreamReader file = new System.IO.StreamReader(filePath);
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            WWW reader = new WWW(originalPath); // Android only use WWW to read file
+            while (!reader.isDone) { }
+
+            string realPath = Application.persistentDataPath + "/db";
+            File.WriteAllBytes(realPath, reader.bytes);
+
+            databasePath = realPath;
+        }
+
+        StreamReader file = new StreamReader(databasePath);
         while ((line = file.ReadLine()) != null)
         {
             //Debug.Log(line);
@@ -31,8 +39,6 @@ public class Database : MonoBehaviour
                 allquestions[counter].isTrue = false;
             counter++;
         }
-
-        Debug.Log("nb of line : " + counter);
     }
 }
 

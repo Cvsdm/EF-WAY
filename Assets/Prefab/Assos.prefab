@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224696314917782368}
-  - component: {fileID: 114969077774824156}
   - component: {fileID: 114738685676106670}
   - component: {fileID: 114722305425661214}
   m_Layer: 5
@@ -168,6 +167,114 @@ MonoBehaviour:
   image30: {fileID: 0}
   image31: {fileID: 0}
   image32: {fileID: 0}
+  text_33: {fileID: 0}
+  text_33_2: {fileID: 0}
+  text_34: {fileID: 0}
+  text_34_2: {fileID: 0}
+  text_35: {fileID: 0}
+  text_35_2: {fileID: 0}
+  text_36: {fileID: 0}
+  text_36_2: {fileID: 0}
+  text_37: {fileID: 0}
+  text_37_2: {fileID: 0}
+  text_38: {fileID: 0}
+  text_38_2: {fileID: 0}
+  text_39: {fileID: 0}
+  text_39_2: {fileID: 0}
+  text_40: {fileID: 0}
+  text_40_2: {fileID: 0}
+  text_41: {fileID: 0}
+  text_41_2: {fileID: 0}
+  text_42: {fileID: 0}
+  text_42_2: {fileID: 0}
+  text_43: {fileID: 0}
+  text_43_2: {fileID: 0}
+  sprite33: {fileID: 0}
+  sprite34: {fileID: 0}
+  sprite35: {fileID: 0}
+  sprite36: {fileID: 0}
+  sprite37: {fileID: 0}
+  sprite38: {fileID: 0}
+  sprite39: {fileID: 0}
+  sprite40: {fileID: 0}
+  sprite41: {fileID: 0}
+  sprite42: {fileID: 0}
+  sprite43: {fileID: 0}
+  image33: {fileID: 0}
+  image34: {fileID: 0}
+  image35: {fileID: 0}
+  image36: {fileID: 0}
+  image37: {fileID: 0}
+  image38: {fileID: 0}
+  image39: {fileID: 0}
+  image40: {fileID: 0}
+  image41: {fileID: 0}
+  image42: {fileID: 0}
+  image43: {fileID: 0}
+  text_45: {fileID: 0}
+  text_45_2: {fileID: 0}
+  text_46: {fileID: 0}
+  text_46_2: {fileID: 0}
+  sprite45: {fileID: 0}
+  sprite46: {fileID: 0}
+  image45: {fileID: 0}
+  image46: {fileID: 0}
+  text_47: {fileID: 0}
+  text_47_2: {fileID: 0}
+  text_48: {fileID: 0}
+  text_48_2: {fileID: 0}
+  text_49: {fileID: 0}
+  text_49_2: {fileID: 0}
+  text_50: {fileID: 0}
+  text_50_2: {fileID: 0}
+  text_51: {fileID: 0}
+  text_51_2: {fileID: 0}
+  text_52: {fileID: 0}
+  text_52_2: {fileID: 0}
+  text_53: {fileID: 0}
+  text_53_2: {fileID: 0}
+  text_54: {fileID: 0}
+  text_54_2: {fileID: 0}
+  sprite47: {fileID: 0}
+  sprite48: {fileID: 0}
+  sprite49: {fileID: 0}
+  sprite50: {fileID: 0}
+  sprite51: {fileID: 0}
+  sprite52: {fileID: 0}
+  sprite53: {fileID: 0}
+  sprite54: {fileID: 0}
+  image47: {fileID: 0}
+  image48: {fileID: 0}
+  image49: {fileID: 0}
+  image50: {fileID: 0}
+  image51: {fileID: 0}
+  image52: {fileID: 0}
+  image53: {fileID: 0}
+  image54: {fileID: 0}
+  text_55: {fileID: 0}
+  text_55_2: {fileID: 0}
+  text_56: {fileID: 0}
+  text_56_2: {fileID: 0}
+  text_57: {fileID: 0}
+  text_57_2: {fileID: 0}
+  text_58: {fileID: 0}
+  text_58_2: {fileID: 0}
+  text_59: {fileID: 0}
+  text_59_2: {fileID: 0}
+  text_60: {fileID: 0}
+  text_60_2: {fileID: 0}
+  sprite55: {fileID: 0}
+  sprite56: {fileID: 0}
+  sprite57: {fileID: 0}
+  sprite58: {fileID: 0}
+  sprite59: {fileID: 0}
+  sprite60: {fileID: 0}
+  image55: {fileID: 0}
+  image56: {fileID: 0}
+  image57: {fileID: 0}
+  image58: {fileID: 0}
+  image59: {fileID: 0}
+  image60: {fileID: 0}
 --- !u!114 &114738685676106670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -184,31 +291,10 @@ MonoBehaviour:
   media: {fileID: 0}
   inter: {fileID: 0}
   culture: {fileID: 0}
---- !u!114 &114969077774824156
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1397785297472780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca20529ab9da93d4793a2416b6de5184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite1: {fileID: 21300000, guid: 24f60467a10516e4292bac8ec562dbb8, type: 3}
-  sprite2: {fileID: 21300000, guid: b919f3282d176514db7c3670380f9717, type: 3}
-  sprite3: {fileID: 21300000, guid: cb1797e0d6eafc245997bc77b369cbf9, type: 3}
-  sprite4: {fileID: 21300000, guid: abbca6d6742db5a40b3d954643023fbf, type: 3}
-  sprite5: {fileID: 21300000, guid: 6c1098638ae44f04c8c602c4898e44af, type: 3}
-  sprite6: {fileID: 21300000, guid: 11a2213803d1d5a44a0486984903a8a3, type: 3}
-  sprite7: {fileID: 21300000, guid: c68d59c728745dd40b291e9b504f5b73, type: 3}
-  sprite8: {fileID: 21300000, guid: 06e683fa5c2baab409240b613a4ec35a, type: 3}
-  sprite9: {fileID: 21300000, guid: de5f989bc8652ba44abc71561d174bb1, type: 3}
-  sprite10: {fileID: 21300000, guid: fb5ffeea04146184285bd8cf4b1b0442, type: 3}
-  sprite11: {fileID: 21300000, guid: b919f3282d176514db7c3670380f9717, type: 3}
-  sprite12: {fileID: 21300000, guid: 29397a2f1282b5a4682d082e36bae67d, type: 3}
-  sprite13: {fileID: 21300000, guid: 8dfcf4f5349201845abec78b8ba45ab6, type: 3}
-  sprite14: {fileID: 21300000, guid: 750f79992a79807488baefe01a5f5d0c, type: 3}
+  sport: {fileID: 0}
+  events: {fileID: 0}
+  technique: {fileID: 0}
+  entraide: {fileID: 0}
 --- !u!224 &224696314917782368
 RectTransform:
   m_ObjectHideFlags: 1

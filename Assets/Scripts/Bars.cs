@@ -6,17 +6,17 @@ using UnityEngine.UI;
 public class Bars : MonoBehaviour
 {
     public float CurrentAssos { get; set; }
-    public float MaxAssos { get; set; }
+    private float MaxAssos { get; set; }
 
     public float CurrentEtude { get; set; }
-    public float MaxEtude { get; set; }
+    private float MaxEtude { get; set; }
 
     public float CurrentSocial { get; set; }
-    public float MaxSocial { get; set; }
+    private float MaxSocial { get; set; }
 
-    public Slider assos;
-    public Slider etude;
-    public Slider social;
+    private Slider assos;
+    private Slider etude;
+    private Slider social;
 
     public Text textAssos;
     public Text textEtude;
@@ -27,29 +27,23 @@ public class Bars : MonoBehaviour
     void Start()
     {
         MaxEtude = 100f;
-        CurrentEtude = 0f;
+        CurrentEtude = 0f; //sauvegarde current
         etude = GameObject.Find("Etude").GetComponent<Slider>();
-        etude.value = CalculateEtude();
         textEtude = GameObject.Find("TextEtude").GetComponent<Text>();
-        temp = CalculateEtude() * 100;
-        textEtude.text = temp.ToString();
+        UpdateEtude();
 
         MaxAssos = 100f;
-        CurrentAssos = 0f;
+        CurrentAssos = 0f; //sauvegarde current
         assos = GameObject.Find("Assos").GetComponent<Slider>();
-        assos.value = CalculateAssos();
         textAssos = GameObject.Find("TextAssos").GetComponent<Text>();
-        temp = CalculateAssos() * 100;
-        textAssos.text = temp.ToString();
+        UpdateAssos();
 
 
         MaxSocial = 100f;
-        CurrentSocial = 0f;
+        CurrentSocial = 0f; // sauvegarde current
         social = GameObject.Find("Sociability").GetComponent<Slider>();
-        social.value = CalculateSocial();
         textSocial = GameObject.Find("TextSocial").GetComponent<Text>();
-        temp = CalculateSocial() * 100;
-        textSocial.text = temp.ToString();
+        UpdateSocial();
     }
 
     void UpdateAssos()
@@ -77,8 +71,7 @@ public class Bars : MonoBehaviour
 
     float CalculateAssos()
     {
-        //Per centage
-        return CurrentAssos / MaxAssos;
+        return CurrentAssos / MaxAssos; //Percentage
     }
 
 
@@ -109,8 +102,7 @@ public class Bars : MonoBehaviour
 
     float CalculateEtude()
     {
-        //Per centage
-        return CurrentEtude / MaxEtude;
+        return CurrentEtude / MaxEtude; //Percentage
     }
 
 
