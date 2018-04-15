@@ -5,39 +5,29 @@ using UnityEngine.UI;
 
 public class Rotation2 : MonoBehaviour
 {
-    struct Resultats
+    /*struct Resultats
     {
         public int D1;
         public int D2;
-    }
+    }*/
 
     public int DiceValues;
     public int DiceValues2;
 
-    Resultats R;
+    //Resultats R;
 
     public float smooth2 = 10.0F;
 
     bool hello2 = true;
-    bool GoAhead1 = false;
-
-    Quaternion target2;
-
-    // public Text countText;
-    // public Text countText2;
-
-
-    public float smooth = 10.0F;
-
     bool hello = true;
-
-    Quaternion target;
-
+    bool GoAhead1 = false;
     bool dice2;
 
+    Quaternion target;
+    Quaternion target2;
+
+    private float smooth = 10.0F;
     int alreadyDropped = 0;
-
-
 
     public Text countText3;
     public InputField x;
@@ -48,12 +38,14 @@ public class Rotation2 : MonoBehaviour
 
     public GameObject Cube1;
     public GameObject Cube;
+    private Sauvegarde save;
 
     void Start()
     {
         GameObject.Find("Go").GetComponent<Button>().enabled = false;
         GameObject.Find("Go").transform.localScale = new Vector3(0, 0, 0);
         GameObject.Find("Result (2)").transform.localScale = new Vector3(0, 0, 0);
+        save = FindObjectOfType<Sauvegarde>();
     }
 
     public void Update()
@@ -156,7 +148,12 @@ public class Rotation2 : MonoBehaviour
             {
                 GetRotation();
                 if (TotalValue >= 0 && TotalValue <= 10)
+                {
                     GameObject.Find("Result (2)").transform.localScale = new Vector3(1, 1, 1);
+                    save.Set_nextmove(TotalValue);
+                    save.Display_attributes();
+                    enabled = false; // STOP THE UPDATE FUNCTION
+                }
 
             }
         }
@@ -178,6 +175,7 @@ public class Rotation2 : MonoBehaviour
             //ValueD2(DiceValues2, 1);
             //  DiceValues2 = 4;
             GetRotation();
+            Debug.Log("Total value: " + TotalValue);
         }
     }
 
@@ -201,9 +199,6 @@ public class Rotation2 : MonoBehaviour
 
         GameObject.Find("Drop").GetComponent<Button>().enabled = false;
         GameObject.Find("Drop").transform.localScale = new Vector3(0, 0, 0);
-
-        TotalValue = D1 + D2;
-        countText3.text = "T=" + TotalValue;
     }
 
 
@@ -239,7 +234,6 @@ public class Rotation2 : MonoBehaviour
         int a = GetRotation1();
         int b = GetRotation2();
         TotalValue = a + b;
-        
         countText3.text = TotalValue.ToString();
     }
 

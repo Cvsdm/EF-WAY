@@ -1,14 +1,16 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Triggered : MonoBehaviour {
 
     public bool was_triggered;
     public int intersection;
+    private Sauvegarde save;
+    //private int count = 0;
 
     private void Start()
     {
+        save = FindObjectOfType<Sauvegarde>();
         was_triggered = false;
     }
 
@@ -17,10 +19,15 @@ public class Triggered : MonoBehaviour {
         if( !was_triggered )
         {
             was_triggered = true;
-            Debug.Log("TRIGGERED");
 
-            //StartCoroutine(WaitAndPause(0.5f));
-            Movement.Stop_itween();
+            //Debug.Log("Triggered");
+
+            save.Set_counter(save.Get_counter() + 1);
+            Debug.Log("counter : " + save.Get_counter());
+
+
+             //StartCoroutine(WaitAndPause(0.5f));
+             Movement.Stop_itween();
 
             if (this.name.Length >= 10) // ex : P1_ENDPATH
             {

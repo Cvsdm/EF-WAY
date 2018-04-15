@@ -18,6 +18,7 @@ public class Sauvegarde : MonoBehaviour {
     
     private int[] Tab_assos = new int[3];
     private int majeur_choice = 0;
+    private int nextmove = -1;
    // private highest score for each quizz ?
 
     void Start ()
@@ -94,6 +95,7 @@ public class Sauvegarde : MonoBehaviour {
     public float Get_etude()        { return jauge_etude; }
     public float Get_assos()        { return jauge_assos; }
     public float Get_sociabilite()  { return jauge_sociabilité; }
+    public int   Get_counter()      { return counter; }
 
     public void Set_player(string name)     { player_name = name; }
     public void Set_gender(int genre)       { player_gender = genre; }
@@ -101,6 +103,8 @@ public class Sauvegarde : MonoBehaviour {
     public void Set_assos(float nb)         { jauge_assos = nb; }
     public void Set_sociabilite(float nb)   { jauge_sociabilité = nb; }
     public void Set_majeure(int maj)        { majeur_choice = maj; }
+    public void Set_counter(int count)      { counter = count; }
+    public void Set_nextmove(int move)      { nextmove = move; }
 
     public void Add_assos(int newest)
     {
@@ -123,5 +127,15 @@ public class Sauvegarde : MonoBehaviour {
         {
             Tab_assos[flag] = newest;
         }
+    }
+
+    public void Display_attributes()
+    {
+        Debug.Log("counter" + counter);
+        Debug.Log("jauge_assos" + jauge_assos);
+        Debug.Log("jauge_etudes" + jauge_etude);
+        Debug.Log("jauge_social" + jauge_sociabilité);
+        Debug.Log("nextmove" + nextmove);
+        Debug.Log("majeure " + majeur_choice);
     }
 }
