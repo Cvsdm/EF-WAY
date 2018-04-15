@@ -91,32 +91,37 @@ public class Sauvegarde : MonoBehaviour {
         file.Close(); //close the stream
     }
 
-    public void Set_player (string name)
-    {
-        player_name = name;
-    }
+    public float Get_etude()        { return jauge_etude; }
+    public float Get_assos()        { return jauge_assos; }
+    public float Get_sociabilite()  { return jauge_sociabilité; }
 
-    public void Set_gender(int genre)
-    {
-        player_gender = genre;
-    }
-
-    public float Get_etude() { return jauge_etude; }
-    public float Get_assos() { return jauge_assos; }
-    public float Get_sociabilite() { return jauge_sociabilité; }
-
-    public void Set_etude(float nb) { jauge_etude = nb; }
-    public void Set_assos(float nb) { jauge_assos = nb; }
-    public void Set_sociabilite(float nb) { jauge_sociabilité = nb; }
+    public void Set_player(string name)     { player_name = name; }
+    public void Set_gender(int genre)       { player_gender = genre; }
+    public void Set_etude(float nb)         { jauge_etude = nb; }
+    public void Set_assos(float nb)         { jauge_assos = nb; }
+    public void Set_sociabilite(float nb)   { jauge_sociabilité = nb; }
+    public void Set_majeure(int maj)        { majeur_choice = maj; }
 
     public void Add_assos(int newest)
     {
+        int i = 0, flag = -1;
 
+        //Debug.Log("add assos");
+        while ( i < Tab_assos.Length && flag == -1) //find where to put it
+        {
+            if (Tab_assos[i] == 0)
+                flag = i;
+            i++;
+        }
+        //Debug.Log("flag : " + flag );
+
+        if (flag == -1)// have to delete and replace a assos
+        {
+            /** IMPLEMENT */
+        }
+        else
+        {
+            Tab_assos[flag] = newest;
+        }
     }
-
-    public void Set_majeure(int maj)
-    {
-        majeur_choice = maj;
-    }
-
 }
