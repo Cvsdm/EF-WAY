@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using System;
 
 public class ManagerMajeures : MonoBehaviour
 {
@@ -42,17 +39,14 @@ public class ManagerMajeures : MonoBehaviour
     public Text text_ENRI1;     // Energies nouvelles et réseaux intelligents
     public Text text_ENRI2;
     
-    int i;
+    private int langue = 0;
     public Text choice;
+    private Sauvegarde save;
 
-
-    void Start()
+    private void Start()
     {
-       
-
+        save = FindObjectOfType<Sauvegarde>();
     }
-
-
 
     void MajeuresFR()
     {
@@ -134,8 +128,6 @@ public class ManagerMajeures : MonoBehaviour
         text_F2.text = "Mathematical modelling \nNumerical simulation \nHigh-performance computing \nMarket Research ";
     }
 
-    public int langue; 
-
     void Update()
     {
         if (langue == 1)
@@ -160,18 +152,22 @@ public class ManagerMajeures : MonoBehaviour
 
     public void ChoixMajeure (int ChoixM)
     {
-        if (ChoixM == 1)        choice.text = "Choice : BI";
-        if (ChoixM == 2)        choice.text = "Choice : ISCC";
-        if (ChoixM == 3)        choice.text = "Choice : VR";
-        if (ChoixM == 4)        choice.text = "Choice : BD";
-        if (ChoixM == 12)        choice.text = "Choice : F";
-        if (ChoixM == 5)        choice.text = "Choice : S";
-        if (ChoixM == 6)        choice.text = "Choice : IL";
-        if (ChoixM == 7)        choice.text = "Choice : B";
-        if (ChoixM == 8)        choice.text = "Choice : AE";
-        if (ChoixM == 9)       choice.text = "Choice : DD";
-        if (ChoixM == 10)       choice.text = "Choice : NV";
-        if (ChoixM == 11)       choice.text = "Choice : ENRI";
+        if (ChoixM == 1)            choice.text = "Choice : BI";
+        else if (ChoixM == 2)       choice.text = "Choice : ISCC";
+        else if (ChoixM == 3)       choice.text = "Choice : VR";
+        else if (ChoixM == 4)       choice.text = "Choice : BD";
+        else if (ChoixM == 12)      choice.text = "Choice : F";
+        else if (ChoixM == 5)       choice.text = "Choice : S";
+        else if (ChoixM == 6)       choice.text = "Choice : IL";
+        else if (ChoixM == 7)       choice.text = "Choice : B";
+        else if (ChoixM == 8)       choice.text = "Choice : AE";
+        else if (ChoixM == 9)       choice.text = "Choice : DD";
+        else if (ChoixM == 10)      choice.text = "Choice : NV";
+        else if (ChoixM == 11)      choice.text = "Choice : ENRI";
+
+        //Debug.Log("choix : " + ChoixM);
+        save.Set_majeure(ChoixM);
+        //Debug.Log("choix : " + ChoixM);
     }
 
 }

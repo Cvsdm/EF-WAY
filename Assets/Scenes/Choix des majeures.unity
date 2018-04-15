@@ -2175,7 +2175,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114594543322458818, guid: b8c4c53e65a991f46b6073484622f28c,
+      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
         m_MethodName: SceneLoader
         m_Mode: 3
@@ -5052,7 +5052,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1806875721}
   - component: {fileID: 1806875720}
-  - component: {fileID: 1806875722}
   m_Layer: 0
   m_Name: MajeuresManager
   m_TagString: Untagged
@@ -5068,7 +5067,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1806875719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ab525dfe4302a458fc006af07507d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bd7958a1eb6973439c03d69e259e3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text_BI1: {fileID: 1580259830}
@@ -5096,7 +5095,6 @@ MonoBehaviour:
   text_ENRI1: {fileID: 213547864}
   text_ENRI2: {fileID: 57483515}
   choice: {fileID: 971339579}
-  langue: 0
 --- !u!4 &1806875721
 Transform:
   m_ObjectHideFlags: 0
@@ -5110,19 +5108,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806875722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1806875719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca43aa5317201640a06b45b650e72b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChoixM: 0
-  choice: {fileID: 971339579}
 --- !u!1 &1819736349
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -51,20 +49,13 @@ public class AssosManager : MonoBehaviour
     public Sprite sprite55, sprite56, sprite57, sprite58, sprite59, sprite60;
     public Image image55, image56, image57, image58, image59, image60;
 
-    int choixAssos;
-
-    int langue = 1;
-
-
+    private int choixAssos;
+    private int langue = 1;
+    private Sauvegarde save;
 
     public void Start()
     {
-        /*   association = new int[4];
-           association[0] = 0;
-           association[1] = 0;
-           association[2] = 0;*/
-
-
+        save = FindObjectOfType<Sauvegarde>();
         IniVariables();
 
         if (langue == 1)
@@ -79,107 +70,6 @@ public class AssosManager : MonoBehaviour
 
     void IniVariables()
     {
-        /*   text_1_2 = GameObject.Find("Text1_D").GetComponent<Text>();
-           text_2_2 = GameObject.Find("Text2_D").GetComponent<Text>();
-           text_3_2 = GameObject.Find("Text3_D").GetComponent<Text>();
-           text_4_2 = GameObject.Find("Text4_D").GetComponent<Text>();
-           text_5_2 = GameObject.Find("Text5_D").GetComponent<Text>();
-           text_6_2 = GameObject.Find("Text6_D").GetComponent<Text>();
-           text_7_2 = GameObject.Find("Text7_D").GetComponent<Text>();
-           text_8_2 = GameObject.Find("Text8_D").GetComponent<Text>();
-           text_9_2 = GameObject.Find("Text9_D").GetComponent<Text>();
-           text_10_2 = GameObject.Find("Text10_D").GetComponent<Text>();
-           text_11_2 = GameObject.Find("Text11_D").GetComponent<Text>();
-           text_12_2 = GameObject.Find("Text12_D").GetComponent<Text>();
-           text_13_2 = GameObject.Find("Text13_D").GetComponent<Text>();
-           text_14_2 = GameObject.Find("Text14_D").GetComponent<Text>();
-           text_15_2 = GameObject.Find("Text15_D").GetComponent<Text>();
-           text_16_2 = GameObject.Find("Text16_D").GetComponent<Text>();
-           text_17_2 = GameObject.Find("Text17_D").GetComponent<Text>();
-           text_18_2 = GameObject.Find("Text18_D").GetComponent<Text>();
-           text_19_2 = GameObject.Find("Text19_D").GetComponent<Text>();
-           text_20_2 = GameObject.Find("Text20_D").GetComponent<Text>();
-           text_21_2 = GameObject.Find("Text21_D").GetComponent<Text>();
-           text_22_2 = GameObject.Find("Text22_D").GetComponent<Text>();
-           text_23_2 = GameObject.Find("Text23_D").GetComponent<Text>();
-           text_24_2 = GameObject.Find("Text24_D").GetComponent<Text>();
-           text_25_2 = GameObject.Find("Text25_D").GetComponent<Text>();
-           text_26_2 = GameObject.Find("Text26_D").GetComponent<Text>();
-           text_27_2 = GameObject.Find("Text27_D").GetComponent<Text>();
-           text_28_2 = GameObject.Find("Text28_D").GetComponent<Text>();
-           text_29_2 = GameObject.Find("Text29_D").GetComponent<Text>();
-           text_30_2 = GameObject.Find("Text30_D").GetComponent<Text>();
-           text_31_2 = GameObject.Find("Text31_D").GetComponent<Text>();
-           text_32_2 = GameObject.Find("Text32_D").GetComponent<Text>();
-
-
-           text_1 = GameObject.Find("Text1").GetComponent<Text>();
-           text_2 = GameObject.Find("Text2").GetComponent<Text>();
-           text_3 = GameObject.Find("Text3").GetComponent<Text>();
-           text_4 = GameObject.Find("Text4").GetComponent<Text>();
-           text_5 = GameObject.Find("Text5").GetComponent<Text>();
-           text_6 = GameObject.Find("Text6").GetComponent<Text>();
-           text_7 = GameObject.Find("Text7").GetComponent<Text>();
-           text_8 = GameObject.Find("Text8").GetComponent<Text>();
-           text_9 = GameObject.Find("Text9").GetComponent<Text>();
-           text_10 = GameObject.Find("Text10").GetComponent<Text>();
-           text_11 = GameObject.Find("Text11").GetComponent<Text>();
-           text_12 = GameObject.Find("Text12").GetComponent<Text>();
-           text_13 = GameObject.Find("Text13").GetComponent<Text>();
-           text_14 = GameObject.Find("Text14").GetComponent<Text>();
-           text_15 = GameObject.Find("Text15").GetComponent<Text>();
-           text_16 = GameObject.Find("Text16").GetComponent<Text>();
-           text_17 = GameObject.Find("Text17").GetComponent<Text>();
-           text_18 = GameObject.Find("Text18").GetComponent<Text>();
-           text_19 = GameObject.Find("Text19").GetComponent<Text>();
-           text_20 = GameObject.Find("Text20").GetComponent<Text>();
-           text_21 = GameObject.Find("Text21").GetComponent<Text>();
-           text_22 = GameObject.Find("Text22").GetComponent<Text>();
-           text_23 = GameObject.Find("Text23").GetComponent<Text>();
-           text_24 = GameObject.Find("Text24").GetComponent<Text>();
-           text_25 = GameObject.Find("Text25").GetComponent<Text>();
-           text_26 = GameObject.Find("Text26").GetComponent<Text>();
-           text_27 = GameObject.Find("Text27").GetComponent<Text>();
-           text_28 = GameObject.Find("Text28").GetComponent<Text>();
-           text_29 = GameObject.Find("Text29").GetComponent<Text>();
-           text_30 = GameObject.Find("Text30").GetComponent<Text>();
-           text_31 = GameObject.Find("Text31").GetComponent<Text>();
-           text_32 = GameObject.Find("Text32").GetComponent<Text>();
-
-           image1 = GameObject.Find("Image1_D").GetComponent<Image>();
-           image2 = GameObject.Find("Image2_D").GetComponent<Image>();
-           image3 = GameObject.Find("Image3_D").GetComponent<Image>();
-           image4 = GameObject.Find("Image4_D").GetComponent<Image>();
-           image5 = GameObject.Find("Image5_D").GetComponent<Image>();
-           image6 = GameObject.Find("Image6_D").GetComponent<Image>();
-           image7 = GameObject.Find("Image7_D").GetComponent<Image>();
-           image8 = GameObject.Find("Image8_D").GetComponent<Image>();
-           image9 = GameObject.Find("Image9_D").GetComponent<Image>();
-           image10 = GameObject.Find("Image10_D").GetComponent<Image>();
-           image11 = GameObject.Find("Image11_D").GetComponent<Image>();
-           image12 = GameObject.Find("Image12_D").GetComponent<Image>();
-           image13 = GameObject.Find("Image13_D").GetComponent<Image>();
-           image14 = GameObject.Find("Image14_D").GetComponent<Image>();
-           image15 = GameObject.Find("Image15_D").GetComponent<Image>();
-           image16 = GameObject.Find("Image16_D").GetComponent<Image>();
-           image17 = GameObject.Find("Image17_D").GetComponent<Image>();
-           image18 = GameObject.Find("Image18_D").GetComponent<Image>();
-           image19 = GameObject.Find("Image19_D").GetComponent<Image>();
-           image20 = GameObject.Find("Image20_D").GetComponent<Image>();
-           image21 = GameObject.Find("Image21_D").GetComponent<Image>();
-           image22 = GameObject.Find("Image22_D").GetComponent<Image>();
-           image23 = GameObject.Find("Image23_D").GetComponent<Image>();
-           image24 = GameObject.Find("Image24_D").GetComponent<Image>();
-           image25 = GameObject.Find("Image25_D").GetComponent<Image>();
-           image26 = GameObject.Find("Image26_D").GetComponent<Image>();
-           image27 = GameObject.Find("Image27_D").GetComponent<Image>();
-           image28 = GameObject.Find("Image28_D").GetComponent<Image>();
-           image29 = GameObject.Find("Image29_D").GetComponent<Image>();
-           image30 = GameObject.Find("Image30_D").GetComponent<Image>();
-           image31 = GameObject.Find("Image31_D").GetComponent<Image>();
-           image32 = GameObject.Find("Image32_D").GetComponent<Image>();
-
-         */
         image1.sprite = sprite1;
         image2.sprite = sprite2;
         image3.sprite = sprite3;
@@ -540,432 +430,312 @@ public class AssosManager : MonoBehaviour
     {
         if (temp == 1)   // BDE
         {
-            //association[i] = 1;
             choixAssos = 1;
             Debug.Log("BDE");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 2)   // Sepefrei
+        else if (temp == 2)   // Sepefrei
         {
-            //association[i] = 2;
             choixAssos = 2;
             Debug.Log("Sepefrei");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 3)   // Effor
+        else if (temp == 3)   // Effor
         {
-            //association[i] = 3;
             choixAssos = 3;
             Debug.Log("Effor");
-            SceneManager.LoadScene(1);
         }
 
         if (temp == 4)   // Effi
         {
-            //association[i] = 4;
             choixAssos = 4;
             Debug.Log("Effi");
-            SceneManager.LoadScene(1);
         }
 
         if (temp == 5)   // Piste
         {
-            //association[i] = 5;
             choixAssos = 5;
             Debug.Log("Piste");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 6)   // AI EFREI
+        else if (temp == 6)   // AI EFREI
         {
-            //association[i] = 6;
             choixAssos = 6;
             Debug.Log("AI efrei");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 7)   // EPS
+        else if (temp == 7)   // EPS
         {
-            //association[i] = 7;
             choixAssos = 7;
             Debug.Log("EPS");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 8)   // Rename
+        else if (temp == 8)   // Rename
         {
-            //association[i] = 8;
             choixAssos = 8;
             Debug.Log("Rename");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 9)   // Ready o
+        else if (temp == 9)   // Ready o
         {
-            //association[i] = 9;
             choixAssos = 9;
             Debug.Log("Ready o");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 10)   // Efrei int
+        else if (temp == 10)   // Efrei int
         {
-            //association[i] = 10;
             choixAssos = 10;
             Debug.Log("Efrei int");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 11)   // Asian
+        else if (temp == 11)   // Asian
         {
-            //association[i] = 11;
             choixAssos = 11;
             Debug.Log("Asian");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 12)   // I week
+        else if (temp == 12)   // I week
         {
-            //association[i] = 12;
             choixAssos = 12;
             Debug.Log("I week");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 13)   // Infitah
+        else if (temp == 13)   // Infitah
         {
-            //association[i] = 13;
             choixAssos = 13;
             Debug.Log("Infitah");
-            SceneManager.LoadScene(1);
         }
 
 
-        if (temp == 14)   // Yé mistikrirk
+        else if (temp == 14)   // Yé mistikrirk
         {
-            //association[i] = 14;
             choixAssos = 14;
             Debug.Log("Yé M");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 15)   // Live Efrei
+        else if (temp == 15)   // Live Efrei
         {
-            //association[i] = 15;
             choixAssos = 15;
             Debug.Log("Live Efrei");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 16)   // Club Rézo
+        else if (temp == 16)   // Club Rézo
         {
-            //association[i] = 16;
             choixAssos = 16;
             Debug.Log("Club Rézo");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 17)   // Efrei Poker
+        else if (temp == 17)   // Efrei Poker
         {
-            //association[i] = 17;
             choixAssos = 17;
             Debug.Log("Efrei Poker");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 18)   // Taverne
+        else if (temp == 18)   // Taverne
         {
-            //association[i] = 13;
-            choixAssos = 13;
+            choixAssos = 18;
             Debug.Log("Infitah");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 19)   // Millésisme
+        else if (temp == 19)   // Millésisme
         {
-            //association[i] = 19;
             choixAssos = 19;
             Debug.Log("Millésisme");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 20)   // Groupe Escape
+        else if (temp == 20)   // Groupe Escape
         {
-            //association[i] = 20;
             choixAssos = 20;
             Debug.Log("Groupe Escape");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 21)   // Pen soul
+        else if (temp == 21)   // Pen soul
         {
-            //association[i] = 21;
             choixAssos = 21;
             Debug.Log("Pen Soul");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 22)   // Le Continental
+        else if (temp == 22)   // Le Continental
         {
-            //association[i] = 22;
             choixAssos = 22;
             Debug.Log("Continental");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 23)   // EfreiChef
+        else if (temp == 23)   // EfreiChef
         {
-            //association[i] = 23;
             choixAssos = 23;
             Debug.Log("Efrei Chefs");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 24)   // Hifi Lix
+        else if (temp == 24)   // Hifi Lix
         {
-            //association[i] = 24;
             choixAssos = 24;
             Debug.Log("Hifi Lix");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 25)   // bds
+        else if (temp == 25)   // bds
         {
-            //association[i] = 25;
             choixAssos = 25;
             Debug.Log("bds");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 26)   // efreestyle
+        else if (temp == 26)   // efreestyle
         {
-            //association[i] = 26;
             choixAssos = 26;
             Debug.Log("efreestyle");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 27)   // efight
+        else if (temp == 27)   // efight
         {
-            //association[i] = 27;
             choixAssos = 27;
             Debug.Log("efight");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 28)   // ef racing
+        else if (temp == 28)   // ef racing
         {
-            //association[i] = 28;
             choixAssos = 28;
             Debug.Log("ef racing");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 29)   // ef ride
+        else if (temp == 29)   // ef ride
         {
-            //association[i] = 29;
             choixAssos = 29;
             Debug.Log("ef ride");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 30)   // cap efrei
+        else if (temp == 30)   // cap efrei
         {
-            //association[i] = 30;
             choixAssos = 30;
             Debug.Log("cap efrei");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 31)   // efrei climbing
+        else if (temp == 31)   // efrei climbing
         {
-            //association[i] = 31;
             choixAssos = 31;
             Debug.Log("climbing");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 32)   // para
+        else if (temp == 32)   // para
         {
-            //association[i] = 32;
             choixAssos = 32;
             Debug.Log("para");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 33 )   // efray
+        else if (temp == 33)   // efray
         {
-            //association[i] = 33;
             choixAssos = 33;
             Debug.Log("efray");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 34)   // hock
+        else if (temp == 34)   // hock
         {
-            //association[i] = 34;
             choixAssos = 34;
             Debug.Log("hock");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 35)   // 4e sport
+        else if (temp == 35)   // 4e sport
         {
-            //association[i] = 35;
             choixAssos = 35;
             Debug.Log("4e sport");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 36)   // wei
+        else if (temp == 36)   // wei
         {
-            //association[i] = 36;
             choixAssos = 36;
             Debug.Log("wei");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 37)   // gala
+        else if (temp == 37)   // gala
         {
-            //association[i] = 37;
             choixAssos = 37;
             Debug.Log("gala");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 38)   // ice
+        else if (temp == 38)   // ice
         {
-            //association[i] = 38;
             choixAssos = 38;
             Debug.Log("ice");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 39)   // microsoft
+        else if (temp == 39)   // microsoft
         {
-            //association[i] = 39;
             choixAssos = 39;
             Debug.Log("microsoft");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 40)   // 3d
+        else if (temp == 40)   // 3d
         {
-            //association[i] = 40;
             choixAssos = 40;
             Debug.Log("3d");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 41)   // crobotic
+        else if (temp == 41)   // crobotic
         {
-            //association[i] = 41;
             choixAssos = 41;
             Debug.Log("crobotic");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 42)   // linux
+        else if (temp == 42)   // linux
         {
-            //association[i] = 42;
             choixAssos = 42;
             Debug.Log("linux");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 43)   // aero
+        else if (temp == 43)   // aero
         {
-            //association[i] = 43;
             choixAssos = 43;
             Debug.Log("aero");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 44)   // get
+        else if (temp == 44)   // get
         {
-            //association[i] = 44;
-            choixAssos =44 ;
+            choixAssos = 44;
             Debug.Log("get");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 45)   // crypto
+        else if (temp == 45)   // crypto
         {
-            //association[i] = 45;
             choixAssos = 45;
             Debug.Log("crypto");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 46)   // fap
+        else if (temp == 46)   // fap
         {
-            //association[i] = 46;
             choixAssos = 46;
             Debug.Log("fap");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 47)   // eah
+        else if (temp == 47)   // eah
         {
-            //association[i] = 47;
             choixAssos = 47;
             Debug.Log("eah");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 48)   // symbioz
+        else if (temp == 48)   // symbioz
         {
-            //association[i] = 48;
             choixAssos = 48;
             Debug.Log("symbioz");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 49)   // entraide
+        else if (temp == 49)   // entraide
         {
-            //association[i] = 49;
             choixAssos = 49;
             Debug.Log("entraide");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 50)   // human app
+        else if (temp == 50)   // human app
         {
-            //association[i] = 50;
             choixAssos = 50;
             Debug.Log("human app");
-            SceneManager.LoadScene(1);
         }
 
-        if (temp == 51)   // 4L
+        else if (temp == 51)   // 4L
         {
-            //association[i] = 51;
             choixAssos = 51;
             Debug.Log("4L");
-            SceneManager.LoadScene(1);
         }
 
-
-
+        save.Add_assos(choixAssos);
+        SceneManager.LoadScene(1);
     }
-
-
-
-   
-
-    /*  int FindLastAssos()
-      {
-          int i = 0;
-
-          while (association[i] != 0 && i < 3)
-              i++;
-          if (i == 2)
-              return -1;
-          else
-              return i;
-      }*/
-
-
 }

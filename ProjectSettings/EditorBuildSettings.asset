@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sauvegarde.unity
     guid: d645e58f29e2e014286ff82eb83b5719
+  - enabled: 1
+    path: Assets/Scenes/Identification.unity
+    guid: e9fa1bc045d03d4419365e5f2d8f0d7e

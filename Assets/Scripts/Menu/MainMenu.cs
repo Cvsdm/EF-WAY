@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour
     //button's functions
     public void LoadJeu () //hardcode
     {
-        SceneManager.LoadSceneAsync("Jeu");
+        SceneManager.LoadSceneAsync("Sauvegarde");
     }
 
     public void LoadInstructions() //hardcode

@@ -46,7 +46,7 @@ public class InstructionScript : MonoBehaviour
     public void LoadMainMenu() //hardcode
     {
         SceneManager.LoadSceneAsync("MainMenu");
-        Debug.Log("X button has been clicked !");
+        //Debug.Log("X button has been clicked !");
     }
 
     private void NavigateOnClick(int InstructionIndex)
@@ -61,7 +61,7 @@ public class InstructionScript : MonoBehaviour
                 break;
             // 1 = go to the left
             case 1:
-                Debug.Log("pos :" + InstructionContainer.anchoredPosition3D.x);
+                //Debug.Log("pos :" + InstructionContainer.anchoredPosition3D.x);
 
                 correction_x = InstructionContainer.anchoredPosition3D;
                 correction_x.x = (int)InstructionContainer.anchoredPosition3D.x;
@@ -69,19 +69,19 @@ public class InstructionScript : MonoBehaviour
                     correction_x.x --;
                 //     correction_x.x = correction_x.x + correction_x.x - 1280;
 
-                Debug.Log("counter :" + correction_x.x);
+                //Debug.Log("counter :" + correction_x.x);
                 desiredInstructionPosition = correction_x + Vector3.right * 1280 ;
                 break;
             // 2 = go to the right
             case 2:
-                Debug.Log("pos :" + InstructionContainer.anchoredPosition3D.x);
+                //Debug.Log("pos :" + InstructionContainer.anchoredPosition3D.x);
                 correction_x = InstructionContainer.anchoredPosition3D;
                 correction_x.x = (int)InstructionContainer.anchoredPosition3D.x;
                 while (correction_x.x % 1280 != 0)
                     correction_x.x--;
                 //    correction_x.x = correction_x.x + correction_x.x - 1280;
 
-                Debug.Log("counter :" + correction_x.x);
+                //Debug.Log("counter :" + correction_x.x);
                 desiredInstructionPosition = correction_x + Vector3.left * 1280;
                 //desiredInstructionPosition = InstructionContainer.anchoredPosition3D + Vector3.left * 1280;
                 break;
@@ -93,19 +93,18 @@ public class InstructionScript : MonoBehaviour
     public void toMenuClick()
     {
         NavigateOnClick(0);
-        Debug.Log("X button has been clicked !");
+        //Debug.Log("X button has been clicked !");
     }
 
     public void toLeftClick()
     {
         NavigateOnClick(1);
-        Debug.Log("<< button has been clicked !");
+        //Debug.Log("<< button has been clicked !");
     }
 
     public void toRightClick()
     {
         NavigateOnClick(2);
-        Debug.Log(">> button has been clicked !");
+        //Debug.Log(">> button has been clicked !");
     }
-
 }

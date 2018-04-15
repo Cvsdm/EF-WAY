@@ -39,6 +39,13 @@ public class Database : MonoBehaviour
                 allquestions[counter].isTrue = false;
             counter++;
         }
+        file.Close(); //close the stream
+
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            File.Delete(databasePath); //delete the created file
+        }
+
     }
 }
 

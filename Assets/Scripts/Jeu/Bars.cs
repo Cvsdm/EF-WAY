@@ -1,46 +1,47 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Bars : MonoBehaviour
 {
-    public float CurrentAssos { get; set; }
+    private float CurrentAssos { get; set; }
     private float MaxAssos { get; set; }
 
-    public float CurrentEtude { get; set; }
+    private float CurrentEtude { get; set; }
     private float MaxEtude { get; set; }
 
-    public float CurrentSocial { get; set; }
+    private float CurrentSocial { get; set; }
     private float MaxSocial { get; set; }
 
     private Slider assos;
     private Slider etude;
     private Slider social;
 
-    public Text textAssos;
-    public Text textEtude;
-    public Text textSocial;
+    private Text textAssos;
+    private Text textEtude;
+    private Text textSocial;
+
+    private Sauvegarde save;
 
     float temp;
 
     void Start()
     {
+        save = FindObjectOfType<Sauvegarde>();
         MaxEtude = 100f;
-        CurrentEtude = 0f; //sauvegarde current
+        CurrentEtude = save.Get_etude();
         etude = GameObject.Find("Etude").GetComponent<Slider>();
         textEtude = GameObject.Find("TextEtude").GetComponent<Text>();
         UpdateEtude();
 
         MaxAssos = 100f;
-        CurrentAssos = 0f; //sauvegarde current
+        CurrentAssos = save.Get_assos();
         assos = GameObject.Find("Assos").GetComponent<Slider>();
         textAssos = GameObject.Find("TextAssos").GetComponent<Text>();
         UpdateAssos();
 
 
         MaxSocial = 100f;
-        CurrentSocial = 0f; // sauvegarde current
+        CurrentSocial = save.Get_sociabilite();
         social = GameObject.Find("Sociability").GetComponent<Slider>();
         textSocial = GameObject.Find("TextSocial").GetComponent<Text>();
         UpdateSocial();
@@ -48,6 +49,7 @@ public class Bars : MonoBehaviour
 
     void UpdateAssos()
     {
+        save.Set_assos(CurrentAssos);
         assos.value = CalculateAssos();
         float temp = CalculateAssos() * 100;
         textAssos.text = temp.ToString();
@@ -74,11 +76,9 @@ public class Bars : MonoBehaviour
         return CurrentAssos / MaxAssos; //Percentage
     }
 
-
-
-
     void UpdateEtude()
     {
+        save.Set_etude(CurrentEtude);
         etude.value = CalculateEtude();
         float temp = CalculateEtude() * 100;
         textEtude.text = temp.ToString();
@@ -88,7 +88,7 @@ public class Bars : MonoBehaviour
     {
         CurrentEtude -= minuspoint;
         if (CurrentEtude < 0)
-            CurrentEtude = 0;
+            CurrentEtude = 0;   
         UpdateEtude();
     }
 
@@ -105,10 +105,9 @@ public class Bars : MonoBehaviour
         return CurrentEtude / MaxEtude; //Percentage
     }
 
-
-
     void UpdateSocial()
     {
+        save.Set_sociabilite(CurrentSocial);
         social.value = CalculateSocial();
         float temp = CalculateSocial() * 100;
         textSocial.text = temp.ToString();
@@ -118,7 +117,7 @@ public class Bars : MonoBehaviour
     {
         CurrentSocial -= minuspoint;
         if (CurrentSocial < 0)
-            CurrentSocial = 0;
+            CurrentSocial = 0;       
         UpdateSocial();
     }
 

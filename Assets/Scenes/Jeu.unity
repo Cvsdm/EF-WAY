@@ -383,7 +383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 68213523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cc28d423f5476942a5542e82dda0578, type: 3}
+  m_Script: {fileID: 11500000, guid: e0ee98ab94eaef8479c7d93ade985873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textAssos: {fileID: 291529937}
@@ -1005,10 +1005,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 222136874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d271b71e7c8727040a92bc81c531b5ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d364ac86301e24f8b094a6f8b68434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 33.87
 --- !u!1 &222811457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,7 +1674,6 @@ GameObject:
   - component: {fileID: 348268489}
   - component: {fileID: 348268488}
   - component: {fileID: 348268487}
-  - component: {fileID: 348268491}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1746,19 +1744,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 72, y: 0, z: 0}
---- !u!114 &348268491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 348268486}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b283765b6e3b844a925b4174242f69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 222136874}
-  mainCam: {fileID: 348268489}
 --- !u!1 &350065161
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,7 +2696,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114594543322458818, guid: b8c4c53e65a991f46b6073484622f28c,
+      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
         m_MethodName: SceneLoader
         m_Mode: 3
@@ -3651,7 +3636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114594543322458818, guid: b8c4c53e65a991f46b6073484622f28c,
+      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
         m_MethodName: SceneLoader
         m_Mode: 3
@@ -7164,7 +7149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114594543322458818, guid: b8c4c53e65a991f46b6073484622f28c,
+      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
         m_MethodName: SceneLoader
         m_Mode: 3
@@ -7376,7 +7361,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114594543322458818, guid: b8c4c53e65a991f46b6073484622f28c,
+      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
         m_MethodName: SceneLoader
         m_Mode: 3
@@ -11198,7 +11183,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114594543322458818, guid: b8c4c53e65a991f46b6073484622f28c,
+      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
         m_MethodName: SceneLoader
         m_Mode: 3
