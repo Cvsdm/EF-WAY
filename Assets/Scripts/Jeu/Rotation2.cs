@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Rotation2 : MonoBehaviour
@@ -175,7 +173,7 @@ public class Rotation2 : MonoBehaviour
             //ValueD2(DiceValues2, 1);
             //  DiceValues2 = 4;
             GetRotation();
-            Debug.Log("Total value: " + TotalValue);
+            //Debug.Log("Total value: " + TotalValue);
         }
     }
 
@@ -202,14 +200,14 @@ public class Rotation2 : MonoBehaviour
     }
 
 
-    static int D2;
-    static int D1;
+    //static int D2;
+    //static int D1;
 
     int ValueD2(int val, int a)
     {
         if (a == 1)
         {
-            D2 = val;
+            //D2 = val;
             return val;
         }
         else
@@ -222,7 +220,7 @@ public class Rotation2 : MonoBehaviour
     {
         if (a == 1)
         {
-            D1 = val;
+            //D1 = val;
             return val;
         }
         return -100;

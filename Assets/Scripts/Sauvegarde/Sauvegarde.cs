@@ -37,7 +37,7 @@ public class Sauvegarde : MonoBehaviour {
         else // if there is a sauvegarde / la chargé + bouger le pion + bouger les jauges, etc...
         {
             ChargefromFile();
-            SceneManager.LoadScene("Jeu");
+            SceneManager.LoadScene("Lancé de dés");
         }
 	}
 	
@@ -96,6 +96,7 @@ public class Sauvegarde : MonoBehaviour {
     public float Get_assos()        { return jauge_assos; }
     public float Get_sociabilite()  { return jauge_sociabilité; }
     public int   Get_counter()      { return counter; }
+    public int   Get_nextmove()     { return nextmove; }
 
     public void Set_player(string name)     { player_name = name; }
     public void Set_gender(int genre)       { player_gender = genre; }
@@ -131,11 +132,11 @@ public class Sauvegarde : MonoBehaviour {
 
     public void Display_attributes()
     {
-        Debug.Log("counter" + counter);
-        Debug.Log("jauge_assos" + jauge_assos);
-        Debug.Log("jauge_etudes" + jauge_etude);
-        Debug.Log("jauge_social" + jauge_sociabilité);
-        Debug.Log("nextmove" + nextmove);
-        Debug.Log("majeure " + majeur_choice);
+        Debug.Log("counter : " + counter);
+        Debug.Log("jauge_assos : " + jauge_assos);
+        Debug.Log("jauge_etudes : " + jauge_etude);
+        Debug.Log("jauge_social : " + jauge_sociabilité);
+        Debug.Log("nextmove : " + nextmove);
+        Debug.Log("majeure : " + majeur_choice);
     }
 }

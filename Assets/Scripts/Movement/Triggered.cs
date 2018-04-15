@@ -23,11 +23,15 @@ public class Triggered : MonoBehaviour {
             //Debug.Log("Triggered");
 
             save.Set_counter(save.Get_counter() + 1);
+            save.Set_nextmove(save.Get_nextmove() - 1);
             Debug.Log("counter : " + save.Get_counter());
 
 
              //StartCoroutine(WaitAndPause(0.5f));
-             Movement.Stop_itween();
+             if (save.Get_nextmove() == 0)
+            {
+                Movement.Stop_itween();
+            }
 
             if (this.name.Length >= 10) // ex : P1_ENDPATH
             {
