@@ -7,10 +7,12 @@ public class Triggered : MonoBehaviour {
     public int intersection;
     private Sauvegarde save;
     //private int count = 0;
+    private Cases cases;
 
     private void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
+        cases = FindObjectOfType<Cases>();
         was_triggered = false;
     }
 
@@ -25,12 +27,16 @@ public class Triggered : MonoBehaviour {
             save.Set_counter(save.Get_counter() + 1);
             save.Set_nextmove(save.Get_nextmove() - 1);
             Debug.Log("counter : " + save.Get_counter());
+            Debug.Log("next : " + save.Get_nextmove());
 
 
-             //StartCoroutine(WaitAndPause(0.5f));
-             if (save.Get_nextmove() == 0)
+            //StartCoroutine(WaitAndPause(0.5f));
+            if (save.Get_nextmove() == 0) /// Avance until the dice number
             {
-                Movement.Stop_itween();
+                //Movement.Stop_itween();
+                iTween.Stop();
+                cases.Case_action(); //lancer la fonction de la case ds laquelle on a atteri
+                save.Set_nextmove(4); //just pour les tests ^^
             }
 
             if (this.name.Length >= 10) // ex : P1_ENDPATH
@@ -44,7 +50,6 @@ public class Triggered : MonoBehaviour {
 
                 Movement.Play_iTween(other.gameObject);
             }
-            //Destroy(gameObject, 0);
         }
     }
 

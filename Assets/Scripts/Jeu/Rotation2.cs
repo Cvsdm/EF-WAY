@@ -3,18 +3,11 @@ using UnityEngine.UI;
 
 public class Rotation2 : MonoBehaviour
 {
-    /*struct Resultats
-    {
-        public int D1;
-        public int D2;
-    }*/
-
-    public int DiceValues;
-    public int DiceValues2;
-
-    //Resultats R;
+    private int DiceValues;
+    private int DiceValues2;
 
     public float smooth2 = 10.0F;
+    private float smooth = 10.0F;
 
     bool hello2 = true;
     bool hello = true;
@@ -24,7 +17,7 @@ public class Rotation2 : MonoBehaviour
     Quaternion target;
     Quaternion target2;
 
-    private float smooth = 10.0F;
+    
     int alreadyDropped = 0;
 
     public Text countText3;
@@ -36,12 +29,16 @@ public class Rotation2 : MonoBehaviour
 
     public GameObject Cube1;
     public GameObject Cube;
+    public Button Go;
+    public Text Result;
+
     private Sauvegarde save;
 
     void Start()
     {
-        GameObject.Find("Go").GetComponent<Button>().enabled = false;
-        GameObject.Find("Go").transform.localScale = new Vector3(0, 0, 0);
+        //GameObject.Find("Go").GetComponent<Button>().enabled = false;
+        //GameObject.Find("Go").transform.localScale = new Vector3(0, 0, 0);
+        Go.gameObject.SetActive(false);
         GameObject.Find("Result (2)").transform.localScale = new Vector3(0, 0, 0);
         save = FindObjectOfType<Sauvegarde>();
     }
@@ -88,9 +85,7 @@ public class Rotation2 : MonoBehaviour
                         GameObject.Find("Cube1").transform.rotation = Quaternion.Slerp(transform.rotation, target2, Time.deltaTime * smooth2);
                         break;
                 }
-                //countText2.text = DiceValues2.ToString();
             }
-
         }
         else
         {
@@ -100,7 +95,7 @@ public class Rotation2 : MonoBehaviour
             }
             else
             {
-                GameObject.Find("Cube").GetComponent<Rigidbody>().freezeRotation = true;
+                Cube.GetComponent<Rigidbody>().freezeRotation = true;
                 GameObject.Find("Cube").GetComponent<Rigidbody>().useGravity = true;
                 switch (DiceValues)
                 {
@@ -131,11 +126,6 @@ public class Rotation2 : MonoBehaviour
                 }
                 //countText.text = DiceValues.ToString();
             }
-            /*  if (alreadyDropped == 1)
-              {
-                  StoreValues(DiceValues);
-                  alreadyDropped++;
-              }*/
 
             int pouet = GetRotation1();
 
@@ -155,7 +145,6 @@ public class Rotation2 : MonoBehaviour
 
             }
         }
-        //  Debug.Log("D1 :" + R.D1 + " | D2 :" + R.D2);
     }
 
 
@@ -192,22 +181,18 @@ public class Rotation2 : MonoBehaviour
     
     void EnableButton()
     {
-        GameObject.Find("Go").GetComponent<Button>().enabled = true;
-        GameObject.Find("Go").transform.localScale = new Vector3(1, 1, 1);
+        //GameObject.Find("Go").GetComponent<Button>().enabled = true;
+        //GameObject.Find("Go").transform.localScale = new Vector3(1, 1, 1);
+        Go.gameObject.SetActive(true);
 
         GameObject.Find("Drop").GetComponent<Button>().enabled = false;
         GameObject.Find("Drop").transform.localScale = new Vector3(0, 0, 0);
     }
 
-
-    //static int D2;
-    //static int D1;
-
     int ValueD2(int val, int a)
     {
         if (a == 1)
         {
-            //D2 = val;
             return val;
         }
         else
@@ -220,7 +205,6 @@ public class Rotation2 : MonoBehaviour
     {
         if (a == 1)
         {
-            //D1 = val;
             return val;
         }
         return -100;

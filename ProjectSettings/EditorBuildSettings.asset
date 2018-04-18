@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8ec9a1bca6aa9ed40938672adef4dd5e
+  - enabled: 1
+    path: Assets/Scenes/Jeu.unity
+    guid: 6c3301127b2e23f46b53757040647146
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 4c1005ac9ca94a6428bd9c59985d4e89
+  - enabled: 1
+    path: "Assets/Scenes/Lanc\xE9 de d\xE9s.unity"
+    guid: 59098526043b10244bcd2643bdc50547
+  - enabled: 1
+    path: Assets/Scenes/Menu Assos.unity
+    guid: a6f734be5e39e3f4fae7f8449b1f1971
+  - enabled: 1
+    path: Assets/Scenes/Choix des majeures.unity
+    guid: a8800a27637b8f44e82d7af9527aa38b
+  - enabled: 1
+    path: Assets/Scenes/Persistent_quizz.unity
+    guid: 58e28c7cea9081b4bb51ccb450ff80c7
+  - enabled: 1
+    path: Assets/Scenes/Menu_quizz.unity
+    guid: a61e5b39ff84f5b4482ff5146887f848
+  - enabled: 1
+    path: Assets/Scenes/Quizz.unity
+    guid: 7b0a77b885364964aae0423d38cd728c
+  - enabled: 1
+    path: Assets/Scenes/Sauvegarde.unity
+    guid: d645e58f29e2e014286ff82eb83b5719
+  - enabled: 1
+    path: Assets/Scenes/Identification.unity
+    guid: e9fa1bc045d03d4419365e5f2d8f0d7e

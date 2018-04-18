@@ -32,4 +32,12 @@ public class Movement : MonoBehaviour
     {
         iTween.Resume();
     }
+
+    public static void Go_toplace(GameObject j1)
+    {
+        iTween.MoveTo(j1, iTween.Hash("path", iTweenPath.GetPath(pathname),
+                                              "speed", 100,
+                                              "easeType", iTween.EaseType.easeInOutSine)
+                     );
+    }
 }

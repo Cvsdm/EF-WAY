@@ -692,15 +692,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6718487d16c29e940a0b3d67db5f24c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiceValues: 0
-  DiceValues2: 0
   smooth2: 10
-  smooth: 10
   countText3: {fileID: 1643136786}
   x: {fileID: 0}
   TotalValue: 0
   Cube1: {fileID: 503748269}
   Cube: {fileID: 1265081345}
+  Go: {fileID: 846394870}
+  Result: {fileID: 1643136786}
 --- !u!1 &567604372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,15 +1690,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6718487d16c29e940a0b3d67db5f24c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiceValues: 0
-  DiceValues2: 0
   smooth2: 10
-  smooth: 10
   countText3: {fileID: 1643136786}
   x: {fileID: 0}
   TotalValue: 0
   Cube1: {fileID: 503748269}
   Cube: {fileID: 1265081345}
+  Go: {fileID: 846394870}
+  Result: {fileID: 1643136786}
 --- !u!1 &1267711950
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Sauvegarde : MonoBehaviour {
     
     private int[] Tab_assos = new int[3];
     private int majeur_choice = 0;
-    private int nextmove = -1;
+    private int nextmove = 0;
    // private highest score for each quizz ?
 
     void Start ()
