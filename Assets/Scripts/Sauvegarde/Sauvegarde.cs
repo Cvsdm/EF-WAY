@@ -19,6 +19,10 @@ public class Sauvegarde : MonoBehaviour {
     private int[] Tab_assos = new int[3];
     private int majeur_choice = 0;
     private int nextmove = 0;
+    private int langue = 0; //french
+    private int nb_jetons = 0;
+
+
    // private highest score for each quizz ?
 
     void Start ()
@@ -97,6 +101,8 @@ public class Sauvegarde : MonoBehaviour {
     public float Get_sociabilite()  { return jauge_sociabilité; }
     public int   Get_counter()      { return counter; }
     public int   Get_nextmove()     { return nextmove; }
+    public int   Get_langue()       { return langue; }
+    public int   Get_jetons()       { return nb_jetons; }
 
     public void Set_player(string name)     { player_name = name; }
     public void Set_gender(int genre)       { player_gender = genre; }
@@ -106,6 +112,9 @@ public class Sauvegarde : MonoBehaviour {
     public void Set_majeure(int maj)        { majeur_choice = maj; }
     public void Set_counter(int count)      { counter = count; }
     public void Set_nextmove(int move)      { nextmove = move; }
+    public void Set_jetons(int jeton)       { nb_jetons = jeton; }
+
+
 
     public void Add_assos(int newest)
     {
@@ -138,5 +147,16 @@ public class Sauvegarde : MonoBehaviour {
         Debug.Log("jauge_social : " + jauge_sociabilité);
         Debug.Log("nextmove : " + nextmove);
         Debug.Log("majeure : " + majeur_choice);
+    }
+
+    public bool Found_assos(int tofind)
+    {
+        for (int i = 0; i < Tab_assos.Length; i++)
+        {
+            if (Tab_assos[i] == tofind)
+                return true;
+        }
+
+        return false;
     }
 }

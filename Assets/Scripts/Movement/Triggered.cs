@@ -6,7 +6,6 @@ public class Triggered : MonoBehaviour {
     public bool was_triggered;
     public int intersection;
     private Sauvegarde save;
-    //private int count = 0;
     private Cases cases;
 
     private void Start()
@@ -26,8 +25,8 @@ public class Triggered : MonoBehaviour {
 
             save.Set_counter(save.Get_counter() + 1);
             save.Set_nextmove(save.Get_nextmove() - 1);
-            Debug.Log("counter : " + save.Get_counter());
-            Debug.Log("next : " + save.Get_nextmove());
+            //Debug.Log("counter : " + save.Get_counter());
+            //Debug.Log("next : " + save.Get_nextmove());
 
 
             //StartCoroutine(WaitAndPause(0.5f));
