@@ -2,6 +2,7 @@
 using System.IO;
 using UnityEngine.SceneManagement;
 using System;
+using System.Collections;
 
 public class Sauvegarde : MonoBehaviour {
 
@@ -15,13 +16,12 @@ public class Sauvegarde : MonoBehaviour {
 
     private string fileName = "save_data.txt";
     private string path;
-    
-    private int[] Tab_assos = new int[3];
+
+    private string[] Tab_assos = new string[3] { "none", "none", "none" };
     private int majeur_choice = 0;
     private int nextmove = 0;
     private int langue = 0; //french
     private int nb_jetons = 0;
-
 
    // private highest score for each quizz ?
 
@@ -89,41 +89,43 @@ public class Sauvegarde : MonoBehaviour {
         counter = Int32.Parse(file.ReadLine());
         majeur_choice = Int32.Parse(file.ReadLine());
 
-        Tab_assos[0] = Int32.Parse(file.ReadLine());
-        Tab_assos[1] = Int32.Parse(file.ReadLine());
-        Tab_assos[2] = Int32.Parse(file.ReadLine());
+        Tab_assos[0] = file.ReadLine();
+        Tab_assos[1] = file.ReadLine();
+        Tab_assos[2] = file.ReadLine();
 
         file.Close(); //close the stream
     }
 
-    public float Get_etude()        { return jauge_etude; }
-    public float Get_assos()        { return jauge_assos; }
-    public float Get_sociabilite()  { return jauge_sociabilité; }
-    public int   Get_counter()      { return counter; }
-    public int   Get_nextmove()     { return nextmove; }
-    public int   Get_langue()       { return langue; }
-    public int   Get_jetons()       { return nb_jetons; }
+    public float    Get_etude()        { return jauge_etude; }
+    public float    Get_assos()        { return jauge_assos; }
+    public float    Get_sociabilite()  { return jauge_sociabilité; }
+    public int      Get_counter()      { return counter; }
+    public int      Get_nextmove()     { return nextmove; }
+    public int      Get_langue()       { return langue; }
+    public int      Get_jetons()       { return nb_jetons; }
+    public string   Get_Tab_assos(int i)   { return Tab_assos[i]; }
 
-    public void Set_player(string name)     { player_name = name; }
-    public void Set_gender(int genre)       { player_gender = genre; }
-    public void Set_etude(float nb)         { jauge_etude = nb; }
-    public void Set_assos(float nb)         { jauge_assos = nb; }
-    public void Set_sociabilite(float nb)   { jauge_sociabilité = nb; }
-    public void Set_majeure(int maj)        { majeur_choice = maj; }
-    public void Set_counter(int count)      { counter = count; }
-    public void Set_nextmove(int move)      { nextmove = move; }
-    public void Set_jetons(int jeton)       { nb_jetons = jeton; }
+    public void Set_player(string name)             { player_name = name; }
+    public void Set_gender(int genre)               { player_gender = genre; }
+    public void Set_etude(float nb)                 { jauge_etude = nb; }
+    public void Set_assos(float nb)                 { jauge_assos = nb; }
+    public void Set_sociabilite(float nb)           { jauge_sociabilité = nb; }
+    public void Set_majeure(int maj)                { majeur_choice = maj; }
+    public void Set_counter(int count)              { counter = count; }
+    public void Set_nextmove(int move)              { nextmove = move; }
+    public void Set_jetons(int jeton)               { nb_jetons = jeton; }
+    public void Set_Tab_assos(int i,string assos)   { Tab_assos[i] = assos; }
 
 
 
-    public void Add_assos(int newest)
+    public void Add_assos(string newest)
     {
         int i = 0, flag = -1;
 
         //Debug.Log("add assos");
         while ( i < Tab_assos.Length && flag == -1) //find where to put it
         {
-            if (Tab_assos[i] == 0)
+            if (Tab_assos[i].Equals("none"))
                 flag = i;
             i++;
         }
@@ -131,11 +133,14 @@ public class Sauvegarde : MonoBehaviour {
 
         if (flag == -1)// have to delete and replace a assos
         {
-            /** IMPLEMENT */
+            //FindObjectOfType<Gerer_Assos>().canvas_suppress.SetActive(true);
+            //FindObjectOfType<Gerer_Assos>().canvas.SetActive(false);
+            FindObjectOfType<Gerer_Assos>().Initialize();
         }
         else
         {
             Tab_assos[flag] = newest;
+            Debug.Log("Tab_assos[" + flag + "] = " + newest);
         }
     }
 
@@ -149,14 +154,20 @@ public class Sauvegarde : MonoBehaviour {
         Debug.Log("majeure : " + majeur_choice);
     }
 
-    public bool Found_assos(int tofind)
+    public bool Found_assos(string tofind)
     {
         for (int i = 0; i < Tab_assos.Length; i++)
         {
-            if (Tab_assos[i] == tofind)
+            if (Tab_assos[i].Equals(tofind))
                 return true;
         }
 
         return false;
+    }
+
+    public IEnumerator Lancer_scene_dés()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Lancé de dés");
     }
 }

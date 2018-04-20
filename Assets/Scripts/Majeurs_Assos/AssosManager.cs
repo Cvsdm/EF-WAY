@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class AssosManager : MonoBehaviour
 {
@@ -25,14 +24,14 @@ public class AssosManager : MonoBehaviour
     public Image image18, image19, image20, image21;
 
     //Culture
-    public Text text_22, text_22_2, text_23, text_23_2, text_24, text_24_2, text_25, text_25_2, text_26, text_26_2, text_27, text_27_2, text_28, text_28_2, text_29, text_29_2, text_30, text_30_2, text_31, text_31_2, text_32, text_32_2;
-    public Sprite sprite22, sprite23, sprite24, sprite25, sprite26, sprite27, sprite28, sprite29, sprite30, sprite31, sprite32;
-    public Image image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32;
+    public Text text_22, text_22_2, text_23, text_23_2, text_24, text_24_2, text_25, text_25_2, text_26, text_26_2, text_27, text_27_2, text_28, text_28_2, text_29, text_29_2, text_30, text_30_2, text_31, text_31_2, text_32, text_32_2, text_61, text_61_2, text_62, text_62_2, text_63, text_63_2;
+    public Sprite sprite22, sprite23, sprite24, sprite25, sprite26, sprite27, sprite28, sprite29, sprite30, sprite31, sprite32, sprite61, sprite62, sprite63;
+    public Image image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image61, image62, image63;
 
     //Sport
-    public Text text_33, text_33_2, text_34, text_34_2, text_35, text_35_2, text_36, text_36_2, text_37, text_37_2, text_38, text_38_2, text_39, text_39_2, text_40, text_40_2, text_41, text_41_2, text_42, text_42_2, text_43, text_43_2;
-    public Sprite sprite33, sprite34, sprite35, sprite36, sprite37, sprite38, sprite39, sprite40, sprite41, sprite42, sprite43;
-    public Image image33, image34, image35, image36, image37, image38, image39, image40, image41, image42, image43;
+    public Text text_33, text_33_2, text_34, text_34_2, text_35, text_35_2, /*text_36, text_36_2,*/ text_37, text_37_2, text_38, text_38_2, text_39, text_39_2, text_40, text_40_2, text_41, text_41_2, text_42, text_42_2, text_43, text_43_2;
+    public Sprite sprite33, sprite34, sprite35, /*sprite36,*/ sprite37, sprite38, sprite39, sprite40, sprite41, sprite42, sprite43;
+    public Image image33, image34, image35, /*image36,*/ image37, image38, image39, image40, image41, image42, image43;
 
     //Events
     public Text text_45, text_45_2, text_46, text_46_2;
@@ -40,29 +39,35 @@ public class AssosManager : MonoBehaviour
     public Image image45, image46;
 
     //Technique
-    public Text text_47, text_47_2, text_48, text_48_2, text_49, text_49_2, text_50, text_50_2, text_51, text_51_2, text_52, text_52_2, text_53, text_53_2, text_54, text_54_2;
-    public Sprite sprite47, sprite48, sprite49, sprite50, sprite51, sprite52, sprite53, sprite54;
-    public Image image47, image48, image49, image50, image51, image52, image53, image54;
+    public Text text_47, text_47_2, text_48, text_48_2, text_49, text_49_2, text_50, text_50_2, text_51, text_51_2, text_52, text_52_2, /*text_53, text_53_2,*/ text_54, text_54_2;
+    public Sprite sprite47, sprite48, sprite49, sprite50, sprite51, sprite52, /*sprite53, */sprite54;
+    public Image image47, image48, image49, image50, image51, image52,/* image53,*/ image54;
 
     //Entraide
-    public Text text_55, text_55_2, text_56, text_56_2, text_57, text_57_2, text_58, text_58_2, text_59, text_59_2, text_60, text_60_2;
-    public Sprite sprite55, sprite56, sprite57, sprite58, sprite59, sprite60;
-    public Image image55, image56, image57, image58, image59, image60;
+    public Text text_55, text_55_2, text_56, text_56_2, text_57, text_57_2, /*text_58, text_58_2,*/ text_59, text_59_2, text_60, text_60_2;
+    public Sprite sprite55, sprite56, sprite57, /*sprite58,*/ sprite59, sprite60;
+    public Image image55, image56, image57, /*image58,*/ image59, image60;
 
-    private int choixAssos;
-    private int langue = 1;
+    // BDS
+    public Text text_64, text_64_2, text_65, text_65_2, text_66, text_66_2, text_67, text_67_2, text_68, text_68_2, text_69, text_69_2, text_70, text_70_2, text_71, text_71_2, text_72, text_72_2, text_73, text_73_2;
+    public Sprite sprite64, sprite65, sprite66, sprite67, sprite68, sprite69, sprite70, sprite71, sprite72, sprite73;
+    public Image image64, image65, image66, image67, image68, image69, image70, image71, image72, image73;
+
+    private string choixAssos;
+    private int langue;
     private Sauvegarde save;
 
     public void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
+        langue = save.Get_langue();
         IniVariables();
 
-        if (langue == 1)
+        if (langue == 0)
         {
             IniFrench();
         }
-        else if (langue == 2)
+        else if (langue == 1)
         {
             IniEnglish();
         }
@@ -105,7 +110,7 @@ public class AssosManager : MonoBehaviour
         image33.sprite = sprite33;
         image34.sprite = sprite34;
         image35.sprite = sprite35;
-        image36.sprite = sprite36;
+        // image36.sprite = sprite36;
         image37.sprite = sprite37;
         image38.sprite = sprite38;
         image39.sprite = sprite39;
@@ -121,14 +126,27 @@ public class AssosManager : MonoBehaviour
         image50.sprite = sprite50;
         image51.sprite = sprite51;
         image52.sprite = sprite52;
-        image53.sprite = sprite53;
+        //  image53.sprite = sprite53;
         image54.sprite = sprite54;
         image55.sprite = sprite55;
         image56.sprite = sprite56;
         image57.sprite = sprite57;
-        image58.sprite = sprite58;
+        //  image58.sprite = sprite58;
         image59.sprite = sprite59;
         image60.sprite = sprite60;
+        image61.sprite = sprite61;
+        image62.sprite = sprite62;
+        image63.sprite = sprite63;
+        image64.sprite = sprite64;
+        image65.sprite = sprite65;
+        image66.sprite = sprite66;
+        image67.sprite = sprite67;
+        image68.sprite = sprite68;
+        image69.sprite = sprite69;
+        image70.sprite = sprite70;
+        image71.sprite = sprite71;
+        image72.sprite = sprite72;
+        image73.sprite = sprite73;
     }
 
     void IniFrench()
@@ -158,8 +176,8 @@ public class AssosManager : MonoBehaviour
         text_10_2.text = "Junior Entreprise";
         text_11.text = "EFFOR";
         text_11_2.text = "EFrei FORmation\nFormations et réalisation de prestations techniques dans le domaine des nouvelles technologies";
-        text_12.text = "EFFI";
-        text_12_2.text = "Efrei Finance\nInitier les élèves au secteur de la finance et ses outils";
+        text_12.text = "Ogma";
+        text_12_2.text = "Entraine les élèves à parler à l'oral avec éloquence";
         text_13.text = "PISTE";
         text_13_2.text = "Portail d'Information pour les Stages en Entreprises\nCV\nCampus day\nConférences";
         text_14.text = "AI EFREI";
@@ -206,6 +224,12 @@ public class AssosManager : MonoBehaviour
         text_31_2.text = "Apprendre les rudiments essentiels de la cuisine orienté étudiante";
         text_32.text = "HIFI LIX";
         text_32_2.text = "Association de DJ\nMixage, éclairage pendant les événements\nProduction de musique";
+        text_61.text = "Pandora";
+        text_61_2.text = "Héhé, bonne question ^^";
+        text_62.text = "Spot";
+        text_62_2.text = "Emmène les étudiants au théâtre, à l'opéra, et dans d’autres lieux insolites de Paris";
+        text_63.text = "The Mist";
+        text_63_2.text = "Association de magie\nManipulation l'histoire et tours";
 
         // Sports
         text_33.text = "Bureau des Sports (BDS)";
@@ -214,8 +238,8 @@ public class AssosManager : MonoBehaviour
         text_34_2.text = "Hip hop, capoeira, salsa, break dance";
         text_35.text = "Efight";
         text_35_2.text = "Dédié aux sports de combat\nPratique des arts martiaux\nCours d'autodéfense";
-        text_36.text = "EF Racing";
-        text_36_2.text = "Association de karting et automobile";
+        // text_36.text = "EF Racing";
+        // text_36_2.text = "Association de karting et automobile";
         text_37.text = "EF'Ride";
         text_37_2.text = "Glisse urbaine : cyclisme, planches, roller...\nGlisse aquatique : wakeboard, windsurf, kitesurf, speed sail";
         text_38.text = "Cap Efrei";
@@ -250,8 +274,8 @@ public class AssosManager : MonoBehaviour
         text_51_2.text = "Dédiée au logiciel libre\nFormations, Install Party...";
         text_52.text = "Aero EFREI";
         text_52_2.text = "Rassemble les élèves passionnés d'aéronotique\n3 pôles : formation, espace, aéronautique\nSimulateurs, ballons sondes...";
-        text_53.text = "GET";
-        text_53_2.text = "Consacrée aux technologies du web\nGoodle AdWords, Android, Gmail, GWT, SEO, Google Apples...";
+        //text_53.text = "GET";
+        //text_53_2.text = "Consacrée aux technologies du web\nGoodle AdWords, Android, Gmail, GWT, SEO, Google Apples...";
         text_54.text = "EFREI Crypto Paris";
         text_54_2.text = "Vulgarise et aide les personnes à s'intéresser à la crypto monnaie";
 
@@ -262,12 +286,24 @@ public class AssosManager : MonoBehaviour
         text_56_2.text = "Favorise l'égalité de l'accès à l'éducation\nConvois humanitaires (Burkina, Madagascar, Sénégal, Rwanda...)";
         text_57.text = "Symbioz EFREI";
         text_57_2.text = "Actions de terrain contre l'impact environnemental de l'industrie indormatique\nTri sélectif, collectes de piles...";
-        text_58.text = "Entraide";
-        text_58_2.text = "Promeut l'entraide entre les élèves du groupe\nFormations entre élèves";
+        //text_58.text = "Entraide";
+        //text_58_2.text = "Promeut l'entraide entre les élèves du groupe\nFormations entre élèves";
         text_59.text = "Human'App";
         text_59_2.text = "Développe des applications à destiation des personnes âgées, ONG humanitaires...\nLigue contre le cancer\nRelation avec l'hôpital Paul Brousse";
         text_60.text = "4L & FAONS";
         text_60_2.text = "Participe au 4L Trophy\nRaid automobile humanitaire destiné aux étudiants";
+
+        //BDS
+        text_64.text = "Bureau du BDS";
+        text_65.text = "Efrei Athlé";
+        text_66.text = "Echecs Groupe EFREI (EGE)";
+        text_67.text = "Football EFREI";
+        text_68.text = "EFREI Tennis";
+        text_69.text = "Eswim";
+        text_70.text = "EFREI Basket";
+        text_71.text = "Rugbiere";
+        text_72.text = "EFREI Badminton";
+        text_73.text = "EFREI Volley";
     }
 
     void IniEnglish()
@@ -297,8 +333,8 @@ public class AssosManager : MonoBehaviour
         text_10_2.text = "Junior Entreprise";
         text_11.text = "EFFOR";
         text_11_2.text = "EFrei FORmation\nTrainings and technic implementation in new technologies";
-        text_12.text = "EFFI";
-        text_12_2.text = "Efrei Finance\nInitiate students in the field of finance";
+        text_12.text = "Ogma";
+        text_12_2.text = "Trains students to talk in public with eloquence";
         text_13.text = "PISTE";
         text_13_2.text = "Portal of information for firms' internships\nCV\nCampus day\nConferences";
         text_14.text = "AI EFREI";
@@ -345,6 +381,12 @@ public class AssosManager : MonoBehaviour
         text_31_2.text = "Learn the basics to cooking for a student";
         text_32.text = "HIFI LIX";
         text_32_2.text = "Association of DJ\nMixing, spotlights during events\nMusic production";
+        text_61.text = "Pandora";
+        text_61_2.text = "Héhé, bonne question ^^";
+        text_62.text = "Spot";
+        text_62_2.text = "Takes students to the theater, opera and other unusual places in Paris";
+        text_63.text = "The Mist";
+        text_63_2.text = "Magic association\nManipulation, history and tricks";
 
         // Sports
         text_33.text = "Bureau des Sports (BDS)";
@@ -353,8 +395,8 @@ public class AssosManager : MonoBehaviour
         text_34_2.text = "Hip hop, capoeira, salsa, breakdance";
         text_35.text = "Efight";
         text_35_2.text = "Dedicated to combat sports\nPractice martial arts\nClasses of self defense";
-        text_36.text = "EF Racing";
-        text_36_2.text = "Association of karting and automobile";
+        //   text_36.text = "EF Racing";
+        //  text_36_2.text = "Association of karting and automobile";
         text_37.text = "EF'Ride";
         text_37_2.text = "Cyycling, board sports, roller blading, wakeboard, windsurfing, kitesurf, speed sail";
         text_38.text = "Cap Efrei";
@@ -389,8 +431,8 @@ public class AssosManager : MonoBehaviour
         text_51_2.text = "Dedicated to free software\nCourses, Install Parties...";
         text_52.text = "Aero EFREI";
         text_52_2.text = "Gathers lovers of aeronautics\n3 poles : courses, space, aeraunotics\nSimulators, sounding ballon...";
-        text_53.text = "GET";
-        text_53_2.text = "Dedicated to new technologies of the web\nGoodle AdWords, Android, Gmail, GWT, SEO, Google Apps...";
+        //   text_53.text = "GET";
+        //  text_53_2.text = "Dedicated to new technologies of the web\nGoodle AdWords, Android, Gmail, GWT, SEO, Google Apps...";
         text_54.text = "EFREI Crypto Paris";
         text_54_2.text = "Popularizes and help people take an interest in crypto currency";
 
@@ -401,341 +443,304 @@ public class AssosManager : MonoBehaviour
         text_56_2.text = "Improves the equality of the education access\nHumanitarian convoys (Burkina, Madagascar, Senegal, Rwanda...)";
         text_57.text = "Symbioz EFREI";
         text_57_2.text = "Field action against the impact of environmental Impact of IT \nRecycling, collection bins of used batteries";
-        text_58.text = "Entraide";
-        text_58_2.text = "Promotes the mutual aid between students of the group\nCourses between students";
+        //text_58.text = "Entraide";
+        // text_58_2.text = "Promotes the mutual aid between students of the group\nCourses between students";
         text_59.text = "Human'App";
         text_59_2.text = "Developps apps for elderly, hospitals and NGO\nCancer Ligue\nLinks with the Paul Brousse hospital";
         text_60.text = "4L & FAONS";
         text_60_2.text = "Takes part in the 4L Trophy\nHumanitarian automobile raid dedicated to students";
+
+
+        //BDS
+        text_64.text = "Bureau du BDS";
+        text_65.text = "Efrei Athlé";
+        text_66.text = "Echecs Groupe EFREI (EGE)";
+        text_67.text = "Football EFREI";
+        text_68.text = "EFREI Tennis";
+        text_69.text = "Eswim";
+        text_70.text = "EFREI Basket";
+        text_71.text = "Rugbiere";
+        text_72.text = "EFREI Badminton";
+        text_73.text = "EFREI Volley";
     }
 
 
 
     public void ChangeLanguageToEn()
     {
-        langue = 2;
+        langue = 1;
         IniEnglish();
     }
 
     public void ChangeLanguageToFr()
     {
-        langue = 1;
+        langue = 0;
         IniFrench();
     }
 
-
-    //   public int[] association;
-
     public void Choice(int temp)
     {
-        if (temp == 1)   // BDE
+        switch (temp)
         {
-            choixAssos = 1;
-            Debug.Log("BDE");
+            case 1: 
+            choixAssos = "BDE";
+                break;
+
+            case 2:   // Sepefrei
+            choixAssos = "Sepefrei";
+                break;
+
+            case 3:   // Effor
+            choixAssos = "EFFOR";
+                break;
+
+            case 4:   // Effi
+            choixAssos = "Effi";
+                break;
+
+            case 5:   // Piste
+            choixAssos = "Piste";
+                break;
+
+            case 6:   // AI EFREI
+            choixAssos = "AI efrei";
+                break;
+
+            case 7:   // EPS
+            choixAssos = "EPS";
+                break;
+
+            case 8:   // Rename
+            choixAssos = "Rename";
+                break;
+
+            case 9:   // Ready o
+            choixAssos = "Ready o";
+                break;
+
+            case 10:   // Efrei int
+            choixAssos = "Efrei international";
+                break;
+
+            case 11:   // Asian
+            choixAssos = "Asian";
+                break;
+
+            case 12:   // I week
+            choixAssos = "I week";
+                break;
+
+            case 13:   // Infitah
+            choixAssos = "Infitah";
+                break;
+
+            case 14:   // Yé mistikrirk
+            choixAssos = "Ye Mistikrik";
+                break;
+
+            case 15:   // Live Efrei
+            choixAssos = "Live Efrei";
+                break;
+
+            case 16:   // Club Rézo
+            choixAssos = "Club Rézo";
+                break;
+
+
+            case 17:   // Efrei Poker
+            choixAssos = "Efrei Poker";
+                break;
+
+            case 18:   // Taverne
+            choixAssos = "Taverne";
+                break;
+
+            case 19:   // Millésisme
+            choixAssos = "Millésisme";
+                break;
+
+            case 20:   // Groupe Escape
+            choixAssos = "Groupe Escape";
+                break;
+
+            case 21:   // Pen soul
+            choixAssos = "Pen Soul";
+                break;
+
+            case 22:   // Le Continental
+            choixAssos = "Continental";
+                break;
+
+            case 23:   // EfreiChef
+            choixAssos = "Efrei Chefs";
+                break;
+
+            case 24:   // Hifi Lix
+            choixAssos = "Hifi Lix";
+                break;
+
+            case 25:   // bds
+            choixAssos = "bds";
+                break;
+
+            case 26:   // efreestyle
+            choixAssos = "efreestyle";
+                break;
+
+            case 27:   // efight
+            choixAssos = "efight";
+                break;
+
+            case 28:   // ef racing
+            choixAssos = "ef racing";
+                break;
+
+            case 29:   // ef ride
+            choixAssos = "ef ride";
+                break;
+
+            case 30:   // cap efrei
+            choixAssos = "cap efrei";
+                break;
+
+            case 31:   // efrei climbing
+            choixAssos = "climbing";
+                break;
+
+            case 32:   // para
+            choixAssos = "para";
+                break;
+
+            case 33:   // efray
+            choixAssos = "efray";
+                break;
+
+            case 34:   // hock
+            choixAssos = "Hock'Efrei";
+                break;
+
+            case 35:   // 4e sport
+            choixAssos = "4e sport";
+                break;
+
+        case 36:   // wei
+            choixAssos = "wei";
+                break;
+
+            case 37:   // gala
+            choixAssos = "Gala";
+                break;
+
+            case 38:   // ice
+            choixAssos = "ice";
+                break;
+
+            case 39:   // microsoft
+            choixAssos = "Microsoft";
+                break;
+
+            case 40:   // 3d
+            choixAssos = "3d";
+                break;
+
+            case 41:   // crobotic
+            choixAssos = "crobotic";
+                break;
+
+            case 42:   // linux
+            choixAssos = "linux";
+                break;
+
+            case 43:   // aero
+            choixAssos = "aero";
+                break;
+
+            case 44:   // get
+            choixAssos = "get";
+                break;
+
+            case 45:   // crypto
+            choixAssos = "crypto";
+                break;
+
+            case 46:   // fap
+            choixAssos = "fap";
+                break;
+
+            case 47:   // eah
+            choixAssos = "eah";
+                break;
+
+            case 48:   // symbioz
+            choixAssos = "symbioz";
+                break;
+
+            case 49:   // entraide
+            choixAssos = "entraide";
+                break;
+
+            case 50:   // human app
+            choixAssos = "human app";
+                break;
+
+            case 51:   // 4L       
+            choixAssos = "4L";
+                break;
+
+            case 52:   // Spot
+                    choixAssos ="Spot";
+                break;
+
+            case 53: // Mist
+                    choixAssos ="Mist";
+                break;
+
+            case 54:  // Bureau BDS
+                    choixAssos ="Bureau BDS";
+                break;
+
+            case 55:  // Athlé
+                    choixAssos ="Athlé";
+                break;
+
+            case 56:  // EGE
+                    choixAssos ="EGE";
+                break;
+
+            case 57:  // Foot
+                    choixAssos ="Foot";
+                break;
+
+            case 58:  // Tennis
+                    choixAssos ="Tennis";
+                break;
+
+            case 59:  // Natation
+                    choixAssos ="Natation";
+                break;
+
+            case 60:  // Basket
+                    choixAssos ="Basket";
+                break;
+
+            case 61:  // Rugby
+                    choixAssos ="Rugby";
+                break;
+
+            case 62:  // Bad
+                    choixAssos ="Bad";
+                break;
+
+            case 63:  // Volley
+                    choixAssos ="Volley";
+                break;
+
+            case 64:  // Pandora
+                    choixAssos ="Pandora";
+                break;
         }
-
-        else if (temp == 2)   // Sepefrei
-        {
-            choixAssos = 2;
-            Debug.Log("Sepefrei");
-        }
-
-        else if (temp == 3)   // Effor
-        {
-            choixAssos = 3;
-            Debug.Log("Effor");
-        }
-
-        if (temp == 4)   // Effi
-        {
-            choixAssos = 4;
-            Debug.Log("Effi");
-        }
-
-        if (temp == 5)   // Piste
-        {
-            choixAssos = 5;
-            Debug.Log("Piste");
-        }
-
-        else if (temp == 6)   // AI EFREI
-        {
-            choixAssos = 6;
-            Debug.Log("AI efrei");
-        }
-
-        else if (temp == 7)   // EPS
-        {
-            choixAssos = 7;
-            Debug.Log("EPS");
-        }
-
-        else if (temp == 8)   // Rename
-        {
-            choixAssos = 8;
-            Debug.Log("Rename");
-        }
-
-        else if (temp == 9)   // Ready o
-        {
-            choixAssos = 9;
-            Debug.Log("Ready o");
-        }
-
-        else if (temp == 10)   // Efrei int
-        {
-            choixAssos = 10;
-            Debug.Log("Efrei int");
-        }
-
-        else if (temp == 11)   // Asian
-        {
-            choixAssos = 11;
-            Debug.Log("Asian");
-        }
-
-        else if (temp == 12)   // I week
-        {
-            choixAssos = 12;
-            Debug.Log("I week");
-        }
-
-        else if (temp == 13)   // Infitah
-        {
-            choixAssos = 13;
-            Debug.Log("Infitah");
-        }
-
-
-        else if (temp == 14)   // Yé mistikrirk
-        {
-            choixAssos = 14;
-            Debug.Log("Yé M");
-        }
-
-        else if (temp == 15)   // Live Efrei
-        {
-            choixAssos = 15;
-            Debug.Log("Live Efrei");
-        }
-
-        else if (temp == 16)   // Club Rézo
-        {
-            choixAssos = 16;
-            Debug.Log("Club Rézo");
-        }
-
-        else if (temp == 17)   // Efrei Poker
-        {
-            choixAssos = 17;
-            Debug.Log("Efrei Poker");
-        }
-
-        else if (temp == 18)   // Taverne
-        {
-            choixAssos = 18;
-            Debug.Log("Infitah");
-        }
-
-        else if (temp == 19)   // Millésisme
-        {
-            choixAssos = 19;
-            Debug.Log("Millésisme");
-        }
-
-        else if (temp == 20)   // Groupe Escape
-        {
-            choixAssos = 20;
-            Debug.Log("Groupe Escape");
-        }
-
-        else if (temp == 21)   // Pen soul
-        {
-            choixAssos = 21;
-            Debug.Log("Pen Soul");
-        }
-
-        else if (temp == 22)   // Le Continental
-        {
-            choixAssos = 22;
-            Debug.Log("Continental");
-        }
-
-        else if (temp == 23)   // EfreiChef
-        {
-            choixAssos = 23;
-            Debug.Log("Efrei Chefs");
-        }
-
-        else if (temp == 24)   // Hifi Lix
-        {
-            choixAssos = 24;
-            Debug.Log("Hifi Lix");
-        }
-
-        else if (temp == 25)   // bds
-        {
-            choixAssos = 25;
-            Debug.Log("bds");
-        }
-
-        else if (temp == 26)   // efreestyle
-        {
-            choixAssos = 26;
-            Debug.Log("efreestyle");
-        }
-
-        else if (temp == 27)   // efight
-        {
-            choixAssos = 27;
-            Debug.Log("efight");
-        }
-
-        else if (temp == 28)   // ef racing
-        {
-            choixAssos = 28;
-            Debug.Log("ef racing");
-        }
-
-        else if (temp == 29)   // ef ride
-        {
-            choixAssos = 29;
-            Debug.Log("ef ride");
-        }
-
-        else if (temp == 30)   // cap efrei
-        {
-            choixAssos = 30;
-            Debug.Log("cap efrei");
-        }
-
-        else if (temp == 31)   // efrei climbing
-        {
-            choixAssos = 31;
-            Debug.Log("climbing");
-        }
-
-        else if (temp == 32)   // para
-        {
-            choixAssos = 32;
-            Debug.Log("para");
-        }
-
-        else if (temp == 33)   // efray
-        {
-            choixAssos = 33;
-            Debug.Log("efray");
-        }
-
-        else if (temp == 34)   // hock
-        {
-            choixAssos = 34;
-            Debug.Log("hock");
-        }
-
-        else if (temp == 35)   // 4e sport
-        {
-            choixAssos = 35;
-            Debug.Log("4e sport");
-        }
-
-        else if (temp == 36)   // wei
-        {
-            choixAssos = 36;
-            Debug.Log("wei");
-        }
-
-        else if (temp == 37)   // gala
-        {
-            choixAssos = 37;
-            Debug.Log("gala");
-        }
-
-        else if (temp == 38)   // ice
-        {
-            choixAssos = 38;
-            Debug.Log("ice");
-        }
-
-        else if (temp == 39)   // microsoft
-        {
-            choixAssos = 39;
-            Debug.Log("microsoft");
-        }
-
-        else if (temp == 40)   // 3d
-        {
-            choixAssos = 40;
-            Debug.Log("3d");
-        }
-
-        else if (temp == 41)   // crobotic
-        {
-            choixAssos = 41;
-            Debug.Log("crobotic");
-        }
-
-        else if (temp == 42)   // linux
-        {
-            choixAssos = 42;
-            Debug.Log("linux");
-        }
-
-        else if (temp == 43)   // aero
-        {
-            choixAssos = 43;
-            Debug.Log("aero");
-        }
-
-        else if (temp == 44)   // get
-        {
-            choixAssos = 44;
-            Debug.Log("get");
-        }
-
-        else if (temp == 45)   // crypto
-        {
-            choixAssos = 45;
-            Debug.Log("crypto");
-        }
-
-        else if (temp == 46)   // fap
-        {
-            choixAssos = 46;
-            Debug.Log("fap");
-        }
-
-        else if (temp == 47)   // eah
-        {
-            choixAssos = 47;
-            Debug.Log("eah");
-        }
-
-        else if (temp == 48)   // symbioz
-        {
-            choixAssos = 48;
-            Debug.Log("symbioz");
-        }
-
-        else if (temp == 49)   // entraide
-        {
-            choixAssos = 49;
-            Debug.Log("entraide");
-        }
-
-        else if (temp == 50)   // human app
-        {
-            choixAssos = 50;
-            Debug.Log("human app");
-        }
-
-        else if (temp == 51)   // 4L
-        {
-            choixAssos = 51;
-            Debug.Log("4L");
-        }
-
+        
         save.Add_assos(choixAssos);
-        SceneManager.LoadScene(1);
+        save.Save_Parameters();
     }
 }

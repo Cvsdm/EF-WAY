@@ -13,6 +13,7 @@ public class ToggleAssos : MonoBehaviour {
     public GameObject events;
     public GameObject technique;
     public GameObject entraide;
+    public GameObject bds;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class ToggleAssos : MonoBehaviour {
         events.SetActive(false);
         technique.SetActive(false);
         entraide.SetActive(false);
+        bds.SetActive(false);
     }
 
     public void ToggleMenu()    //toggle on or off the pause menu
@@ -70,5 +72,10 @@ public class ToggleAssos : MonoBehaviour {
     public void ToggleEntraide()
     {
         entraide.SetActive(!entraide.activeSelf);
+    }
+
+    public void ToggleBDS()
+    {
+        bds.SetActive(!bds.activeSelf);
     }
 }
