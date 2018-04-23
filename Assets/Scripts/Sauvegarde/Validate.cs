@@ -14,6 +14,7 @@ public class Validate : MonoBehaviour {
     {
         save = FindObjectOfType<Sauvegarde>();
         button.interactable = false;
+
     }
 
     // Update is called once per frame

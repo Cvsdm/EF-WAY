@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class Cases : MonoBehaviour {
+public class Cases : MonoBehaviour
+{
 
     private Sauvegarde save;
     private float add_jauge = 5f;
@@ -12,7 +12,8 @@ public class Cases : MonoBehaviour {
     public GameObject CaseDisplay;
     public Bars bars;
 
-    void Start () {
+    void Start()
+    {
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
 
@@ -21,13 +22,13 @@ public class Cases : MonoBehaviour {
         else
             button.GetComponentInChildren<Text>().text = "Continue";
     }
-	
-	public void Case_action ()
+
+    public void Case_action()
     {
         //Debug.Log("Je suis ds le bon script");
         CaseDisplay.SetActive(true);
-        
-        switch(save.Get_counter()) // switch le numéro de la case :) 
+
+        switch (save.Get_counter()) // switch le numéro de la case :) 
         {
             case 1:
                 break;
@@ -35,12 +36,17 @@ public class Cases : MonoBehaviour {
             case 2:
                 break;
 
+            case 4:         // Concours entrée
+                text.text = "Jour J !\nVous devez passer le concours Puissance Alpha !\nBon courage !";
+                /// SceneManager.LoadScene(Quizz);
+                break;
+
             case 10:        //POD d'intégration : jauge sociale
                 if (save.Get_langue() == 0)
                     text.text = "Vous participez au POD d'intégration et rencontrez de nombreuses personnes";
                 else
                     text.text = "You take part in the integration POD and you meet lots of people";
-                    bars.DealSocialPlus(add_jauge);
+                bars.DealSocialPlus(add_jauge);
                 break;
 
             case 12:        //rally culturel : jauge sociabilité
@@ -75,11 +81,19 @@ public class Cases : MonoBehaviour {
                 bars.DealSocialPlus(add_jauge);
                 break;
 
+            case 16:        // Semaine des assos
+                if (save.Get_langue() == 0)
+                    text.text = "Semaine des assos\nVous pouvez choisir parmi toutes les associations 3 au maximum";
+                else
+                    text.text = "Association week\nYou may choose amongst all of them up to 3";
+               /// SceneManager.LoadScene(4);          /// choix de 3 assos ? Script en plus ?
+                break;
+
             case 17:        //1_assos
                 if (save.Get_langue() == 0)
                     Action_Assos("EAH organise un petit déjeuner", "eah");
                 else
-                    Action_Assos("EAH organizes a breakfast", "eah");                
+                    Action_Assos("EAH organizes a breakfast", "eah");
                 break;
 
             case 18:        //aide un ami en math : jauge étude
@@ -105,7 +119,7 @@ public class Cases : MonoBehaviour {
                     text.text = "you are 15 mintes late for your course and can't join the class";
                 bars.DealEtudeMinus(add_jauge);
                 break;
-            
+
             case 22:        //2_assos
                 if (save.Get_langue() == 0)
                     Action_Assos("Une soirée patinoire est organisée par Hock'Efrei", "Hock'Efrei");
@@ -114,6 +128,13 @@ public class Cases : MonoBehaviour {
 
                 break;
 
+            case 24:          // Projet Voltaire
+                if (save.Get_langue() == 0)
+                    text.text = "Projet Voltaire !\nVous devez réussir ce test de français niveau ingénieur pour recevoir votre diplôme... Bonne chance !";
+                else
+                    text.text = "Projet Voltaire !\nYou will need to pass with an engineer level this french test to get your diploma... Break a leg !";
+                /// SceneManager.LoadScene(Quizz du Projet Voltaire);
+                break;
 
             case 25:          //3_assos
                 if (save.Get_langue() == 0)
@@ -168,7 +189,15 @@ public class Cases : MonoBehaviour {
                 else
                     text.text = "Association: Choose new associations or quit some if you want !";
                 //appel vers la même fonction que celle du stop choix d'assos, modification des jauges dans la fonction direct
-               
+
+                break;
+
+            case 42:            // Choix destination
+                if (save.Get_langue() == 0)
+                    text.text = "Vous partez au prochain semestre à l'étranger. Vous devez choisir votre destination !";
+                else
+                    text.text = "You will leave next semester abroad. You need to choose whether to leave alone or in a group and the location !";
+                /// SceneManager.LoadScene(Choix destination);
                 break;
 
             case 43:          //6_assos
@@ -194,6 +223,7 @@ public class Cases : MonoBehaviour {
                     text.text = "You meet your new housemates";
                 bars.DealSocialPlus(add_jauge);
                 break;
+                
 
             case 49:          //7_assos
                 // Vous participez à des activités sur le campus (social)
@@ -222,14 +252,14 @@ public class Cases : MonoBehaviour {
                     text.text = "You take part in a list for the next student's association of Efrei Paris";
 
                 save.Add_assos("BDE");
-                bars.DealAssosPlus( add_jauge);
+                bars.DealAssosPlus(add_jauge);
 
                 break;
 
-                case 59:        // Vous rêvez beaucoup de votre mobilité et vous impliquez moins dans votre travail : vos notes baisses, jauge étude diminue
+            case 59:        // Vous rêvez beaucoup de votre mobilité et vous impliquez moins dans votre travail : vos notes baisses, jauge étude diminue
                 break;
 
-                        case 60:          //8.2_assos
+            case 60:          //8.2_assos
                 //Tournoi de la taverne, fait partie de l'assos (assos), sinon (social)
                 if (save.Get_langue() == 0)
                     Action_Assos("La Taverne organise un tournoi", "Taverne");
@@ -247,9 +277,16 @@ public class Cases : MonoBehaviour {
                 bars.DealSocialPlus(add_jauge);
                 break;
 
-                
+            case 62:            // Majeure
+                if (save.Get_langue() == 0)
+                    text.text = "C'est l'heure de choisir votre majeure !\nChoisissez bien";
+                else
+                    text.text = "It is time to choose your major !\nChoose carefully";
+              ///  SceneManager.LoadScene(5);
+                break;
+
             case 66:          //9_assos
-              
+
                 if (save.Get_langue() == 0)
                     Action_Assos("C'est L'I Week !", "I week");
                 else
@@ -257,7 +294,7 @@ public class Cases : MonoBehaviour {
                 break;
 
             case 73:          //10_assos
-                
+
                 if (save.Get_langue() == 0)
                     Action_Assos("Le groupe Escape organise un Escape Game dans le métro de Paris", "Groupe Escape");
                 else
@@ -272,8 +309,16 @@ public class Cases : MonoBehaviour {
                     Action_Assos("Efrei Microsoft organizes a course training to learn more about some softwares", "Microsoft");
                 break;
 
+            case 83:          //PV
+                if (save.Get_langue() == 0)
+                    text.text = "Projet Voltaire !\nEt oui, il faut le repasser... Bonne chance !";
+                else
+                    text.text = "Projet Voltaire !\nYes, you will need to do it again... Break a leg !";
+                /// SceneManager.LoadScene(Quizz du Projet Voltaire);
+                break;
+
             case 84:          //12_assos
-                
+
                 if (save.Get_langue() == 0)
                     Action_Assos("EPS organise une formation pour apprendre à se servir d'un reflexe", "EPS");
                 else
@@ -281,15 +326,23 @@ public class Cases : MonoBehaviour {
                 break;
 
             case 85:          //13_assos
-                
+
                 if (save.Get_langue() == 0)
                     Action_Assos("La Sepefrei organise un petit déjeuner spécial recrutement", "Sepefrei");
                 else
                     Action_Assos("Sepefrei organizes a breakfast in a hiring purpose", "Sepefrei");
                 break;
 
+            case 90:          //TOEIC
+                if (save.Get_langue() == 0)
+                    text.text = "C'est le TOEIC ! Epreuve d'anglais indispensable pour les futurs ingénieurs";
+                else
+                    text.text = "TOEIC time ! English test essential to futur engineers";
+                /// SceneManager.LoadScene(Quizz du TOEIC);
+                break;
+
             case 91:          //14_assos
-                
+
                 if (save.Get_langue() == 0)
                     Action_Assos("L'AI Efrei organise un afterwork entre étudiants actuels et anciens de l'Efrei Paris", "AI efrei");
                 else
@@ -297,16 +350,24 @@ public class Cases : MonoBehaviour {
                 break;
 
             case 96:          //15_assos
-                
+
                 if (save.Get_langue() == 0)
                     Action_Assos("L'Asian Efrei organise l'Aki Party !", "Asian");
                 else
                     Action_Assos("Asian Efrei organizes The Aki Party !", "Asian");
                 break;
+
+            case 100:           //Remise des diplômes
+                if (save.Get_langue() == 0)
+                    text.text = "Félicitations ! Vous avez réussi !\nVous venez de recevoir votre diplôme d'ingénieur de EF'WAY !";
+                else
+                    text.text = "Congratulations ! You did it !\nYou have been awarded your very own EF'WAY diploma !";
+                break;
+
         }
     }
 
-    public void Action_Assos (string action, string assos_Name)
+    public void Action_Assos(string action, string assos_Name)
     {
         text.text = action;
 
@@ -314,14 +375,25 @@ public class Cases : MonoBehaviour {
             bars.DealAssosPlus(add_jauge);
         else
             bars.DealSocialPlus(add_jauge);
-        
+
     }
 
-    public void Action_button ()
+    public void Action_button()
     {
         save.Save_Parameters();
+        int i = save.Get_counter();
         CaseDisplay.SetActive(false);
-        StartCoroutine(save.Lancer_scene_dés());
+
+        if (i == 4 || i == 24 || i == 90 || i == 83) // lancer scène quizz
+            SceneManager.LoadScene("Persistent_quizz");
+        else if (i == 16) // lancer scène assos
+            SceneManager.LoadScene("Menu Assos");
+        else if(i == 62) // lancer les majeurs
+            SceneManager.LoadScene("Choix des majeurs");
+        //else if (i == 42) // lancer la scène de choix des destination
+            //SceneManager.LoadScene("Choix destination");
+        else
+            StartCoroutine(save.Lancer_scene_dés());
     }
 
 

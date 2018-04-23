@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+//using UnityEditor;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System;
@@ -19,9 +20,11 @@ public class Sauvegarde : MonoBehaviour {
 
     private string[] Tab_assos = new string[3] { "none", "none", "none" };
     private int majeur_choice = 0;
-    private int nextmove = 0;
+    private int nextmove = 0; //pas besoin dans la sauvegarde
     private int langue = 0; //french
     private int nb_jetons = 0;
+
+    public GameObject canvas_resume; 
 
    // private highest score for each quizz ?
 
@@ -40,29 +43,27 @@ public class Sauvegarde : MonoBehaviour {
         }
         else // if there is a sauvegarde / la chargé + bouger le pion + bouger les jauges, etc...
         {
-            ChargefromFile();
-            SceneManager.LoadScene("Lancé de dés");
+            canvas_resume.SetActive(true);
         }
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	/*void Update () {
 		
-	}
+	}*/
 
     public void Save_Parameters ()
     {
-        /*Debug.Log("bla save entered");
-        Debug.Log("path : " + path);*/
-
-        TextWriter writer = new StreamWriter(path); //create automaticcally file if not created
+        TextWriter writer = new StreamWriter(path); //create automatically file if not created
 
         writer.WriteLine(player_name);
         writer.WriteLine(player_gender);
+        writer.WriteLine(langue);
 
         writer.WriteLine(jauge_assos);
         writer.WriteLine(jauge_etude);
         writer.WriteLine(jauge_sociabilité);
+        writer.WriteLine(nb_jetons);
 
         writer.WriteLine(counter);
         writer.WriteLine(majeur_choice);
@@ -72,7 +73,6 @@ public class Sauvegarde : MonoBehaviour {
         writer.WriteLine(Tab_assos[2]);
 
         writer.Close();
-
     }
 
     void ChargefromFile()
@@ -81,10 +81,12 @@ public class Sauvegarde : MonoBehaviour {
 
         player_name = file.ReadLine();
         player_gender = Int32.Parse(file.ReadLine());
+        langue = Int32.Parse(file.ReadLine());
 
         jauge_assos = Int32.Parse(file.ReadLine());
         jauge_etude = Int32.Parse(file.ReadLine());
         jauge_sociabilité = Int32.Parse(file.ReadLine());
+        nb_jetons = Int32.Parse(file.ReadLine());
 
         counter = Int32.Parse(file.ReadLine());
         majeur_choice = Int32.Parse(file.ReadLine());
@@ -132,11 +134,7 @@ public class Sauvegarde : MonoBehaviour {
         //Debug.Log("flag : " + flag );
 
         if (flag == -1)// have to delete and replace a assos
-        {
-            //FindObjectOfType<Gerer_Assos>().canvas_suppress.SetActive(true);
-            //FindObjectOfType<Gerer_Assos>().canvas.SetActive(false);
-            FindObjectOfType<Gerer_Assos>().Initialize();
-        }
+           FindObjectOfType<Gerer_Assos>().Initialize();
         else
         {
             Tab_assos[flag] = newest;
@@ -169,5 +167,17 @@ public class Sauvegarde : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Lancé de dés");
+    }
+
+    public void Button_yes()
+    {
+        ChargefromFile();
+        SceneManager.LoadScene("Lancé de dés");
+    }
+
+    public void Button_no()
+    {
+        File.Delete(path);
+        SceneManager.LoadScene("Identification");
     }
 }

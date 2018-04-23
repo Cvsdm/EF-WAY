@@ -51,10 +51,15 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("Instructions");
     }
 
-    public void onCreditClick()
+    public void OnCreditClick()
     {
         NavigationOnClick(1);
         //Debug.Log("Credit button has been clicked !");
+    }
+
+    public void OnExit()
+    {
+        Application.Quit();
     }
 
     public void OnParametresClick()
