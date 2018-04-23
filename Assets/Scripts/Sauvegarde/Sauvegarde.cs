@@ -124,22 +124,24 @@ public class Sauvegarde : MonoBehaviour {
     {
         int i = 0, flag = -1;
 
-        //Debug.Log("add assos");
-        while ( i < Tab_assos.Length && flag == -1) //find where to put it
+        if (!Found_assos(newest))
         {
-            if (Tab_assos[i].Equals("none"))
-                flag = i;
-            i++;
-        }
-        //Debug.Log("flag : " + flag );
+            while (i < Tab_assos.Length && flag == -1) //find where to put it
+            {
+                if (Tab_assos[i].Equals("none"))
+                    flag = i;
+                i++;
+            }
 
-        if (flag == -1)// have to delete and replace a assos
-           FindObjectOfType<Gerer_Assos>().Initialize();
-        else
-        {
-            Tab_assos[flag] = newest;
-            Debug.Log("Tab_assos[" + flag + "] = " + newest);
+            if (flag == -1)// have to delete and replace a assos
+                FindObjectOfType<Gerer_Assos>().Initialize();
+            else
+            {
+                Tab_assos[flag] = newest;
+                Debug.Log("Tab_assos[" + flag + "] = " + newest);
+            }
         }
+
     }
 
     public void Display_attributes()
