@@ -1,14 +1,14 @@
-﻿Le plus petit élément qui conserve ses propriétés est l'éléctron
+﻿Le plus petit élément qui conserve ses propriétés est l'éléctron.
 0
-L'opposition au courant est appelé la conductivité
+L'opposition au courant est appelé la conductivité.
 0
-La résistance au courant est appelé la résistance
+La résistance au courant est appelé la résistance.
 1
-Un matériau qui bloque le courant est appelé un isolateur
+Un matériau qui bloque le courant est appelé un isolateur.
 1
 La loi d'Ohm pose que le courant est proportionnel au voltage et inversement proportionnel à la résistance. I = V/R
 1
-La puissance est montant d'énergie par unité de temps
+La puissance est montant d'énergie par unité de temps.
 1
 La loi des mailles pose que la somme des voltages d'une boucle fermé est égale à 1.
 0
@@ -16,31 +16,31 @@ La fréquence est égale à la période divisé par 2. f = T/2
 0
 L'inductance est la capacité d'un matériau de s'opposer aux changements de courant.
 1
-En langage C, le type de variable int représente des entiers
+En langage C, le type de variable int représente des entiers.
 1
-En langage C, le type  de variable string représente des habits
+En langage C, le type  de variable string représente des habits.
 0
-En langage C, vous pouvez utiliser une variable non déclaré auparavant
+En langage C, vous pouvez utiliser une variable non déclaré auparavant.
 0
-En langage C, le type de variable bool (boolean) existe
+En langage C, le type de variable bool (boolean) existe.
 0
 En langage C, pour attribuer une valeur à une variable on utilise le signe =
 1 
-L'unité internationale du volume est le m^3
+L'unité internationale du volume est le m³.
 1
-L'unité internationale de l'énergie est kg.m.s^-2
+L'unité internationale de l'énergie est kg.m.s⁻².
 0
-L'unité internationale du champ magnétique est kg.s^-2.A^-1
+L'unité internationale du champ magnétique est kg.s⁻².A⁻¹.
 1
-Une opération est dite commutative si a * b = b * a
+Une opération est dite commutative si a * b = b * a.
 1
-Une opération est dite associative si on ne peut pas bouger les parenthèses
+Une opération est dite associative si on ne peut pas bouger les parenthèses.
 0
-La lumière est une onde électromagnétique
+La lumière est une onde électromagnétique.
 1
-Les ondes électromagnétiques sont composés d'un champ électrique et d'un champ kinétique
+Les ondes électromagnétiques sont composés d'un champ électrique et d'un champ kinétique.
 0
-La vitesse approximative de la lumière dans le vide est 3 x 10^6 m.s^-1
+La vitesse approximative de la lumière dans le vide est 3 x 10⁶ m.s⁻¹.
 0
 La longueur d'onde (λ) est égale à λ = c/f	avec c la célérité de l'onde et f sa fréquence.
 1

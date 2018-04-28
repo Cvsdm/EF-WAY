@@ -126,8 +126,8 @@ public class Rotation2 : MonoBehaviour
 
 
         //Debug.Log(TotalValue + "  =  " + Dice1 + "  +  " + Dice2);
-        
-        save.Set_nextmove(TotalValue);
+        save.Set_nextmove(4);
+        //save.Set_nextmove(TotalValue);
         //save.Display_attributes();
     }
 

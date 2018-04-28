@@ -62,11 +62,33 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OnParametresClick()
+    public void OnEnSavoirPLusClick()
     {
         NavigationOnClick(2);
         //Debug.Log("Parametres button has been clicked !");
     }
+
+    public void OnEfreiSiteClick()
+    {
+        Application.OpenURL("http://www.efrei.fr/");
+    }
+
+    public void OnFacebookClick()
+    {
+        Application.OpenURL("https://www.facebook.com/Efrei/?ref=hl");
+    }
+
+    public void OnYTClick()
+    {
+        Application.OpenURL("https://www.youtube.com/efrei");
+    }
+
+    public void OnContactClick()
+    {
+        Application.OpenURL("http://www.efrei.fr/contacts/");
+    }
+    
+
 
     public void ReturnToMenu ()
     {

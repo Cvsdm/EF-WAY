@@ -49,7 +49,7 @@ public class AssosManager : MonoBehaviour
     public Image image55, image56, image57, /*image58,*/ image59, image60;
 
     // BDS
-    public Text text_64, text_64_2, text_65, text_65_2, text_66, text_66_2, text_67, text_67_2, text_68, text_68_2, text_69, text_69_2, text_70, text_70_2, text_71, text_71_2, text_72, text_72_2, text_73, text_73_2;
+    public Text text_64, text_65, text_66, text_67, text_68, text_69, text_70, text_71, text_72, text_73;
     public Sprite sprite64, sprite65, sprite66, sprite67, sprite68, sprite69, sprite70, sprite71, sprite72, sprite73;
     public Image image64, image65, image66, image67, image68, image69, image70, image71, image72, image73;
 

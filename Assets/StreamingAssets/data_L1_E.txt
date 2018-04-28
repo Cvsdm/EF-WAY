@@ -1,0 +1,50 @@
+﻿The smallest element that keeps its properties is the electron.
+0
+Oppostition to current is called conductivity.
+0
+Resistance to current is called Resistance.
+1
+A material that blocks current is called an insulator.
+1
+Ohm's Law states that the current is proportionnal to voltage and inversely proportionnal to resistance. I = V/R
+1
+Power is the amount of energy per unit of time.
+1
+La loi des mailles pose que la somme des voltages d'une boucle fermé est égale à 1.
+0
+The frequency equals to the period divided by 2. f = T/2
+0
+L'inductance est la capacité d'un matériau de s'opposer aux changements de courant.
+1
+In C, the variable type int represents an integer.
+1
+In C, the variable type string represents clothes.
+0
+In C, you can use a variable that was not declared previously.
+0
+In C, the variable type bool (boolean) exists.
+0
+In C, to give a value to a variable we use the sign =
+1 
+The international unit of volume is the m³
+1
+The international unit of energy is kg.m.s⁻²
+0
+The international unit of the magnetic field is kg.s⁻².A⁻¹
+1
+An operation is said commutative if a * b = b * a
+1
+An operation is said associative if we can't move brackets
+0
+Light is an electromagnetic wave.
+1
+Les ondes électromagnétiques sont composés d'un champ électrique et d'un champ kinétique
+0
+The approximate speed of light in vacuum is 3 x 10⁶ m.s⁻¹
+0
+The wavelength (λ) equals to λ = c/f	with c the celerity of the wave and f its frequency sa fréquence.
+1
+The refractive index of water is : n = 1.33
+1
+The refractive index of glass is : n = 2.5
+0  

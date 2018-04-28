@@ -904,11 +904,9 @@ GameObject:
   - component: {fileID: 920484855}
   - component: {fileID: 920484854}
   - component: {fileID: 920484853}
-  - component: {fileID: 920484852}
   - component: {fileID: 920484851}
   - component: {fileID: 920484850}
   - component: {fileID: 920484849}
-  - component: {fileID: 920484856}
   m_Layer: 5
   m_Name: FalseButton
   m_TagString: Untagged
@@ -969,18 +967,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &920484852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000012600885592, guid: a010264e384c8e0449dfb523d23d463e,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 920484848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ab11279ff25f0a44abde60ce72e4bca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &920484853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,8 +1007,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 920484852}
-        m_MethodName: HandleClick
+      - m_Target: {fileID: 995343550}
+        m_MethodName: HandleClickFalse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1069,17 +1055,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 920484848}
---- !u!114 &920484856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 920484848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ab11279ff25f0a44abde60ce72e4bca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &949309685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1156,6 @@ GameObject:
   - component: {fileID: 989356334}
   - component: {fileID: 989356333}
   - component: {fileID: 989356332}
-  - component: {fileID: 989356331}
   - component: {fileID: 989356330}
   - component: {fileID: 989356329}
   - component: {fileID: 989356328}
@@ -1245,18 +1219,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &989356331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000012600885592, guid: a010264e384c8e0449dfb523d23d463e,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 989356327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9409f473900fe64794c6d8d3d0f0a49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &989356332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1297,8 +1259,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 989356331}
-        m_MethodName: HandleClick
+      - m_Target: {fileID: 995343550}
+        m_MethodName: HandleClickTrue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1382,8 +1344,6 @@ MonoBehaviour:
   truebutton: {fileID: 989356332}
   falsebutton: {fileID: 920484853}
   endbutton: {fileID: 2077521860}
-  numberofquestions: 5
-  threshold: 20
 --- !u!4 &995343551
 Transform:
   m_ObjectHideFlags: 0

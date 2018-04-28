@@ -1,0 +1,114 @@
+﻿Nous sommes censés nous voir à midi.
+1
+J'ai l'attention de te surprendre.
+0
+Le carnaval se déroule à Madrid.
+1
+Les fenêtres bleues de l'appartement se font repeindre.
+1
+Les cheveux marrons de Céline sont jolis.
+1
+Les yeux rouge de Georges font peur.
+0
+Nous sommes sensés ne pas nous disputer.
+0
+Quel être censé sauterait de la tour Eiffel ?
+0
+Si la critique est sensée et argumentée, il n’en prend pas ombrage.
+1
+Ce pauvre fermier possédait quatre à cinq vaches.
+0
+J’ai repéré dix ou douze soldats cachés dans les fourrés.
+0
+Il reste cinq à six kilomètres à parcourir.
+1
+Comptez cinq à six kilos de fraises pour douze pots de confiture.
+1
+Douze ou treize euros, c’est le prix moyen du plat du jour.
+0
+Il descend l’escalier s’il entend du bruit dans la cuisine.
+1
+Dans cette célèbre pièce, Roméo s’éprent de Juliette.
+0
+Le pack comprend l’appareil et tous ses accessoires.
+1
+Cet opérateur téléphonique prétend être moins cher que tous les autres.
+0
+La nouvelle machine reprend les fonctionnalités de la précédente.
+1
+C’est un homme sans parole.
+1
+Ce film muet narre une histoire sans paroles.
+1
+Cet étourdi est sorti sans pantalons.
+0
+Pour une peau sans boutons, adoptez notre lotion.
+1
+La plupart des bébés naissent sans dent.
+0
+Un tee-shirt sans manches est couramment appelé un débardeur.
+1
+Si tu n’as plus rien à faire, va-t’en.
+1
+« Tout est en ordre », déclare-t'elle.
+0
+L’analyse ADN prouve-t’elle la culpabilité de l’accusé ?
+0
+Il adore sa voiture, aussi la gare-t-il toujours dans un parc.
+1
+J’ai été au cinéma voir le dernier Spielberg.
+0
+Ils sont allés se plaindre auprès du ministre.
+1
+Elles ont été acheter ce roman le jour même de sa sortie.
+0
+J’ai rendez-vous pour signer ma prolongation de contrat.
+1
+Le médecin a accordé un prolongement de son arrêt de travail.
+0
+Avide, il en veut toujours d’avantage.
+0
+Je voudrais davantage de reconnaissance.
+1
+Il n’y a pas d’avantage financier à en tirer.
+1
+Il faut vous dépêchez.
+0
+On resterait des heures à vous écouter.
+1
+On ne vous a rien dit pour vous ménagez.
+0
+Avez-vous l’habitude de vous exprimez en public ?
+0
+Si l’on ne c’était pas défendu, on aurait tout perdu.
+0
+Si c’était de son ressort, il changerait de stratégie commerciale.
+1
+La réunion c’est déroulée sans incident.
+0
+À l’instar du maréchal Pétain, le général de Gaulle décida de continuer la lutte.
+0
+Remplissez soigneusement les questionnaires jaunes.
+1
+Un grand couturier a dessiné les nouveaux fauteuils violet du TGV.
+0
+Vous trouverez ci-jointe photocopie de votre acte de naissance.
+0
+Ci-inclus la photo d’identité demandée.
+1
+Ajoutez les certificats médicaux ci-joints aux dossiers des licenciés.
+1
+Les documents ci-joint sont confidentiels.
+0
+Les invitations seront envoyées dans des enveloppes bleu.
+0
+Les enveloppes marron sont rangées dans le tiroir.
+1
+Le coureur avait les joues écarlates après son sprint.
+1
+Blanche-Neige est connue pour ses cheveux ébènes.
+0
+Ces cravates moutardes laissaient deviner un goût douteux.
+0
+Mon ancienne voisine était une habituée des chemisiers crème.
+1

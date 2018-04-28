@@ -14,7 +14,7 @@ public class DataController : MonoBehaviour
     {
         /*ADD SOMETHING TO KEEP TRACK OF THE CASE*/
         quizz_data = FindObjectOfType<Quizz_data>();
-        fileName = quizz_data.filename[0];  //replace 0 by the corresponding number
+        fileName = quizz_data.filename;  //replace 0 by the corresponding number
 
         database = FindObjectOfType<Database>();
         database.Create_Database(fileName);
