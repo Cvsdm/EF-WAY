@@ -202,7 +202,7 @@ public class Sauvegarde : MonoBehaviour {
         canvas_jeu.gameObject.SetActive(false);
     }
 
-    public IEnumerator Load_scenes()
+    /*public IEnumerator Load_scenes(float waitTime)
     {
         Disp_Dice();
         //SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
@@ -210,6 +210,35 @@ public class Sauvegarde : MonoBehaviour {
         yield return loading;
         var scene = SceneManager.GetSceneByName("lancé de dés");
         SceneManager.SetActiveScene(scene);
+    }*/
+
+    /*public IEnumerator Load_scenes(float waitTime)
+    {
+        Disp_Dice();
+        
+        yield return waitTime;
+
+        SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
+
+    }*/
+
+    public IEnumerator Load_scenes(float waitTime)
+    {
+        Disp_Dice();
+
+        if (waitTime == 0)
+        {
+            var loading = SceneManager.LoadSceneAsync("lancé de dés", LoadSceneMode.Additive);
+            yield return loading;
+            var scene = SceneManager.GetSceneByName("lancé de dés");
+            SceneManager.SetActiveScene(scene);
+        }
+        else
+        {
+            yield return waitTime;
+            SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
+        }
+
     }
 
     public void Disp_game()

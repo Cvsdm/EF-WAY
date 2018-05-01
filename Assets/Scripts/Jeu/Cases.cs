@@ -17,7 +17,7 @@ public class Cases : MonoBehaviour
     {
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
-        StartCoroutine(save.Load_scenes());
+        StartCoroutine(save.Load_scenes(0));
 
         if (save.Get_langue() == 0)
             button.GetComponentInChildren<Text>().text = "Continuer";
@@ -540,12 +540,30 @@ public class Cases : MonoBehaviour
               ///  SceneManager.LoadScene(5);
                 break;
 
+            case 65:            // rencontre avec les nouveaux entrants en M1 : jauge sociale
+                if (save.Get_langue() == 0)
+                    text.text = "Vous rencontrez les nouveaux étudiants arrivés en M1 à l'Efrei\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "You meet new students arrived for the 4th year at Efrei\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
+                break;
+
             case 66:          //9_assos
 
                 if (save.Get_langue() == 0)
                     Action_Assos("C'est L'I Week !", "I week");
                 else
                     Action_Assos("It's 'I Week' time !", "I week");
+                break;
+
+            case 68:         //Séminaire animation efficace
+                if (save.Get_langue() == 0)
+                    text.text = "Vous participez à un séminaire d'animation efficace\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You take part in a seminar of the efficient animation\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
                 break;
 
             case 69:        //8_dilemme
@@ -567,12 +585,48 @@ public class Cases : MonoBehaviour
                 btn2_dilemme.gameObject.SetActive(true);
                 break;
 
+            case 70:        //Talent Day
+                if (save.Get_langue() == 0)
+                    text.text = "Vous participez au Talent day et donnez votre CV à plusieurs entreprises\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You take part in the Talent Day and give your resume to some companies\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
+                break;
+
+            case 71:        //Fab Lab
+                if (save.Get_langue() == 0)
+                    text.text = "Vous allez au Fab Lab pour commencer un projet avec des amis\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "You go to the Fab Lab to begin a project with your friends\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
+                break;
+
+            case 72:        //encadrement projette-toi
+                if (save.Get_langue() == 0)
+                    text.text = "Vous encadrez des personnes lors de la journée Projette-toi\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "You supervise some people during the immersion day\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
+                break; 
+
             case 73:          //10_assos
 
                 if (save.Get_langue() == 0)
                     Action_Assos("Le groupe Escape organise un Escape Game dans le métro de Paris", "Groupe Escape");
                 else
                     Action_Assos("The Escape Group organizes an Escape Game in the Metro of Paris", "Groupe Escape");
+                break;
+
+            case 74:        //impression BDE
+                if (save.Get_langue() == 0)
+                    text.text = "Vous allez imprimer des documents au BDE et parlez à plusieurs personnes\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "You go printing some documents at the BDE and talk to few people\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
                 break;
 
             case 75:        //9_dilemme
@@ -594,12 +648,39 @@ public class Cases : MonoBehaviour
                 btn2_dilemme.gameObject.SetActive(true);
                 break;
 
+            case 76:          //Printemps des entrepreuneurs
+                if (save.Get_langue() == 0)
+                    text.text = "Vous présentez votre projet de startup au printemps des entrepreneurs\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You meet new students arrived for the 4th year at Efrei\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
+                break;
+
+            case 77:        // Innovation day
+                if (save.Get_langue() == 0)
+                    text.text = "Vous êtes sélectionné pour présenter votre projet à un jury durant l'innovation day\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You have been chosen to present your project to a board during the innovation day\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
+                break;
+
             case 78:          //11_assos
 
                 if (save.Get_langue() == 0)
                     Action_Assos("Efrei Microsoft organise une formation pour en savoir plus sur certains logiciels", "Microsoft");
                 else
                     Action_Assos("Efrei Microsoft organizes a course training to learn more about some softwares", "Microsoft");
+                break;
+
+            case 80:        //Stage
+                if (save.Get_langue() == 0)
+                    text.text = "Vous effectuez votre stage technique de 4 mois\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You meet new students arrived for the 4th year at Efrei\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
                 break;
 
             case 82:        //10_dilemme
@@ -621,6 +702,15 @@ public class Cases : MonoBehaviour
                 btn2_dilemme.gameObject.SetActive(true);
                 break;
 
+            case 83:        //Séminaire métiers
+                if (save.Get_langue() == 0)
+                    text.text = "Vous Paricipez au séminaire des métiers!\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You take part in the profession's seminar\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
+                break;
+
             case 84:          //PV
                 if (save.Get_langue() == 0)
                     text.text = "Projet Voltaire !\nEt oui, il faut le repasser... Bonne chance !";
@@ -635,6 +725,33 @@ public class Cases : MonoBehaviour
                     Action_Assos("EPS organise une formation pour apprendre à se servir d'un reflexe", "EPS");
                 else
                     Action_Assos("EPS organizes a training course to learn how to use a reflex camera", "EPS");
+                break;
+
+            case 86:        //Présentation PFE
+                if (save.Get_langue() == 0)
+                    text.text = "Vous assistez à un réunion de présentation du PFE, le projet que vous allez devoir effectuer\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You go to a presentation meeting about the PFE the project you will have to do\n\n\n +10 in your sutdy's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
+                break;
+
+            case 87:        // réponse question
+                if (save.Get_langue() == 0)
+                    text.text = "Vous répondez sur des forums aux futurs étudiants se posant des questions sur Efrei Paris\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "You answer on forums to futur student having some questions about Efrei Paris\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
+                break;
+
+            case 88:        //journée de la femme
+                if (save.Get_langue() == 0)
+                    text.text = "C'est la journée des droits de la femme ! Vous participez à l'évènement organisé par Symbioz en offrant une rose à une femme\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "It is the International Women's Day ! You take part in the event organised by Symbioz offering a rose to a woman\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
                 break;
 
             case 89:          //13_assos
@@ -662,12 +779,48 @@ public class Cases : MonoBehaviour
                     Action_Assos("AI Efrei organizes an afterwork with current and former students of Efrei Paris", "AI efrei");
                 break;
 
+            case 93:            //endormissement
+                if (save.Get_langue() == 0)
+                    text.text = "Faitgué par les cours et les activités qui remplissent votre vie d'étudiant, vous vous endormez en cours\n\n\n -10 dans votre jauge étude !";
+                else
+                    text.text = "Tired because of the study and all the activities of your student's life, you fall asleep during a course\n\n\n -10 in your study's gauge!";
+
+                bars.DealEtudeMinus(add_jauge);
+                break;
+
+            case 95:            //POD
+                if (save.Get_langue() == 0)
+                    text.text = "Vous participez à un POD organisé à l'Efrei\n\n\n +10 dans votre jauge sociabilité !";
+                else
+                    text.text = "You go to a POD organized at Efrei\n\n\n +10 in your sociability's gauge!";
+
+                bars.DealSocialPlus(add_jauge);
+                break;
+
             case 97:          //15_assos
 
                 if (save.Get_langue() == 0)
                     Action_Assos("L'Asian Efrei organise l'Aki Party !", "Asian");
                 else
                     Action_Assos("Asian Efrei organizes The Aki Party !", "Asian");
+                break;
+
+            case 98:        //Soutenance PFE
+                if (save.Get_langue() == 0)
+                    text.text = "C'est le jour J ! Vous devez présentez votre PFE\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "It is D-Day! You have to present your PFE\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
+                break;
+
+            case 99:        //Stage de in d'étude
+                if (save.Get_langue() == 0)
+                    text.text = "Vous faite votre stage de fin d'étude\n\n\n +10 dans votre jauge étude !";
+                else
+                    text.text = "You do your final internship\n\n\n +10 in your study's gauge!";
+
+                bars.DealEtudePlus(add_jauge);
                 break;
 
             case 100:           //Remise des diplômes
@@ -717,8 +870,10 @@ public class Cases : MonoBehaviour
             SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
         //SceneManager.LoadScene("Choix destination");
         else
-            StartCoroutine(save.Load_scenes());
-        //StartCoroutine(save.Lancer_scene_dés());
+        {
+            StartCoroutine(save.Load_scenes(2f));
+        }
+            
     }
 
     public void OnLeftDilemmaClick()
@@ -746,7 +901,7 @@ public class Cases : MonoBehaviour
             bars.DealAssosPlus(add_jauge*randPlus/2);
         }
         //StartCoroutine(save.Lancer_scene_dés());
-        StartCoroutine(save.Load_scenes());
+        StartCoroutine(save.Load_scenes(1f));
     }
 
     public void OnRightDilemmaClick()
@@ -773,7 +928,7 @@ public class Cases : MonoBehaviour
             bars.DealAssosMinus(add_jauge*randMinus/2);
         }
         //StartCoroutine(save.Lancer_scene_dés());
-        StartCoroutine(save.Load_scenes());
+        StartCoroutine(save.Load_scenes(1f));
     }
 
 }

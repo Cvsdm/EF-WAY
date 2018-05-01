@@ -24,7 +24,7 @@ public class SwitchScripts : MonoBehaviour
     {
         save = FindObjectOfType<Sauvegarde>();
         SceneManager.UnloadSceneAsync(SceneName);
-        StartCoroutine(save.Load_scenes());
+        StartCoroutine(save.Load_scenes(0.8f));
     }
 
 }

@@ -38,3 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Identification.unity
     guid: e9fa1bc045d03d4419365e5f2d8f0d7e
+  - enabled: 1
+    path: Assets/Scenes/Menu Destinations.unity
+    guid: c4c6f15d13afcd042a2ac4c6d057e80d
