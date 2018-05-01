@@ -8,6 +8,7 @@ public class Quizz_data : MonoBehaviour
     void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
+        Debug.Log(save.Get_counter());
 
         switch (save.Get_counter())
         {
@@ -22,6 +23,9 @@ public class Quizz_data : MonoBehaviour
                 break;
             case 83:
                 filename = "Projet_Voltaire.txt";
+                break;
+            default:
+                filename = "data_concours.txt";
                 break;
 
 

@@ -12,9 +12,8 @@ public class DataController : MonoBehaviour
 
     void Start()
     {
-        /*ADD SOMETHING TO KEEP TRACK OF THE CASE*/
         quizz_data = FindObjectOfType<Quizz_data>();
-        fileName = quizz_data.filename;  //replace 0 by the corresponding number
+        fileName = quizz_data.filename;
 
         database = FindObjectOfType<Database>();
         database.Create_Database(fileName);
@@ -23,7 +22,8 @@ public class DataController : MonoBehaviour
         LoadPlayerProgress();
         LoadData();
 
-        SceneManager.LoadScene("Menu_quizz");
+        SceneManager.LoadScene("Menu_quizz", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Persistent_quizz");
     }
 
     public RoundData GetCurrentRoundData()

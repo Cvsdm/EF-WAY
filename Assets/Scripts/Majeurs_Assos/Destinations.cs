@@ -116,6 +116,6 @@ public class Destinations : MonoBehaviour
 
         save.Set_destination(choixDestination);
         save.Save_Parameters();
-
+        StartCoroutine(save.Load_scenes());
     }
 }

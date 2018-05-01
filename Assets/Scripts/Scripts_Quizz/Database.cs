@@ -4,8 +4,7 @@ using System;
 
 public class Database : MonoBehaviour
 {
-    public QuestionData[] allquestions = new QuestionData[14];
-   // private string gameDataFileName;// = "data_concours.txt";
+    public QuestionData[] allquestions = new QuestionData[50];
 
     public void Create_Database(string gameDataFileName)
     {

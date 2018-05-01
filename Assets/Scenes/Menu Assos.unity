@@ -2674,7 +2674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.700012, y: 4.600006}
+  m_AnchoredPosition: {x: 4.700012, y: 4.5999756}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &228506616
@@ -7670,7 +7670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.700012, y: 4.600006}
+  m_AnchoredPosition: {x: 4.700012, y: 4.5999756}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &550397573
@@ -10294,7 +10294,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681369103}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &681369105
 Behaviour:
   m_ObjectHideFlags: 0
@@ -13992,7 +13992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 7.700012, y: 5.399994}
+  m_AnchoredPosition: {x: 7.700012, y: 5.4000244}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &948679614
@@ -22353,14 +22353,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
           type: 2}
-        m_MethodName: SceneLoader
-        m_Mode: 3
+        m_MethodName: Switch2dices
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu Assos
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -28995,25 +28995,15 @@ MonoBehaviour:
   image59: {fileID: 426642586}
   image60: {fileID: 2011551590}
   text_64: {fileID: 37445092}
-  text_64_2: {fileID: 0}
   text_65: {fileID: 332448014}
-  text_65_2: {fileID: 0}
   text_66: {fileID: 957156716}
-  text_66_2: {fileID: 0}
   text_67: {fileID: 1005100703}
-  text_67_2: {fileID: 0}
   text_68: {fileID: 1240709907}
-  text_68_2: {fileID: 0}
   text_69: {fileID: 1612508366}
-  text_69_2: {fileID: 0}
   text_70: {fileID: 67808490}
-  text_70_2: {fileID: 0}
   text_71: {fileID: 1416507708}
-  text_71_2: {fileID: 0}
   text_72: {fileID: 1643489033}
-  text_72_2: {fileID: 0}
   text_73: {fileID: 880260514}
-  text_73_2: {fileID: 0}
   sprite64: {fileID: 21300000, guid: daa0ba5de61733f4eb698575a1444620, type: 3}
   sprite65: {fileID: 21300000, guid: 39d19bbc4b7b38747986560352df7448, type: 3}
   sprite66: {fileID: 21300000, guid: 5983400ea8dcc8e48b26254df6a67ce9, type: 3}

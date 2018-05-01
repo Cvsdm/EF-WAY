@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+//using System;
+using System.Collections;
 
 public class Cases : MonoBehaviour
 {
-
     private Sauvegarde save;
     private float add_jauge = 10f;
     public Text text;
@@ -16,12 +17,15 @@ public class Cases : MonoBehaviour
     {
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
+        StartCoroutine(save.Load_scenes());
 
         if (save.Get_langue() == 0)
             button.GetComponentInChildren<Text>().text = "Continuer";
         else
             button.GetComponentInChildren<Text>().text = "Continue";
     }
+
+
 
     public void Case_action()
     {
@@ -701,15 +705,20 @@ public class Cases : MonoBehaviour
         CaseDisplay.SetActive(false);
 
         if (i == 4 || i == 24 || i == 90 || i == 83) // lancer scène quizz
-            SceneManager.LoadScene("Persistent_quizz");
+            //SceneManager.LoadScene("Persistent_quizz");
+            SceneManager.LoadScene("Persistent_quizz",LoadSceneMode.Additive);
         else if (i == 16) // lancer scène assos
-            SceneManager.LoadScene("Menu Assos");
+            //SceneManager.LoadScene("Menu Assos");
+            SceneManager.LoadScene("Menu Assos", LoadSceneMode.Additive);
         else if(i == 62) // lancer les majeurs
-            SceneManager.LoadScene("Choix des majeurs");
-        //else if (i == 42) // lancer la scène de choix des destination
-            //SceneManager.LoadScene("Choix destination");
+            //SceneManager.LoadScene("Choix des majeurs");
+            SceneManager.LoadScene("Choix des majeurs", LoadSceneMode.Additive);
+        else if (i == 42) // lancer la scène de choix des destination
+            SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("Choix destination");
         else
-            StartCoroutine(save.Lancer_scene_dés());
+            StartCoroutine(save.Load_scenes());
+        //StartCoroutine(save.Lancer_scene_dés());
     }
 
     public void OnLeftDilemmaClick()
@@ -718,6 +727,7 @@ public class Cases : MonoBehaviour
         int i = save.Get_counter();
         btn1_dilemme.gameObject.SetActive(false);
         btn2_dilemme.gameObject.SetActive(false);
+        button.gameObject.SetActive(true);
 
         int randPlus = Random.Range(1, 3);
         int randMinus = Random.Range(1, 3);
@@ -735,7 +745,8 @@ public class Cases : MonoBehaviour
             bars.DealEtudeMinus(add_jauge*randMinus/2);
             bars.DealAssosPlus(add_jauge*randPlus/2);
         }
-        StartCoroutine(save.Lancer_scene_dés());
+        //StartCoroutine(save.Lancer_scene_dés());
+        StartCoroutine(save.Load_scenes());
     }
 
     public void OnRightDilemmaClick()
@@ -744,6 +755,7 @@ public class Cases : MonoBehaviour
         int i = save.Get_counter();
         btn1_dilemme.gameObject.SetActive(false);
         btn2_dilemme.gameObject.SetActive(false);
+        button.gameObject.SetActive(true);
 
         int randPlus = Random.Range(1, 3);
         int randMinus = Random.Range(1, 3);
@@ -760,7 +772,8 @@ public class Cases : MonoBehaviour
             bars.DealEtudePlus(add_jauge*randPlus/2);
             bars.DealAssosMinus(add_jauge*randMinus/2);
         }
-        StartCoroutine(save.Lancer_scene_dés());
+        //StartCoroutine(save.Lancer_scene_dés());
+        StartCoroutine(save.Load_scenes());
     }
 
 }

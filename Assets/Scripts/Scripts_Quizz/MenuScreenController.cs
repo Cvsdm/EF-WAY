@@ -30,8 +30,9 @@ public class MenuScreenController : MonoBehaviour
 
 
 
-    public void StartGame()
+    /*public void StartGame()
 	{
-		UnityEngine.SceneManagement.SceneManager.LoadScene("Quizz");
-	}
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Quizz", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        //UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync("Menu_quizz");
+    }*/
 }

@@ -59,7 +59,7 @@ public class CameraFollowPlayer: MonoBehaviour
             //   mainCam.transform.position = focused;
             
 
-            Debug.Log("hello");
+            //Debug.Log("hello");
 
             transform.position = player.transform.position + offset;
         }
@@ -69,7 +69,7 @@ public class CameraFollowPlayer: MonoBehaviour
         {
             
             mainCam.transform.position = overview;
-            Debug.Log("wazza");
+           // Debug.Log("wazza");
         }
 
 
