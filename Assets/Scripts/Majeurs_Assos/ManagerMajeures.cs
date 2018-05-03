@@ -107,7 +107,7 @@ public class ManagerMajeures : MonoBehaviour
         text_ENRI2.text = "Intelligent networks \nUrban energy management \nReal-time regional energy management ";
 
         text_Secu1.text = "Security (French & English)";
-        text_Secu2.text = "Network \nSystem protection \nInformation security \nFirewalls \nComputer law ";
+        text_Secu2.text = "Network \nSystem protection \nInformation security \nFirewalls \nIT law ";
 
         text_IL1.text = "Software Engineering (English)";
         text_IL2.text = "Application design \nModelling \nDevelopment \nAlgorithmics \nThe web \nObject-oriented technologies ";

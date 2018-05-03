@@ -529,7 +529,7 @@ Prefab:
         pas d\u2019actions \xE0 effectuer mais tu remportes un jeton dont le contenu
         te sera r\xE9v\xE9l\xE9 \xE0 la fin de la partie ! Indice, tu ne seras pas
         d\xE9\xE7u de son contenu !\r\n\nLes cases \xAB Partiels \xBB : C\u2019est
-        l\u2019heure des partiels ! Deux questions vont \xEAtre pos\xE9es si tu r\xE9ponds
+        l\u2019heure des partiels ! Deux questions vont \xEAtre pos\xE9es. Si tu r\xE9ponds
         correctement, ta jauge \xE9tude & assiduit\xE9 augmente, sinon tu passes un
         tour.\r\n"
       objectReference: {fileID: 0}
@@ -3470,7 +3470,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 150}
+  m_SizeDelta: {x: 1000, y: 165.2}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1032439343
 MonoBehaviour:
@@ -4326,7 +4326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cases rouges : l\u2019arr\xEAt sur ces cases est obligatoire, Ces cases
+  m_Text: "Cases rouges : l\u2019arr\xEAt sur ces cases est obligatoire. Ces cases
     sont des \xE9tapes incontournables dans ton parcours \xE0 l\u2019EFREI Paris.
     Le joueur rejoue lorsqu\u2019il tombe sur une case stop. "
 --- !u!222 &1206679681

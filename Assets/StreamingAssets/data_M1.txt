@@ -1,1 +1,30 @@
-﻿
+﻿Le système d'exploitation le plus commercialisé est Linux.
+0
+Le 1er système d'exploitation crée par Microsoft est Vista.
+0
+Un octet vaut 8 bits.
+1
+La norme française de la disposition du clavier d'ordinateur est Azerty.
+1
+La norme anglaise de la disposition du clavier d'ordinateur est Azerty.
+0
+Google est créé par 2 étudiants de Stanford. 
+1
+Le protocole HTTP utilise le port 21.
+0
+Un Firewall est un mur de feu.
+0
+Le protocole FTP utilise le port 21
+1
+Le protocole sécurisé le plus rencontré sur les sites de vente en ligne est SSL.
+1
+Le protocole de sécurité SSL signifie Secure Sockets Layer
+1
+Le protocole de sécurité TSL signifie Total Layer Security
+0
+Un hoax est un virus destructeur.
+0
+Un hoax est un faux antivirus.
+0
+IP signifie Informations Personnelles.
+0

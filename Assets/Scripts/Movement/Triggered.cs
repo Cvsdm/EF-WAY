@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Triggered : MonoBehaviour {
 
-    public bool was_triggered;
+    private bool was_triggered;
     public int intersection;
     private Sauvegarde save;
     private Cases cases;
+
+    public GameObject CaseDisplay;
+    public Text text;
+    public Button button, btn1_dilemme, btn2_dilemme;
 
     private void Start()
     {
@@ -17,7 +22,7 @@ public class Triggered : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if(!was_triggered)
+        if (!was_triggered)
         {
             was_triggered = true;
 
@@ -29,36 +34,106 @@ public class Triggered : MonoBehaviour {
                     save.Set_nextmove(save.Get_nextmove() - 1);
                 }
 
-                if (save.Get_nextmove() == 0) /// Avance until the dice number
+                if (save.Get_nextmove() == 0 || save.Get_counter() == 100) /// Avance until the dice number
                 {
                     iTween.Pause();
                     StartCoroutine(Action_Case(0.8f)); //lancer l'action de la case
+                }
+
+                else if (IsStop())
+                {
+                    iTween.Pause();
+                    StartCoroutine(Action_Case(0.8f));
                 }
             }
             else
             {
                 Movement.advance = Movement.advance - 1;
-                if (Movement.advance == 0)
-                {
-                    iTween.Pause();
-                }
-
+                if (Movement.advance == 0) { iTween.Pause(); }
             }
-                
+
 
             if (this.name.Length >= 10) // ex : P1_ENDPATH
             {
                 Movement.path_counter += 1;
 
-                if (this.intersection == 1)
-                    Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                if (this.intersection == 1) //Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                {
+                    if (this.name.Equals("P6_ENDPATH") && save.Get_counter()== 52)
+                        Move_counter();
+                    if (save.Get_nextmove() != 0) // si il reste des cases à bouger
+                    {
+                        StartCoroutine(Choice());
+                    }
+                    else
+                        iTween.Pause();
+                }
                 else
+                {
                     Movement.pathname = "J1_" + Movement.path_counter;
-
-                Movement.Play_iTween(other.gameObject);
+                    Movement.Play_iTween(GameObject.Find("Sphere_path"));
+                    Move_counter();
+                }
             }
         }
     }
+
+
+    public IEnumerator Choice()
+    {
+        yield return 1;
+        iTween.Pause();
+
+        CaseDisplay.SetActive(true);
+
+        button.gameObject.SetActive(false);
+        if (save.Get_langue() == 0)
+        {
+            text.text = "Choisissez votre chemin";
+            btn1_dilemme.GetComponentInChildren<Text>().text = "Gauche";
+            btn2_dilemme.GetComponentInChildren<Text>().text = "Droite";
+        }
+        else
+        {
+            text.text = "Choose your path";
+            btn1_dilemme.GetComponentInChildren<Text>().text = "Left";
+            btn2_dilemme.GetComponentInChildren<Text>().text = "Right";
+        }
+        btn1_dilemme.gameObject.SetActive(true);
+        btn2_dilemme.gameObject.SetActive(true);
+    }
+
+    public void HandleClick1() // Gauche
+    {
+        if (save.IsIntersection())
+        {
+            CaseDisplay.SetActive(false);
+
+            btn1_dilemme.gameObject.SetActive(false);
+            btn2_dilemme.gameObject.SetActive(false);
+            button.gameObject.SetActive(true);
+
+            Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+            Movement.Play_iTween(GameObject.Find("Sphere_path"));
+        }
+    }
+
+    public void HandleClick2() // Droite
+    {
+        if (save.IsIntersection())
+        {
+            CaseDisplay.SetActive(false);
+
+            btn1_dilemme.gameObject.SetActive(false);
+            btn2_dilemme.gameObject.SetActive(false);
+            button.gameObject.SetActive(true);
+
+            Movement.pathname = "J1_" + Movement.path_counter + "_RIGHT";
+            Movement.Play_iTween(GameObject.Find("Sphere_path"));
+            Move_counter();
+        }
+    }
+
 
     IEnumerator Action_Case(float waitTime)
     {
@@ -66,4 +141,30 @@ public class Triggered : MonoBehaviour {
         cases.Case_action();
     }
 
+    void Move_counter() // if bool = false it's left. Else its right
+    {
+        int j = save.Get_counter();
+
+        if (j == 8)       { save.Set_counter(j + 2); } //right
+        else if (j == 11) { save.Set_counter(j + 2); } 
+
+        else if (j == 25) { save.Set_counter(j + 4); } //right
+        else if (j == 30) { save.Set_counter(j + 4); }
+
+        else if (j == 46) { save.Set_counter(j + 5); } // right
+        else if (j == 52) { save.Set_counter(j + 4); }
+
+        else if (j == 56) { save.Set_counter(j + 3); } //right
+        else if (j == 70) { save.Set_counter(j + 2); }
+    }
+
+    public bool IsStop()
+    {
+        int i = save.Get_counter();
+
+        if (i == 4 || i == 16 || i == 24 || i == 42 || i == 62 || i == 68 || i == 84 || i == 91 || i == 100)
+            return true;
+
+        return false;
+    }
 }

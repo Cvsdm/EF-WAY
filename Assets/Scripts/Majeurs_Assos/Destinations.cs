@@ -22,7 +22,7 @@ public class Destinations : MonoBehaviour
         encadre.SetActive(false);
         
 
-        Debug.Log("langue " + langue);
+        //Debug.Log("langue " + langue);
         
         if (langue == 0)
         {
@@ -116,6 +116,7 @@ public class Destinations : MonoBehaviour
 
         save.Set_destination(choixDestination);
         save.Save_Parameters();
-        StartCoroutine(save.Load_scenes(0.8f));
+        //StartCoroutine(save.Load_scenes(0.8f));
+        save.Disp_after_Stop("Menu Destinations");
     }
 }

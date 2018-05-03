@@ -364,7 +364,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.09999999, z: 0.39999995}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 92
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: -175.94402, z: 90.00001}
 --- !u!114 &19396859
 MonoBehaviour:
@@ -378,8 +378,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &19396860
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -859,7 +863,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000002, z: 0.4}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 91
+  m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: -116.920006, z: 90.00001}
 --- !u!114 &57329894
 MonoBehaviour:
@@ -873,8 +877,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &57329895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -960,12 +968,12 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57688811}
-  m_LocalRotation: {x: 0.7293038, y: 0.6832915, z: -0.021499433, w: -0.0276885}
+  m_LocalRotation: {x: 0.7293038, y: 0.6832915, z: -0.021499433, w: -0.027688494}
   m_LocalPosition: {x: 26.309998, y: 385.73, z: -49.09}
   m_LocalScale: {x: 0.3000001, y: 0.100000046, z: 0.45}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 97
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: -0.63100004, y: -536.032, z: 93.70901}
 --- !u!114 &57688813
 MonoBehaviour:
@@ -979,8 +987,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &57688814
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1351,7 +1363,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000006, z: 0.6000006}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 75
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 262.02698, z: 90.00001}
 --- !u!114 &85426281
 MonoBehaviour:
@@ -1365,8 +1377,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &85426282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1457,7 +1473,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000006, z: 0.60000026}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 120.545006, z: 90.00001}
 --- !u!114 &87166659
 MonoBehaviour:
@@ -1471,8 +1487,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &87166660
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1563,7 +1583,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 57
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 107.44701, z: 90.00001}
 --- !u!114 &91607768
 MonoBehaviour:
@@ -1577,8 +1597,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &91607769
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1883,7 +1907,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000004}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 102.386, z: 90.00001}
 --- !u!114 &134224387
 MonoBehaviour:
@@ -1897,8 +1921,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &134224388
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2186,7 +2214,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.100000024, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 72
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 160.386, z: 90.00001}
 --- !u!114 &164804494
 MonoBehaviour:
@@ -2200,8 +2228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &164804495
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2781,7 +2813,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 79
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 181.25499, z: 90.00001}
 --- !u!114 &208544725
 MonoBehaviour:
@@ -2795,8 +2827,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &208544726
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3134,7 +3170,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.60000056}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 63
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 234.76399, z: 90.00001}
 --- !u!114 &226146363
 MonoBehaviour:
@@ -3148,8 +3184,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &226146364
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3404,7 +3444,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &234497713
 MonoBehaviour:
@@ -3418,8 +3458,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &234497714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3822,7 +3866,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 88
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: -59.676003, z: 90.00001}
 --- !u!114 &264819474
 MonoBehaviour:
@@ -3836,8 +3880,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &264819475
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4003,7 +4051,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &272504843
 MonoBehaviour:
@@ -4017,8 +4065,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &272504844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5026,7 +5078,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 30.560001, z: 90.00001}
 --- !u!114 &361202780
 MonoBehaviour:
@@ -5040,8 +5092,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &361202781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5221,7 +5277,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 117.28001, z: 90.00001}
 --- !u!114 &390783940
 MonoBehaviour:
@@ -5235,8 +5291,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &390783941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5757,7 +5817,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &433048458
 MonoBehaviour:
@@ -5771,8 +5831,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &433048459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6426,7 +6490,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.09999999, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 70, z: 90}
 --- !u!114 &466911866
 MonoBehaviour:
@@ -6440,8 +6504,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &466911867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6618,7 +6686,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: -42.441, z: 90.00001}
 --- !u!114 &474504822
 MonoBehaviour:
@@ -6632,8 +6700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &474504823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6887,7 +6959,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000007, z: 0.60000044}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 78
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 232.72299, z: 90.00001}
 --- !u!114 &483872649
 MonoBehaviour:
@@ -6901,8 +6973,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &483872650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7025,7 +7101,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.100000024, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 61
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 140.666, z: 90.00001}
 --- !u!114 &488553861
 MonoBehaviour:
@@ -7039,8 +7115,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &488553862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7583,7 +7663,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
 --- !u!114 &526229860
 MonoBehaviour:
@@ -7597,8 +7677,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &526229861
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8029,7 +8113,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &575600497
 MonoBehaviour:
@@ -8043,8 +8127,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &575600498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8512,7 +8600,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000001, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 73
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 182.30199, z: 90.00001}
 --- !u!114 &591543774
 MonoBehaviour:
@@ -8526,8 +8614,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &591543775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8618,7 +8710,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.6000008}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 74
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 204.79599, z: 90.00001}
 --- !u!114 &597314615
 MonoBehaviour:
@@ -8632,8 +8724,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &597314616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8724,7 +8820,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000003}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 38.625, z: 90.00001}
 --- !u!114 &597826682
 MonoBehaviour:
@@ -8738,8 +8834,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &597826683
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8994,7 +9094,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.60000044}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 62
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 179.768, z: 90.00001}
 --- !u!114 &619142356
 MonoBehaviour:
@@ -9008,8 +9108,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &619142357
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9677,7 +9781,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.100000046, z: 0.60000044}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 67
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 182.109, z: 90.00001}
 --- !u!114 &670936696
 MonoBehaviour:
@@ -9691,8 +9795,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &670936697
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10184,7 +10292,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.100000024, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 95
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: -339.23, z: 90.00001}
 --- !u!114 &674582344
 MonoBehaviour:
@@ -10198,8 +10306,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &674582345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10290,7 +10402,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.09999998, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 77
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 269.765, z: 90.00001}
 --- !u!114 &678757801
 MonoBehaviour:
@@ -10304,8 +10416,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &678757802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10396,7 +10512,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &679301979
 MonoBehaviour:
@@ -10410,8 +10526,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &679301980
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10612,7 +10732,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 85
+  m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 0.044000003, z: 90.00001}
 --- !u!114 &706055929
 MonoBehaviour:
@@ -10626,8 +10746,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &706055930
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10882,7 +11006,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: -42.441, z: 90.00001}
 --- !u!114 &711313372
 MonoBehaviour:
@@ -10896,8 +11020,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &711313373
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11302,7 +11430,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000007, z: 0.60000074}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 60
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 140.666, z: 90.00001}
 --- !u!114 &731092248
 MonoBehaviour:
@@ -11316,8 +11444,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &731092249
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11408,7 +11540,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 86
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: -89.665, z: 90.00001}
 --- !u!114 &732819382
 MonoBehaviour:
@@ -11422,8 +11554,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &732819383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11550,7 +11686,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000001, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 74.922005, z: 90.00001}
 --- !u!114 &735001265
 MonoBehaviour:
@@ -11564,8 +11700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &735001266
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11777,7 +11917,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
 --- !u!114 &743708905
 MonoBehaviour:
@@ -11791,8 +11931,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &743708906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12224,7 +12368,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.8}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 46.863003, z: 90.00001}
 --- !u!114 &772534728
 MonoBehaviour:
@@ -12238,8 +12382,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &772534729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12480,7 +12628,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &793330304
 MonoBehaviour:
@@ -12494,8 +12642,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &793330305
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12750,7 +12902,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 102.386, z: 90.00001}
 --- !u!114 &805133904
 MonoBehaviour:
@@ -12764,8 +12916,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &805133905
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13096,7 +13252,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000003}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 71
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 119.913, z: 90.00001}
 --- !u!114 &822024811
 MonoBehaviour:
@@ -13110,8 +13266,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &822024812
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13202,7 +13362,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000003, z: 0.35}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 89
+  m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: -14.453001, z: 90.00001}
 --- !u!114 &823531005
 MonoBehaviour:
@@ -13216,8 +13376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &823531006
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13285,7 +13449,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4978608473197736, guid: b43f8a016d8569f4e8ee3e446407a117, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 28
+      value: 28.93
       objectReference: {fileID: 0}
     - target: {fileID: 4978608473197736, guid: b43f8a016d8569f4e8ee3e446407a117, type: 2}
       propertyPath: m_LocalPosition.y
@@ -13359,6 +13523,16 @@ Prefab:
       propertyPath: pathColor.g
       value: 0.28676474
       objectReference: {fileID: 0}
+    - target: {fileID: 23030643917193782, guid: b43f8a016d8569f4e8ee3e446407a117,
+        type: 2}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114268136606258136, guid: b43f8a016d8569f4e8ee3e446407a117,
+        type: 2}
+      propertyPath: nodes.Array.data[0].x
+      value: 28.93
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114162727577715908, guid: b43f8a016d8569f4e8ee3e446407a117, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b43f8a016d8569f4e8ee3e446407a117, type: 2}
@@ -13395,7 +13569,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 56
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 107.44701, z: 90.00001}
 --- !u!114 &846842957
 MonoBehaviour:
@@ -13409,8 +13583,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &846842958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14159,7 +14337,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 1}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &911256809
 MonoBehaviour:
@@ -14173,8 +14351,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &911256810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14593,7 +14775,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000006, z: 0.60000026}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 74.922005, z: 90.00001}
 --- !u!114 &921914061
 MonoBehaviour:
@@ -14607,8 +14789,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &921914062
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14850,7 +15036,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999985}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 71.219, z: 90.00001}
 --- !u!114 &937443191
 MonoBehaviour:
@@ -14864,8 +15050,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &937443192
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15284,7 +15474,7 @@ Transform:
   m_LocalScale: {x: 0.30000016, y: 0.10000004, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 83
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0.044000003, z: 90.00001}
 --- !u!114 &962147407
 MonoBehaviour:
@@ -15298,8 +15488,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &962147408
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16237,7 +16431,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1045082103
 MonoBehaviour:
@@ -16251,8 +16445,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1045082104
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16419,7 +16617,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1048478229
 MonoBehaviour:
@@ -16433,8 +16631,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1048478230
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16764,7 +16966,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.100000024, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 24.960001, z: 90.00001}
 --- !u!114 &1060699036
 MonoBehaviour:
@@ -16778,8 +16980,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1060699037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17544,7 +17750,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000003}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 70
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 96.174, z: 90.00001}
 --- !u!114 &1098187689
 MonoBehaviour:
@@ -17558,8 +17764,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1098187690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17830,7 +18040,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 55
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 107.44701, z: 90.00001}
 --- !u!114 &1126252556
 MonoBehaviour:
@@ -17844,8 +18054,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1126252557
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18645,7 +18859,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000003}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 96.409004, z: 90.00001}
 --- !u!114 &1161000360
 MonoBehaviour:
@@ -18659,8 +18873,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1161000361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18751,7 +18969,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.39999998}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 93
+  m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: -221.86899, z: 90.00001}
 --- !u!114 &1174444163
 MonoBehaviour:
@@ -18765,8 +18983,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1174444164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19057,7 +19279,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.60000044}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 64
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 272.004, z: 90.00001}
 --- !u!114 &1195258040
 MonoBehaviour:
@@ -19071,8 +19293,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1195258041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19341,7 +19567,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.45}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 94
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: -273.641, z: 90.00001}
 --- !u!114 &1206320526
 MonoBehaviour:
@@ -19355,8 +19581,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1206320527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19556,7 +19786,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.8}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 16.701, z: 90.00001}
 --- !u!114 &1213770308
 MonoBehaviour:
@@ -19570,8 +19800,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 1
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1213770309
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20478,7 +20712,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 54.272003, z: 90.00001}
 --- !u!114 &1288355625
 MonoBehaviour:
@@ -20492,8 +20726,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1288355626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20584,7 +20822,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000006, z: 0.60000026}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 100.490005, z: 90.00001}
 --- !u!114 &1289367423
 MonoBehaviour:
@@ -20598,8 +20836,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1289367424
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20779,7 +21021,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999964, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 66
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 243.93799, z: 90.00001}
 --- !u!114 &1316813079
 MonoBehaviour:
@@ -20793,8 +21035,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1316813080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20892,6 +21138,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 27
       objectReference: {fileID: 0}
+    - target: {fileID: 114817984976974024, guid: 8940db0a6578e9347b72ae11c20ffbe2,
+        type: 2}
+      propertyPath: CaseDisplay
+      value: 
+      objectReference: {fileID: 630557519}
+    - target: {fileID: 114817984976974024, guid: 8940db0a6578e9347b72ae11c20ffbe2,
+        type: 2}
+      propertyPath: btn1_dilemme
+      value: 
+      objectReference: {fileID: 1727047667}
+    - target: {fileID: 114817984976974024, guid: 8940db0a6578e9347b72ae11c20ffbe2,
+        type: 2}
+      propertyPath: btn2_dilemme
+      value: 
+      objectReference: {fileID: 1767744707}
+    - target: {fileID: 114817984976974024, guid: 8940db0a6578e9347b72ae11c20ffbe2,
+        type: 2}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 187218665}
+    - target: {fileID: 114817984976974024, guid: 8940db0a6578e9347b72ae11c20ffbe2,
+        type: 2}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1224663295}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8940db0a6578e9347b72ae11c20ffbe2, type: 2}
   m_IsPrefabParent: 0
@@ -20940,6 +21211,7 @@ Transform:
   m_LocalPosition: {x: 23.442245, y: -371.6396, z: 105.31052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1918557152}
   - {fileID: 1749346871}
   - {fileID: 1471964668}
   - {fileID: 1919382491}
@@ -20966,8 +21238,8 @@ Transform:
   - {fileID: 1213770307}
   - {fileID: 526229859}
   - {fileID: 743708904}
-  - {fileID: 1288355624}
   - {fileID: 1699103362}
+  - {fileID: 1288355624}
   - {fileID: 1640648202}
   - {fileID: 272504842}
   - {fileID: 361202779}
@@ -21837,7 +22109,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000001, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
 --- !u!114 &1366427627
 MonoBehaviour:
@@ -21851,8 +22123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1366427628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22032,7 +22308,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.100000024, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 54
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 107.44701, z: 90.00001}
 --- !u!114 &1386026437
 MonoBehaviour:
@@ -22046,8 +22322,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 1
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1386026438
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22213,7 +22493,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 1}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1399803464
 MonoBehaviour:
@@ -22227,8 +22507,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1399803465
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23222,7 +23506,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999964, z: 0.59999985}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 102.386, z: 90.00001}
 --- !u!114 &1455472868
 MonoBehaviour:
@@ -23236,8 +23520,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1455472869
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23506,7 +23794,7 @@ Transform:
   m_LocalScale: {x: 0.30000013, y: 0.10000006, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1471964669
 MonoBehaviour:
@@ -23520,8 +23808,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1471964670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24176,7 +24468,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.6000004}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 95.198006, z: 90.00001}
 --- !u!114 &1514686887
 MonoBehaviour:
@@ -24190,8 +24482,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 1
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1514686888
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24371,7 +24667,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 87
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: -89.665, z: 90.00001}
 --- !u!114 &1521485799
 MonoBehaviour:
@@ -24385,8 +24681,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1521485800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24731,7 +25031,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.1, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1542104181
 MonoBehaviour:
@@ -24745,8 +25045,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 1
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1542104182
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25198,7 +25502,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 145.026, z: 90.00001}
 --- !u!114 &1567469058
 MonoBehaviour:
@@ -25212,8 +25516,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1567469059
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25704,7 +26012,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1640648203
 MonoBehaviour:
@@ -25718,8 +26026,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1640648204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26042,7 +26354,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1658397281
 MonoBehaviour:
@@ -26056,8 +26368,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1658397282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26237,7 +26553,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 111.673004, z: 90.00001}
 --- !u!114 &1665331586
 MonoBehaviour:
@@ -26251,8 +26567,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1665331587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26343,7 +26663,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 84
+  m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 0.044000003, z: 90.00001}
 --- !u!114 &1670158584
 MonoBehaviour:
@@ -26357,8 +26677,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1670158585
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26524,7 +26848,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000002, z: 1}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 171.80501, z: 90.00001}
 --- !u!114 &1676726479
 MonoBehaviour:
@@ -26538,8 +26862,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1676726480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26726,7 +27054,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000001, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: -42.441, z: 90.00001}
 --- !u!114 &1683259982
 MonoBehaviour:
@@ -26740,8 +27068,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1683259983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26935,8 +27267,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1699103364
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27116,7 +27452,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999964, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 65
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 272.004, z: 90.00001}
 --- !u!114 &1718347114
 MonoBehaviour:
@@ -27130,8 +27466,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1718347115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27357,6 +27697,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1318282811}
         m_MethodName: OnLeftDilemmaClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1918557153}
+        m_MethodName: HandleClick1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27804,7 +28155,7 @@ Transform:
   m_LocalScale: {x: 0.30000013, y: 0.10000006, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1749346872
 MonoBehaviour:
@@ -27818,8 +28169,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1749346873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27910,7 +28265,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1751775591
 MonoBehaviour:
@@ -27924,8 +28279,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1751775592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28151,6 +28510,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1318282811}
         m_MethodName: OnRightDilemmaClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1918557153}
+        m_MethodName: HandleClick2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28537,7 +28907,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000002, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 96
+  m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: -423.229, z: 90.00001}
 --- !u!114 &1797621938
 MonoBehaviour:
@@ -28551,8 +28921,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1797621939
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29126,7 +29500,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 58
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 107.44701, z: 90.00001}
 --- !u!114 &1844414543
 MonoBehaviour:
@@ -29140,8 +29514,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1844414544
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29751,7 +30129,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.100000046, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: -15.496, z: 90.00001}
 --- !u!114 &1854754987
 MonoBehaviour:
@@ -29765,8 +30143,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1854754988
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29857,7 +30239,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 68
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 136.65201, z: 90.00001}
 --- !u!114 &1863962032
 MonoBehaviour:
@@ -29871,8 +30253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1863962033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30038,7 +30424,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: -27.445002, z: 90.00001}
 --- !u!114 &1873800017
 MonoBehaviour:
@@ -30052,8 +30438,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1873800018
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30144,7 +30534,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.1, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1879752333
 MonoBehaviour:
@@ -30158,8 +30548,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1879752334
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30325,7 +30719,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.09999998, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 11.929001, z: 90.00001}
 --- !u!114 &1886300739
 MonoBehaviour:
@@ -30339,8 +30733,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1886300740
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30707,6 +31105,116 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1912847988}
   m_Mesh: {fileID: 4300014, guid: 6b9ec56600d70ab47817473340f5a1e0, type: 3}
+--- !u!1 &1918557151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1280960718976016, guid: 7b5def4c0c4854544be79f700209c28a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1918557152}
+  - component: {fileID: 1918557156}
+  - component: {fileID: 1918557155}
+  - component: {fileID: 1918557154}
+  - component: {fileID: 1918557153}
+  m_Layer: 0
+  m_Name: P1_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1918557152
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4937503719055874, guid: 7b5def4c0c4854544be79f700209c28a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918557151}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 4.19, y: 373.6396, z: -98.82052}
+  m_LocalScale: {x: 0.3000001, y: 0.10000005, z: 0.59999996}
+  m_Children: []
+  m_Father: {fileID: 1318282812}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1918557153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114988445678567780, guid: 7b5def4c0c4854544be79f700209c28a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918557151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
+--- !u!23 &1918557154
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23619323199666094, guid: 7b5def4c0c4854544be79f700209c28a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918557151}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0e4f94910afd8414bb0402ba9212446f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &1918557155
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 64726638637296514, guid: 7b5def4c0c4854544be79f700209c28a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918557151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1918557156
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33981855931150448, guid: 7b5def4c0c4854544be79f700209c28a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918557151}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1919382490
 GameObject:
   m_ObjectHideFlags: 0
@@ -30739,7 +31247,7 @@ Transform:
   m_LocalScale: {x: 0.30000013, y: 0.100000024, z: 0.6}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 90}
 --- !u!114 &1919382492
 MonoBehaviour:
@@ -30753,8 +31261,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1919382493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30920,7 +31432,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000004, z: 0.35000005}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 90
+  m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: -62.339005, z: 90.00001}
 --- !u!114 &1938841498
 MonoBehaviour:
@@ -30934,8 +31446,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1938841499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31026,7 +31542,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.59999996}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 69
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 96.174, z: 90.00001}
 --- !u!114 &1944812170
 MonoBehaviour:
@@ -31040,8 +31556,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1944812171
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31132,7 +31652,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 59
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 151.19801, z: 90.00001}
 --- !u!114 &1945127727
 MonoBehaviour:
@@ -31146,8 +31666,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1945127728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31238,7 +31762,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: -6.821, z: 90.00001}
 --- !u!114 &1957816348
 MonoBehaviour:
@@ -31252,8 +31776,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1957816349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31885,7 +32413,7 @@ Transform:
   m_LocalScale: {x: 0.3000001, y: 0.10000001, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 107.273, z: 90.00001}
 --- !u!114 &1992421542
 MonoBehaviour:
@@ -31899,8 +32427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1992421543
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31991,7 +32523,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000001, z: 0.6000002}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 81.702, z: 90.00001}
 --- !u!114 &1993545770
 MonoBehaviour:
@@ -32005,8 +32537,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &1993545771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32172,7 +32708,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.10000001, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 76
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 269.765, z: 90.00001}
 --- !u!114 &2014991374
 MonoBehaviour:
@@ -32186,8 +32722,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2014991375
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32492,7 +33032,7 @@ Transform:
   m_LocalScale: {x: 0.30000016, y: 0.100000046, z: 0.6000004}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 142.76001, z: 90.00001}
 --- !u!114 &2044038694
 MonoBehaviour:
@@ -32506,8 +33046,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2044038695
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32759,11 +33303,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2057479127}
   m_LocalRotation: {x: 0.7293037, y: 0.6832915, z: -0.02149943, w: -0.027688522}
-  m_LocalPosition: {x: 26.309998, y: 387.72, z: -54.64}
+  m_LocalPosition: {x: 25.3, y: 387.72, z: -54.1}
   m_LocalScale: {x: 0.3000002, y: 0.10000004, z: 0.55}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 98
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: -0.63100004, y: -536.032, z: 93.70901}
 --- !u!114 &2057479129
 MonoBehaviour:
@@ -32772,13 +33316,17 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2057479127}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2057479130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32869,7 +33417,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.099999994, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 81
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 90.674, z: 90.00001}
 --- !u!114 &2066343927
 MonoBehaviour:
@@ -32883,8 +33431,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2066343928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33232,7 +33784,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.100000024, z: 0.6000001}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 80
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 141.001, z: 90.00001}
 --- !u!114 &2087033680
 MonoBehaviour:
@@ -33246,8 +33798,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2087033681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33338,7 +33894,7 @@ Transform:
   m_LocalScale: {x: 0.30000013, y: 0.10000007, z: 0.60000014}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 50, z: 90}
 --- !u!114 &2090895619
 MonoBehaviour:
@@ -33352,8 +33908,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2090895620
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33518,7 +34078,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.09999998, z: 0.59999985}
   m_Children: []
   m_Father: {fileID: 1318282812}
-  m_RootOrder: 82
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 38.642002, z: 90.00001}
 --- !u!114 &2102242463
 MonoBehaviour:
@@ -33532,8 +34092,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e21560a8074b46a7c178aa0e9e66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  was_triggered: 0
   intersection: 0
+  CaseDisplay: {fileID: 630557519}
+  text: {fileID: 1224663295}
+  button: {fileID: 187218665}
+  btn1_dilemme: {fileID: 1727047667}
+  btn2_dilemme: {fileID: 1767744707}
 --- !u!23 &2102242464
 MeshRenderer:
   m_ObjectHideFlags: 0

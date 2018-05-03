@@ -131,25 +131,21 @@ public class Sauvegarde : MonoBehaviour {
     {
         int i = 0, flag = -1;
 
-        //Debug.Log("add assos");
         while ( i < Tab_assos.Length && flag == -1) //find where to put it
         {
             if (Tab_assos[i].Equals("none"))
                 flag = i;
             i++;
         }
-        //Debug.Log("flag : " + flag );
 
         if (flag == -1)// have to delete and replace a assos
         {
-            //FindObjectOfType<Gerer_Assos>().canvas_suppress.SetActive(true);
-            //FindObjectOfType<Gerer_Assos>().canvas.SetActive(false);
             FindObjectOfType<Gerer_Assos>().Initialize();
         }
         else
         {
             Tab_assos[flag] = newest;
-            Debug.Log("Tab_assos[" + flag + "] = " + newest);
+            //Debug.Log("Tab_assos[" + flag + "] = " + newest);
         }
     }
 
@@ -174,12 +170,6 @@ public class Sauvegarde : MonoBehaviour {
         return false;
     }
 
-    /*public IEnumerator Lancer_scene_dés()
-    {
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("Lancé de dés", LoadSceneMode.Additive);
-    }*/
-
     public void Button_yes()
     {
         ChargefromFile();
@@ -202,58 +192,56 @@ public class Sauvegarde : MonoBehaviour {
         canvas_jeu.gameObject.SetActive(false);
     }
 
-    /*public IEnumerator Load_scenes(float waitTime)
+    public IEnumerator Load_scenes(float waitTime)
     {
+        //Debug.Log("I'm here 3");
         Disp_Dice();
-        //SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
+        //Debug.Log("I'm here 2");
         var loading = SceneManager.LoadSceneAsync("lancé de dés", LoadSceneMode.Additive);
         yield return loading;
         var scene = SceneManager.GetSceneByName("lancé de dés");
         SceneManager.SetActiveScene(scene);
-    }*/
-
-    /*public IEnumerator Load_scenes(float waitTime)
-    {
-        Disp_Dice();
-        
-        yield return waitTime;
-
-        SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
-
-    }*/
-
-    public IEnumerator Load_scenes(float waitTime)
-    {
-        Disp_Dice();
-
-        if (waitTime == 0)
-        {
-            var loading = SceneManager.LoadSceneAsync("lancé de dés", LoadSceneMode.Additive);
-            yield return loading;
-            var scene = SceneManager.GetSceneByName("lancé de dés");
-            SceneManager.SetActiveScene(scene);
-        }
-        else
-        {
-            yield return waitTime;
-            SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
-        }
-
     }
 
     public void Disp_game()
     {
-        /*GameObject.Find("Terrain").gameObject.SetActive(true);
-        GameObject.Find("Jauges").gameObject.SetActive(true);
-        GameObject.Find("Canvas_Jeu").gameObject.SetActive(true);*/
         terrain.gameObject.SetActive(true);
         jauges.gameObject.SetActive(true);
         canvas_jeu.gameObject.SetActive(true);
         SceneManager.UnloadSceneAsync("lancé de dés");
-        if (counter == 0)
-            Movement.Play_iTween(GameObject.Find("Sphere_path")); 
+
+        if (nextmove == 0)
+            StartCoroutine(Load_scenes(2f));
+        else if (counter == 0)
+            Movement.Play_iTween(GameObject.Find("Sphere_path"));
         else
-            iTween.Resume();
-        //start movement
+        {
+            if (IsIntersection())
+                StartCoroutine(FindObjectOfType<Triggered>().Choice());
+            else
+                iTween.Resume();
+        }
+    }
+
+    public void Disp_after_Stop(string scene)
+    {
+        SceneManager.UnloadSceneAsync(scene);
+
+        if (nextmove == 0)
+            StartCoroutine(Load_scenes(2f));
+        else {   iTween.Resume();  }
+    }
+
+
+    public bool IsIntersection()
+    {
+        bool res = false;
+        if (counter == 8 ||
+            counter == 25 ||
+            counter == 46 ||
+            counter == 56 )
+            res = true;
+
+        return res;
     }
 }

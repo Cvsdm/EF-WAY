@@ -96,7 +96,6 @@ public class Rotation2 : MonoBehaviour
 
             Cube2.transform.rotation = Quaternion.Slerp(transform.rotation, target2, Time.deltaTime * smooth);
 
-
             if (GetRotation() > 0)
             {
                 Result.gameObject.SetActive(true);
@@ -124,7 +123,7 @@ public class Rotation2 : MonoBehaviour
         Dice2 = Random.Range(0,5);
         TotalValue = Dice1 + Dice2;
 
-        //save.Set_nextmove(4); //pour tester
+        //save.Set_nextmove(100); //pour tester
         save.Set_nextmove(TotalValue);
     }
 

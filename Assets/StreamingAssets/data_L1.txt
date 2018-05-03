@@ -48,3 +48,22 @@ L'index de refraction de l'eau est d'environ n = 1.33
 1
 L'index de réfraction du verre est d'environ n = 2.5
 0  
+PC signifie Personal Computer.
+1
+Le 'CPU' est le synonyme de carte graphique.
+0
+Un pourriel est l'appellation française d'un spam.
+1
+Le câble reliant généralement l'écran à l'UC est appelé câble VGA.
+1
+
+
+
+
+
+
+
+
+
+
+
