@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Rotation2 : MonoBehaviour
 {
@@ -25,7 +27,6 @@ public class Rotation2 : MonoBehaviour
 
     void Start()
     {
-        Go.gameObject.SetActive(false);
         Result.gameObject.SetActive(false);
         save = FindObjectOfType<Sauvegarde>();
 
@@ -108,14 +109,29 @@ public class Rotation2 : MonoBehaviour
 
     public void Drop2()         /// Stop rotating & Drop
     {
-        isTurning = false;
-        EnableButton();
+        /*isTurning = false;
+        EnableButton();*/
+        StartCoroutine(BreakDisplayResult());
     }
 
+    public IEnumerator BreakDisplayResult()
+    {
+        isTurning = false;
+        EnableButton();
+        yield return new WaitForSecondsRealtime(5);
+        SceneManager.UnloadSceneAsync("lancé de dés");
+        save.Disp_game();
+    }
+
+    public void Buttontouch()
+    {
+        save = FindObjectOfType<Sauvegarde>();
+        SceneManager.UnloadSceneAsync("lancé de dés");
+        save.Disp_game();
+    }
 
     void EnableButton()
     {
-        Go.gameObject.SetActive(true);
         GameObject.Find("Drop").SetActive(false);
 
        
@@ -123,7 +139,7 @@ public class Rotation2 : MonoBehaviour
         Dice2 = Random.Range(0,5);
         TotalValue = Dice1 + Dice2;
 
-        //save.Set_nextmove(100); //pour tester
+        //save.Set_nextmove(10); //pour tester
         save.Set_nextmove(TotalValue);
     }
 
@@ -172,4 +188,5 @@ public class Rotation2 : MonoBehaviour
             return 5;
         return -2000;
     }
+
 }

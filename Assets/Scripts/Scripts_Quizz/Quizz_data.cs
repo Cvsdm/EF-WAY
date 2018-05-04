@@ -84,7 +84,6 @@ public class Quizz_data : MonoBehaviour
                     filename = "data_M2_E.txt";
                 break;
 
-
             default:
                 filename = "data_concours.txt";
                 break;

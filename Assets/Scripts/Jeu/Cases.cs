@@ -138,10 +138,9 @@ public class Cases : MonoBehaviour
 
             case 16:        // Semaine des assos
                 if (save.Get_langue() == 0)
-                    text.text = "Semaine des assos\nVous pouvez choisir parmi toutes les associations 3 au maximum";
+                    text.text = "Semaine des assos\nParmi toutes les associations de l'Efrei, choisissez en 3 maximum";
                 else
                     text.text = "Association week\nYou may choose amongst all of them up to 3";
-                /// SceneManager.LoadScene(4);          /// choix de 3 assos ? Script en plus ?
                 break;
 
             case 17:        //1_assos
@@ -291,9 +290,9 @@ public class Cases : MonoBehaviour
 
             case 34:            //DE
                 if (save.Get_langue() == 0)
-                    text.text = "Premier gros partiel \n Faites au plus intelligent ! ";
+                    text.text = "Premier gros partiel \nBon courage ! ";
                 else
-                    text.text = "First big partial \n Go to the most intelligent answer ! ";
+                    text.text = "First big partial \n Good luck! ";
                 break;
 
             case 35:            //objectif

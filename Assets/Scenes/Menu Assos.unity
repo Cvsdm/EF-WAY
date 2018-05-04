@@ -21940,9 +21940,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114476422356208590, guid: b8c4c53e65a991f46b6073484622f28c,
-          type: 2}
-        m_MethodName: Switch2dices
+      - m_Target: {fileID: 1980299781}
+        m_MethodName: Disp_after_Stop
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28772,6 +28771,7 @@ GameObject:
   - component: {fileID: 1980299778}
   - component: {fileID: 1980299777}
   - component: {fileID: 1980299779}
+  - component: {fileID: 1980299781}
   m_Layer: 5
   m_Name: Assos
   m_TagString: Untagged
@@ -28919,6 +28919,17 @@ RectTransform:
   m_AnchoredPosition: {x: 1142.733, y: 553.1642}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1980299781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980299776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526fa84e1c213d442815271e1c522863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1981108036
 GameObject:
   m_ObjectHideFlags: 0

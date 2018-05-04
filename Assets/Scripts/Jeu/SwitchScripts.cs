@@ -20,11 +20,13 @@ public class SwitchScripts : MonoBehaviour
         SceneManager.UnloadSceneAsync(SceneName);
     }
 
-    public void Switch2dices(string SceneName)
+    public void Disp_after_Stop(string scene)
     {
         save = FindObjectOfType<Sauvegarde>();
-        SceneManager.UnloadSceneAsync(SceneName);
-        //Debug.Log("I'm here");
-        StartCoroutine(save.Load_scenes(0.8f));
+        SceneManager.UnloadSceneAsync(scene);
+
+        if (save.Get_nextmove() == 0)
+            StartCoroutine(save.Load_scenes(2f));
+        else { iTween.Resume(); }
     }
 }
