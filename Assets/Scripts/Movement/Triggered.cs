@@ -45,34 +45,57 @@ public class Triggered : MonoBehaviour {
                     iTween.Pause();
                     StartCoroutine(Action_Case(0.8f));
                 }
-            }
-            else
+
+                if (this.name.Length >= 10) // ex : P1_ENDPATH
+                {
+                    Movement.path_counter += 1;
+
+                    if (this.intersection == 1) //Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                    {
+                        if (this.name.Equals("P6_ENDPATH") && save.Get_counter() == 52)
+                            Move_counter();
+                        if (save.Get_nextmove() != 0) // si il reste des cases à bouger
+                        {
+                            StartCoroutine(Choice());
+                        }
+                        else
+                            iTween.Pause();
+                    }
+                    else
+                    {
+                        Movement.pathname = "J1_" + Movement.path_counter;
+                        Movement.Play_iTween(GameObject.Find("Sphere_path"));
+                        Move_counter();
+                    }
+                }
+            } //si il n'y a pas de sauvegarde
+            else // sauvegarde présente 
             {
                 Movement.advance = Movement.advance - 1;
                 if (Movement.advance == 0) { iTween.Pause(); }
-            }
 
-
-            if (this.name.Length >= 10) // ex : P1_ENDPATH
-            {
-                Movement.path_counter += 1;
-
-                if (this.intersection == 1) //Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                if (this.name.Length >= 10) // ex : P1_ENDPATH
                 {
-                    if (this.name.Equals("P6_ENDPATH") && save.Get_counter()== 52)
-                        Move_counter();
-                    if (save.Get_nextmove() != 0) // si il reste des cases à bouger
+                    Movement.path_counter += 1;
+                    /*don't forget to move counter*/
+                    if (this.intersection == 1)
                     {
-                        StartCoroutine(Choice());
+                        if (this.name.Equals("P6_ENDPATH") && Movement.advance == 52)
+                            Move_counter();
+                        if (Isleft(save.Get_counter()))
+                            Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                        else
+                        {   Movement.pathname = "J1_" + Movement.path_counter + "_RIGHT";
+                            Move_counter(); }
                     }
+
                     else
-                        iTween.Pause();
-                }
-                else
-                {
-                    Movement.pathname = "J1_" + Movement.path_counter;
-                    Movement.Play_iTween(GameObject.Find("Sphere_path"));
-                    Move_counter();
+                    {
+                        Movement.pathname = "J1_" + Movement.path_counter;
+                        Move_counter();
+                    }
+
+                    Movement.Play_iTween(other.gameObject);
                 }
             }
         }
@@ -155,7 +178,26 @@ public class Triggered : MonoBehaviour {
         else if (j == 52) { save.Set_counter(j + 4); }
 
         else if (j == 56) { save.Set_counter(j + 3); } //right
-        else if (j == 70) { save.Set_counter(j + 2); }
+        else if (j == 60) { save.Set_counter(j + 2); }
+        //else if (j == 70) { save.Set_counter(j + 2); } /// JE SUIS PAS CONVAINCU là !! :D
+    }
+
+    void Move_advance() // if bool = false it's left. Else its right
+    {
+        int j = save.Get_counter();
+
+        if (j == 8) { Movement.advance = Movement.advance - 2; } //right
+        else if (j == 11) { Movement.advance = Movement.advance - 2; }
+
+        else if (j == 25) { Movement.advance = Movement.advance - 4; } //right
+        else if (j == 30) { Movement.advance = Movement.advance - 4; }
+
+        else if (j == 46) { Movement.advance = Movement.advance - 5; } // right
+        else if (j == 52) { Movement.advance = Movement.advance - 4; }
+
+        else if (j == 56) { Movement.advance = Movement.advance - 3; } //right
+        else if (j == 60) { Movement.advance = Movement.advance - 2; }
+        //else if (j == 70) { save.Set_counter(j + 2); } /// JE SUIS PAS CONVAINCU là !! :D
     }
 
     public bool IsStop()
@@ -163,6 +205,21 @@ public class Triggered : MonoBehaviour {
         int i = save.Get_counter();
 
         if (i == 4 || i == 16 || i == 24 || i == 42 || i == 62 || i == 68 || i == 84 || i == 91 || i == 100)
+            return true;
+
+        return false;
+    }
+
+
+    public bool Isleft(int i)
+    {
+        if (i == 9 || i == 10)
+            return true;
+        else if (i > 25 && i < 30)
+            return true;
+        else if (i > 46 && i < 52)
+            return true;
+        else if (i > 56 && i < 60)
             return true;
 
         return false;

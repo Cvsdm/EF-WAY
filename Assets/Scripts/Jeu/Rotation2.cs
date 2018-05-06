@@ -20,7 +20,6 @@ public class Rotation2 : MonoBehaviour
 
     public GameObject Cube2;
     public GameObject Cube1;
-    public Button Go;
     public Text Result;
 
     private Sauvegarde save;
@@ -109,8 +108,6 @@ public class Rotation2 : MonoBehaviour
 
     public void Drop2()         /// Stop rotating & Drop
     {
-        /*isTurning = false;
-        EnableButton();*/
         StartCoroutine(BreakDisplayResult());
     }
 

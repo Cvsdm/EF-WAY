@@ -17,7 +17,8 @@ public class Cases : MonoBehaviour
     {
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
-        StartCoroutine(save.Load_scenes(0));
+        save.Disp_Dice();
+        SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
 
         if (save.Get_langue() == 0)
             button.GetComponentInChildren<Text>().text = "Continuer";
@@ -938,7 +939,7 @@ public class Cases : MonoBehaviour
             if (save.Get_nextmove() != 0)
                 iTween.Resume();
             else 
-                StartCoroutine(save.Load_scenes(2f));
+                StartCoroutine(save.Load_scenes(2.0f));
         }
     }
 
@@ -968,7 +969,7 @@ public class Cases : MonoBehaviour
                 bars.DealAssosPlus(add_jauge * randPlus / 2);
             }
             Debug.Log("je suis sur left");
-            StartCoroutine(save.Load_scenes(1f));
+            StartCoroutine(save.Load_scenes(2.0f));
         }
         
     }
@@ -1001,7 +1002,7 @@ public class Cases : MonoBehaviour
             }
             //StartCoroutine(save.Lancer_scene_dés());
             Debug.Log("je suis sur right");
-            StartCoroutine(save.Load_scenes(1f));
+            StartCoroutine(save.Load_scenes(2.0f));
         }
     }
 }

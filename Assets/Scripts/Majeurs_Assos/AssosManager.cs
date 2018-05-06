@@ -31,12 +31,14 @@ public class AssosManager : MonoBehaviour
     public Text text_55_2, text_56_2, text_57_2, /*text_58, text_58_2,*/ text_59_2, text_60_2;
 
     public Text bureauBDS;
-    public Text displayAssos;
+    public Text choixAssos1, choixAssos2, choixAssos3, choixAssos4;
 
 
     private string choixAssos;
     private int langue;
     private Sauvegarde save;
+
+
 
     public void Start()
     {
@@ -147,7 +149,7 @@ public class AssosManager : MonoBehaviour
         text_60_2.text = "Participe au 4L Trophy\nRaid automobile humanitaire destiné aux étudiants";
 
         bureauBDS.text = "Bureau du BDS";
-        
+
     }
 
     void IniEnglish()
@@ -244,7 +246,7 @@ public class AssosManager : MonoBehaviour
         text_60_2.text = "Takes part in the 4L Trophy\nHumanitarian automobile raid dedicated to students";
 
         bureauBDS.text = "Sports Office";
-        
+
     }
 
 
@@ -266,260 +268,260 @@ public class AssosManager : MonoBehaviour
         switch (temp)
         {
             case 1:  //BDE
-            choixAssos = "BDE";
+                choixAssos = "BDE";
                 break;
 
             case 2:   // Sepefrei
-            choixAssos = "Sepefrei";
+                choixAssos = "Sepefrei";
                 break;
 
             case 3:   // Effor
-            choixAssos = "EFFOR";
+                choixAssos = "EFFOR";
                 break;
 
             case 4:   // Ogma
-            choixAssos = "Ogma";
+                choixAssos = "Ogma";
                 break;
 
             case 5:   // Piste
-            choixAssos = "Piste";
+                choixAssos = "Piste";
                 break;
 
             case 6:   // AI EFREI
-            choixAssos = "AI efrei";
+                choixAssos = "AI efrei";
                 break;
 
             case 7:   // EPS
-            choixAssos = "EPS";
+                choixAssos = "EPS";
                 break;
 
             case 8:   // Rename
-            choixAssos = "Rename";
+                choixAssos = "Rename";
                 break;
 
             case 9:   // Ready o
-            choixAssos = "Ready o";
+                choixAssos = "Ready o";
                 break;
 
             case 10:   // Efrei int
-            choixAssos = "Efrei international";
+                choixAssos = "Efrei international";
                 break;
 
             case 11:   // Asian
-            choixAssos = "Asian";
+                choixAssos = "Asian";
                 break;
 
             case 12:   // I week
-            choixAssos = "I week";
+                choixAssos = "I week";
                 break;
 
             case 13:   // Infitah
-            choixAssos = "Infitah";
+                choixAssos = "Infitah";
                 break;
 
             case 14:   // Yé mistikrirk
-            choixAssos = "Ye Mistikrik";
+                choixAssos = "Ye Mistikrik";
                 break;
 
             case 15:   // Live Efrei
-            choixAssos = "Live Efrei";
+                choixAssos = "Live Efrei";
                 break;
 
             case 16:   // Club Rézo
-            choixAssos = "Club Rézo";
+                choixAssos = "Club Rézo";
                 break;
 
 
             case 17:   // Efrei Poker
-            choixAssos = "Efrei Poker";
+                choixAssos = "Efrei Poker";
                 break;
 
             case 18:   // Taverne
-            choixAssos = "Taverne";
+                choixAssos = "Taverne";
                 break;
 
             case 19:   // Millésisme
-            choixAssos = "Millésisme";
+                choixAssos = "Millésisme";
                 break;
 
             case 20:   // Groupe Escape
-            choixAssos = "Groupe Escape";
+                choixAssos = "Groupe Escape";
                 break;
 
             case 21:   // Pen soul
-            choixAssos = "Pen Soul";
+                choixAssos = "Pen Soul";
                 break;
 
             case 22:   // Le Continental
-            choixAssos = "Continental";
+                choixAssos = "Continental";
                 break;
 
             case 23:   // EfreiChef
-            choixAssos = "Efrei Chefs";
+                choixAssos = "Efrei Chefs";
                 break;
 
             case 24:   // Hifi Lix
-            choixAssos = "Hifi Lix";
+                choixAssos = "Hifi Lix";
                 break;
 
             case 25:   // bds
-            choixAssos = "bds";
+                choixAssos = "bds";
                 break;
 
             case 26:   // efreestyle
-            choixAssos = "efreestyle";
+                choixAssos = "efreestyle";
                 break;
 
             case 27:   // efight
-            choixAssos = "efight";
+                choixAssos = "efight";
                 break;
 
             case 28:   // ef racing
-            choixAssos = "ef racing";
+                choixAssos = "ef racing";
                 break;
 
             case 29:   // ef ride
-            choixAssos = "ef ride";
+                choixAssos = "ef ride";
                 break;
 
             case 30:   // cap efrei
-            choixAssos = "cap efrei";
+                choixAssos = "cap efrei";
                 break;
 
             case 31:   // efrei climbing
-            choixAssos = "climbing";
+                choixAssos = "climbing";
                 break;
 
             case 32:   // para
-            choixAssos = "para";
+                choixAssos = "para";
                 break;
 
             case 33:   // efray
-            choixAssos = "efray";
+                choixAssos = "efray";
                 break;
 
             case 34:   // hock
-            choixAssos = "Hock'Efrei";
+                choixAssos = "Hock'Efrei";
                 break;
 
             case 35:   // 4e sport
-            choixAssos = "4e sport";
+                choixAssos = "4e sport";
                 break;
 
-        case 36:   // wei
-            choixAssos = "wei";
+            case 36:   // wei
+                choixAssos = "WEI";
                 break;
 
             case 37:   // gala
-            choixAssos = "Gala";
+                choixAssos = "Gala";
                 break;
 
             case 38:   // ice
-            choixAssos = "ice";
+                choixAssos = "Ice";
                 break;
 
             case 39:   // microsoft
-            choixAssos = "Microsoft";
+                choixAssos = "Microsoft";
                 break;
 
             case 40:   // 3d
-            choixAssos = "3d";
+                choixAssos = "3D";
                 break;
 
             case 41:   // crobotic
-            choixAssos = "crobotic";
+                choixAssos = "Crobotic";
                 break;
 
             case 42:   // linux
-            choixAssos = "linux";
+                choixAssos = "Linux";
                 break;
 
             case 43:   // aero
-            choixAssos = "aero";
+                choixAssos = "Aero";
                 break;
 
             case 44:   // get
-            choixAssos = "get";
+                choixAssos = "get";
                 break;
 
             case 45:   // crypto
-            choixAssos = "crypto";
+                choixAssos = "Crypto";
                 break;
 
             case 46:   // fap
-            choixAssos = "fap";
+                choixAssos = "FAP";
                 break;
 
             case 47:   // eah
-            choixAssos = "eah";
+                choixAssos = "EAH";
                 break;
 
             case 48:   // symbioz
-            choixAssos = "symbioz";
+                choixAssos = "Symbioz";
                 break;
 
             case 49:   // entraide
-            choixAssos = "entraide";
+                choixAssos = "Entraide";
                 break;
 
             case 50:   // human app
-            choixAssos = "human app";
+                choixAssos = "Human'app";
                 break;
 
             case 51:   // 4L       
-            choixAssos = "4L";
+                choixAssos = "4L FAONS";
                 break;
 
             case 52:   // Spot
-                    choixAssos ="Spot";
+                choixAssos = "Spot";
                 break;
 
             case 53: // Mist
-                    choixAssos ="Mist";
+                choixAssos = "Mist";
                 break;
 
             case 54:  // Bureau BDS
-                    choixAssos ="Bureau BDS";
+                choixAssos = "Bureau BDS";
                 break;
 
             case 55:  // Athlé
-                    choixAssos ="Athlé";
+                choixAssos = "Athlé";
                 break;
 
             case 56:  // EGE
-                    choixAssos ="EGE";
+                choixAssos = "EGE";
                 break;
 
             case 57:  // Foot
-                    choixAssos ="Foot";
+                choixAssos = "Foot";
                 break;
 
             case 58:  // Tennis
-                    choixAssos ="Tennis";
+                choixAssos = "Tennis";
                 break;
 
             case 59:  // Natation
-                    choixAssos ="Natation";
+                choixAssos = "Natation";
                 break;
 
             case 60:  // Basket
-                    choixAssos ="Basket";
+                choixAssos = "Basket";
                 break;
 
             case 61:  // Rugby
-                    choixAssos ="Rugby";
+                choixAssos = "Rugby";
                 break;
 
             case 62:  // Bad
-                    choixAssos ="Bad";
+                choixAssos = "Bad";
                 break;
 
             case 63:  // Volley
-                    choixAssos ="Volley";
+                choixAssos = "Volley";
                 break;
 
             case 64:  // Pandora
-                    choixAssos ="Pandora";
+                choixAssos = "Pandora";
                 break;
         }
 
@@ -527,11 +529,20 @@ public class AssosManager : MonoBehaviour
         {
             save.Add_assos(choixAssos);
             save.Save_Parameters();
-
-            if (langue == 0)
-                displayAssos.text = "Tu as choisi : " + choixAssos;
-            else
-                displayAssos.text = "You chose : " + choixAssos;
         }
+        if (langue == 0)
+            choixAssos1.text = "Tes associations";
+        else
+            choixAssos1.text = "Your associations";
+
+
+        choixAssos2.text = save.Get_Tab_assos(0);
+
+        if (save.Get_Tab_assos(1) != "none")
+            choixAssos3.text = save.Get_Tab_assos(1);
+
+        if (save.Get_Tab_assos(2) != "none")
+            choixAssos4.text = save.Get_Tab_assos(2);
     }
+    
 }

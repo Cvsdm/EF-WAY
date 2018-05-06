@@ -19,7 +19,6 @@ public class DataController : MonoBehaviour
         database.Create_Database(fileName);
         DontDestroyOnLoad(gameObject);
 
-        LoadPlayerProgress();
         LoadData();
 
         SceneManager.LoadScene("Menu_quizz", LoadSceneMode.Additive);
@@ -31,42 +30,13 @@ public class DataController : MonoBehaviour
         return allRoundData;
     }
 
-    public void SubmitNewPlayerScore(int newScore)
-    {
-        if (newScore > playerProgress.highestScore)
-        {
-            playerProgress.highestScore = newScore;
-            SavePlayerProgress();
-        }
-    }
-
-    public int GetHighestPlayerScore()
-    {
-        return playerProgress.highestScore;
-    }
-
-    private void LoadPlayerProgress()
-    {
-        playerProgress = new PlayerProgress();
-
-        if (PlayerPrefs.HasKey("highestScore"))
-        {
-            playerProgress.highestScore = PlayerPrefs.GetInt("highestScore");
-        }
-    }
-
     private void LoadData()
     {
         allRoundData = new RoundData
         {
-            timeLimitInSeconds = 30,
-            pointsAddedForCorrectAnswer = 10,
+            timeLimitInSeconds = 50,
+            pointsAddedForCorrectAnswer = 20,
             questions = database.allquestions
         };
-    }
-
-    private void SavePlayerProgress()
-    {
-        PlayerPrefs.SetInt("highestScore", playerProgress.highestScore);
     }
 }

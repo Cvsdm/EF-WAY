@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 40459152}
   - component: {fileID: 40459151}
   m_Layer: 5
-  m_Name: HighScoreValue
+  m_Name: EndScoreValue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   resultsDisplay: {fileID: 1070858213}
   questionDisplay: {fileID: 611059049}
   roundEndDisplay: {fileID: 710672098}
-  highScoreDisplay: {fileID: 40459151}
+  EndScoreDisplay: {fileID: 40459151}
   truebutton: {fileID: 989356332}
   falsebutton: {fileID: 920484853}
   endbutton: {fileID: 2077521860}
@@ -1671,7 +1671,7 @@ GameObject:
   - component: {fileID: 1326372242}
   - component: {fileID: 1326372241}
   m_Layer: 5
-  m_Name: HighScore
+  m_Name: EndScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1727,7 +1727,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'High score:'
+  m_Text: 'Your Score:'
 --- !u!222 &1326372242
 CanvasRenderer:
   m_ObjectHideFlags: 0

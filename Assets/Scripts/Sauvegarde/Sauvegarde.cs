@@ -4,11 +4,12 @@ using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
 
-public class Sauvegarde : MonoBehaviour {
+public class Sauvegarde : MonoBehaviour
+{
 
     private int counter = 0;    //number of the tiles
     private string player_name;
-    private int player_gender;  // 0 : masculin    1: Feminin
+    private int bac;  // 0 : s    1: es sti2d
 
     private float jauge_assos = 0f;
     private float jauge_etude = 0f;
@@ -23,6 +24,7 @@ public class Sauvegarde : MonoBehaviour {
     private int langue = 0; //french
     private int nb_jetons = 0;
     private string destination = "destination";
+    private string section = "section";
 
     public GameObject canvas_resume;
 
@@ -34,11 +36,12 @@ public class Sauvegarde : MonoBehaviour {
 
     // private highest score for each quizz ?
 
-    void Start ()
+        
+    void Start()
     {
         if (Application.platform == RuntimePlatform.Android)
             path = Path.Combine(Application.persistentDataPath, fileName);
-        else 
+        else
             path = Path.Combine(Application.streamingAssetsPath, fileName);
 
         DontDestroyOnLoad(gameObject); // do not destroy the sauvegarde while playing
@@ -51,17 +54,17 @@ public class Sauvegarde : MonoBehaviour {
         {
             canvas_resume.SetActive(true);
         }
-	}
+    }
 
     // Update is called once per frame
     //void Update() { }
 
-    public void Save_Parameters ()
+    public void Save_Parameters()
     {
         TextWriter writer = new StreamWriter(path); //create automaticcally file if not created
 
         writer.WriteLine(player_name);
-        writer.WriteLine(player_gender);
+        writer.WriteLine(bac);
 
         writer.WriteLine(jauge_assos);
         writer.WriteLine(jauge_etude);
@@ -71,6 +74,7 @@ public class Sauvegarde : MonoBehaviour {
         writer.WriteLine(nb_jetons);
         writer.WriteLine(majeur_choice);
         writer.WriteLine(destination);
+        writer.WriteLine(section);
 
         writer.WriteLine(Tab_assos[0]);
         writer.WriteLine(Tab_assos[1]);
@@ -85,7 +89,7 @@ public class Sauvegarde : MonoBehaviour {
         StreamReader file = new StreamReader(path);
 
         player_name = file.ReadLine();
-        player_gender = Int32.Parse(file.ReadLine());
+        bac = Int32.Parse(file.ReadLine());
 
         jauge_assos = Int32.Parse(file.ReadLine());
         jauge_etude = Int32.Parse(file.ReadLine());
@@ -95,6 +99,7 @@ public class Sauvegarde : MonoBehaviour {
         nb_jetons = Int32.Parse(file.ReadLine());
         majeur_choice = Int32.Parse(file.ReadLine());
         destination = file.ReadLine();
+        section = file.ReadLine();
 
         Tab_assos[0] = file.ReadLine();
         Tab_assos[1] = file.ReadLine();
@@ -103,27 +108,31 @@ public class Sauvegarde : MonoBehaviour {
         file.Close(); //close the stream
     }
 
-    public float    Get_etude()        { return jauge_etude; }
-    public float    Get_assos()        { return jauge_assos; }
-    public float    Get_sociabilite()  { return jauge_sociabilité; }
-    public int      Get_counter()      { return counter; }
-    public int      Get_nextmove()     { return nextmove; }
-    public int      Get_langue()       { return langue; }
-    public int      Get_jetons()       { return nb_jetons; }
-    public string   Get_Tab_assos(int i)   { return Tab_assos[i]; }
-    public string   Get_destination()  { return destination; }
+    public float Get_etude() { return jauge_etude; }
+    public float Get_assos() { return jauge_assos; }
+    public float Get_sociabilite() { return jauge_sociabilité; }
+    public int Get_counter() { return counter; }
+    public int Get_nextmove() { return nextmove; }
+    public int Get_langue() { return langue; }
+    public int Get_jetons() { return nb_jetons; }
+    public string Get_Tab_assos(int i) { return Tab_assos[i]; }
+    public string Get_destination() { return destination; }
+    public string Get_section() { return section; }
+    public int Get_bac() { return bac; }
 
-    public void Set_player(string name)             { player_name = name; }
-    public void Set_gender(int genre)               { player_gender = genre; }
-    public void Set_etude(float nb)                 { jauge_etude = nb; }
-    public void Set_assos(float nb)                 { jauge_assos = nb; }
-    public void Set_sociabilite(float nb)           { jauge_sociabilité = nb; }
-    public void Set_majeure(int maj)                { majeur_choice = maj; }
-    public void Set_counter(int count)              { counter = count; }
-    public void Set_nextmove(int move)              { nextmove = move; }
-    public void Set_jetons(int jeton)               { nb_jetons = jeton; }
-    public void Set_Tab_assos(int i,string assos)   { Tab_assos[i] = assos; }
+    public void Set_player(string name) { player_name = name; }
+    public void Set_bac(int genre) { bac = genre; }
+    public void Set_etude(float nb) { jauge_etude = nb; }
+    public void Set_assos(float nb) { jauge_assos = nb; }
+    public void Set_sociabilite(float nb) { jauge_sociabilité = nb; }
+    public void Set_majeure(int maj) { majeur_choice = maj; }
+    public void Set_counter(int count) { counter = count; }
+    public void Set_nextmove(int move) { nextmove = move; }
+    public void Set_jetons(int jeton) { nb_jetons = jeton; }
+    public void Set_Tab_assos(int i, string assos) { Tab_assos[i] = assos; }
     public void Set_destination(string choixDestination) { destination = choixDestination; }
+    public void Set_section(string choixSection) { section = choixSection; }
+    public void Set_langue(int langage) { langue = langage; }
 
 
 
@@ -131,7 +140,7 @@ public class Sauvegarde : MonoBehaviour {
     {
         int i = 0, flag = -1;
 
-        while ( i < Tab_assos.Length && flag == -1) //find where to put it
+        while (i < Tab_assos.Length && flag == -1) //find where to put it
         {
             if (Tab_assos[i].Equals("none"))
                 flag = i;
@@ -147,6 +156,7 @@ public class Sauvegarde : MonoBehaviour {
             Tab_assos[flag] = newest;
             //Debug.Log("Tab_assos[" + flag + "] = " + newest);
         }
+
     }
 
     public void Display_attributes()
@@ -194,13 +204,9 @@ public class Sauvegarde : MonoBehaviour {
 
     public IEnumerator Load_scenes(float waitTime)
     {
-        //Debug.Log("I'm here 3");
+        yield return new WaitForSecondsRealtime(waitTime);
         Disp_Dice();
-        //Debug.Log("I'm here 2");
-        var loading = SceneManager.LoadSceneAsync("lancé de dés", LoadSceneMode.Additive);
-        yield return loading;
-        var scene = SceneManager.GetSceneByName("lancé de dés");
-        SceneManager.SetActiveScene(scene);
+        SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
     }
 
     public void Disp_game()
@@ -229,7 +235,7 @@ public class Sauvegarde : MonoBehaviour {
 
         if (nextmove == 0)
             StartCoroutine(Load_scenes(2f));
-        else {   iTween.Resume();  }
+        else { iTween.Resume(); }
     }
 
 
@@ -239,7 +245,7 @@ public class Sauvegarde : MonoBehaviour {
         if (counter == 8 ||
             counter == 25 ||
             counter == 46 ||
-            counter == 56 )
+            counter == 56)
             res = true;
 
         return res;

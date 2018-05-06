@@ -26,7 +26,7 @@ public class SwitchScripts : MonoBehaviour
         SceneManager.UnloadSceneAsync(scene);
 
         if (save.Get_nextmove() == 0)
-            StartCoroutine(save.Load_scenes(2f));
+            StartCoroutine(save.Load_scenes(2.0f));
         else { iTween.Resume(); }
     }
 }
