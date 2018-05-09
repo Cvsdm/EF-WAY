@@ -1,13 +1,13 @@
-gd
-0
+srts
+1
 0
 0
 20
-22
-3
+16
+2
 0
 destination
 section
-Sepefrei
-EFFOR
-AI efrei
+none
+none
+none
