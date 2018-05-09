@@ -7,13 +7,17 @@ public class MusicManager : MonoBehaviour {
     public Image Sound;
     public Sprite spriteMute, spriteUnmute;
     private AudioSource music;
-	// Use this for initialization
+    public static MusicManager instance = null;
+
 	void Start () {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
         music = GetComponent<AudioSource>();
         DontDestroyOnLoad(gameObject);
 	}
-	
-
 
     public void ToggleMuteMusic()
     {
@@ -27,7 +31,5 @@ public class MusicManager : MonoBehaviour {
                 music.mute = true;// mettre en mute
                 Sound.sprite = spriteMute;
             }
-       
-
     }
 }

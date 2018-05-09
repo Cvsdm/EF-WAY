@@ -531,9 +531,9 @@ public class AssosManager : MonoBehaviour
             save.Save_Parameters();
         }
         if (langue == 0)
-            choixAssos1.text = "Tes associations";
+            choixAssos1.text = "Tes associations : ";
         else
-            choixAssos1.text = "Your associations";
+            choixAssos1.text = "Your associations : ";
 
 
         choixAssos2.text = save.Get_Tab_assos(0);
@@ -543,6 +543,11 @@ public class AssosManager : MonoBehaviour
 
         if (save.Get_Tab_assos(2) != "none")
             choixAssos4.text = save.Get_Tab_assos(2);
+    }
+
+    public void ExitbuttonClicked()
+    {
+        save.Disp_after_Stop("Menu Assos");
     }
     
 }

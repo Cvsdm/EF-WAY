@@ -12,13 +12,17 @@ public class Cases : MonoBehaviour
     public Button button, btn1_dilemme, btn2_dilemme;
     public GameObject CaseDisplay;
     public Bars bars;
+    public GameObject dices;
 
     void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
-        save.Disp_Dice();
-        SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
+        dices = GameObject.Find("Dés");
+        save.Find_dice();
+
+        //save.Disp_Dice();
+        //SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
 
         if (save.Get_langue() == 0)
             button.GetComponentInChildren<Text>().text = "Continuer";
@@ -934,12 +938,13 @@ public class Cases : MonoBehaviour
             SceneManager.LoadScene("Choix des majeurs", LoadSceneMode.Additive);
         else if (i == 42) // lancer la scène de choix des destination
             SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
-        else
+        else if (i != 100)
         {
             if (save.Get_nextmove() != 0)
                 iTween.Resume();
-            else 
-                StartCoroutine(save.Load_scenes(2.0f));
+            else
+                dices.gameObject.SetActive(true);
+                //StartCoroutine(save.Load_scenes(2.0f));
         }
     }
 
@@ -969,7 +974,8 @@ public class Cases : MonoBehaviour
                 bars.DealAssosPlus(add_jauge * randPlus / 2);
             }
             Debug.Log("je suis sur left");
-            StartCoroutine(save.Load_scenes(2.0f));
+            //StartCoroutine(save.Load_scenes(2.0f));
+            dices.gameObject.SetActive(true);
         }
         
     }
@@ -1002,7 +1008,8 @@ public class Cases : MonoBehaviour
             }
             //StartCoroutine(save.Lancer_scene_dés());
             Debug.Log("je suis sur right");
-            StartCoroutine(save.Load_scenes(2.0f));
+            //StartCoroutine(save.Load_scenes(2.0f));
+            dices.gameObject.SetActive(true);
         }
     }
 }

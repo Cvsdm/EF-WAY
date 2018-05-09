@@ -1,13 +1,13 @@
-jyyuy
+gd
 0
 0
-10
 0
-18
-1
+20
+22
+3
 0
 destination
 section
 Sepefrei
 EFFOR
-Ogma
+AI efrei

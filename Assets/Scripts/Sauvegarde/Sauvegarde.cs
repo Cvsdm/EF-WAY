@@ -31,12 +31,13 @@ public class Sauvegarde : MonoBehaviour
     private GameObject terrain;
     private GameObject canvas_jeu;
     private GameObject jauges;
+    private GameObject dices;
     //private GameObject canvas_resume;
 
 
     // private highest score for each quizz ?
 
-        
+
     void Start()
     {
         if (Application.platform == RuntimePlatform.Android)
@@ -229,12 +230,15 @@ public class Sauvegarde : MonoBehaviour
         }
     }
 
+    public void Find_dice () { dices = GameObject.Find("Dés"); }
+
     public void Disp_after_Stop(string scene)
     {
         SceneManager.UnloadSceneAsync(scene);
 
         if (nextmove == 0)
-            StartCoroutine(Load_scenes(2f));
+            //StartCoroutine(Load_scenes(2f));
+            dices.SetActive(true);
         else { iTween.Resume(); }
     }
 
