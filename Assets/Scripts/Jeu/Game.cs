@@ -24,7 +24,7 @@ public class Game : MonoBehaviour {
     public void Throw_Dice()
     {
         GameObject.Find("Dés").SetActive(false);
-        StartCoroutine(save.Load_scenes(0f));
+        StartCoroutine(save.Load_scenes(0));
     }
 
 

@@ -12,17 +12,12 @@ public class Cases : MonoBehaviour
     public Button button, btn1_dilemme, btn2_dilemme;
     public GameObject CaseDisplay;
     public Bars bars;
-    public GameObject dices;
+    //public GameObject dices;
 
     void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
-        dices = GameObject.Find("Dés");
-        save.Find_dice();
-
-        //save.Disp_Dice();
-        //SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
 
         if (save.Get_langue() == 0)
             button.GetComponentInChildren<Text>().text = "Continuer";
@@ -943,7 +938,7 @@ public class Cases : MonoBehaviour
             if (save.Get_nextmove() != 0)
                 iTween.Resume();
             else
-                dices.gameObject.SetActive(true);
+                Sauvegarde.dices.gameObject.SetActive(true);
                 //StartCoroutine(save.Load_scenes(2.0f));
         }
     }
@@ -975,7 +970,7 @@ public class Cases : MonoBehaviour
             }
             Debug.Log("je suis sur left");
             //StartCoroutine(save.Load_scenes(2.0f));
-            dices.gameObject.SetActive(true);
+            Sauvegarde.dices.gameObject.SetActive(true);
         }
         
     }
@@ -1009,7 +1004,7 @@ public class Cases : MonoBehaviour
             //StartCoroutine(save.Lancer_scene_dés());
             Debug.Log("je suis sur right");
             //StartCoroutine(save.Load_scenes(2.0f));
-            dices.gameObject.SetActive(true);
+            Sauvegarde.dices.gameObject.SetActive(true);
         }
     }
 }

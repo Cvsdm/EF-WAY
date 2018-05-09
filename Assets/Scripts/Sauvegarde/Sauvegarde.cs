@@ -31,7 +31,7 @@ public class Sauvegarde : MonoBehaviour
     private GameObject terrain;
     private GameObject canvas_jeu;
     private GameObject jauges;
-    private GameObject dices;
+    public static GameObject dices;
     //private GameObject canvas_resume;
 
 
@@ -151,10 +151,12 @@ public class Sauvegarde : MonoBehaviour
         if (flag == -1)// have to delete and replace a assos
         {
             FindObjectOfType<Gerer_Assos>().Initialize();
+            FindObjectOfType<Bars>().DealAssosMinus(20f);
         }
         else
         {
             Tab_assos[flag] = newest;
+            FindObjectOfType<Bars>().DealAssosPlus(20f);
             //Debug.Log("Tab_assos[" + flag + "] = " + newest);
         }
 
@@ -195,11 +197,8 @@ public class Sauvegarde : MonoBehaviour
 
     public void Disp_Dice()
     {
-        terrain = GameObject.Find("Terrain");
         terrain.gameObject.SetActive(false);
-        jauges = GameObject.Find("Jauges");
         jauges.gameObject.SetActive(false);
-        canvas_jeu = GameObject.Find("Canvas_Jeu");
         canvas_jeu.gameObject.SetActive(false);
     }
 
@@ -218,7 +217,8 @@ public class Sauvegarde : MonoBehaviour
         SceneManager.UnloadSceneAsync("lancé de dés");
 
         if (nextmove == 0)
-            StartCoroutine(Load_scenes(2f));
+            dices.SetActive(true);
+
         else if (counter == 0)
             Movement.Play_iTween(GameObject.Find("Sphere_path"));
         else
@@ -230,7 +230,13 @@ public class Sauvegarde : MonoBehaviour
         }
     }
 
-    public void Find_dice () { dices = GameObject.Find("Dés"); }
+    public void Find_dice ()
+    {
+        dices = GameObject.Find("Dés");
+        terrain = GameObject.Find("Terrain");
+        jauges = GameObject.Find("Jauges");
+        canvas_jeu = GameObject.Find("Canvas_Jeu");
+    }
 
     public void Disp_after_Stop(string scene)
     {
