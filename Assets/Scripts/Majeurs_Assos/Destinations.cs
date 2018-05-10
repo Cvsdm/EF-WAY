@@ -119,4 +119,9 @@ public class Destinations : MonoBehaviour
         //StartCoroutine(save.Load_scenes(0.8f));
         save.Disp_after_Stop("Menu Destinations");
     }
+
+    public void Exit_button()
+    {
+        save.Disp_after_Stop("Menu Destinations");
+    }
 }
