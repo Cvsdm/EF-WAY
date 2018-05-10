@@ -8,7 +8,8 @@ public class Quizz_data : MonoBehaviour
     void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
-        
+
+
         switch (save.Get_counter())
         {
             case 4:

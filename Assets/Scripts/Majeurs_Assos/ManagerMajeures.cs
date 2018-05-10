@@ -170,4 +170,8 @@ public class ManagerMajeures : MonoBehaviour
         //Debug.Log("choix : " + ChoixM);
     }
 
+    public void Exit_button()
+    {
+        save.Disp_after_Stop("Choix des majeures");
+    }
 }

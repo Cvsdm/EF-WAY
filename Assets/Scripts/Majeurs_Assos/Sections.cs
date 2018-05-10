@@ -23,7 +23,6 @@ public class Sections : MonoBehaviour
         bio.SetActive(false);
         renforce.SetActive(false);
 
-
         //Debug.Log("langue " + langue);
 
         if (bac == 1)
@@ -59,7 +58,7 @@ public class Sections : MonoBehaviour
                 break;
 
             case 4:
-                choixSection = "Prépa Rénforcée";
+                choixSection = "Prépa Renforcée";
                 break;
                 
         }

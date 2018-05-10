@@ -27,11 +27,9 @@ public class Database : MonoBehaviour
         StreamReader file = new StreamReader(databasePath);
         while ((line = file.ReadLine()) != null)
         {
-            //Debug.Log(line);
             allquestions[counter].questionText = line;
 
             line = file.ReadLine();
-            //Debug.Log(Int32.Parse(line));
             if (Int32.Parse(line) == 1)
                 allquestions[counter].isTrue = true;
             else

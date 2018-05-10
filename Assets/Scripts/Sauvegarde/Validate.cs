@@ -53,10 +53,4 @@ public class Validate : MonoBehaviour {
         bac_s = false;
         //Debug.Log("bool_f " + gender_f);
     }
-
-    /*public void Button_Start()
-    {
-        //StartCoroutine(save.Lancer_scene_dés());
-        SceneManager.LoadScene("Jeu");
-    }*/
 }

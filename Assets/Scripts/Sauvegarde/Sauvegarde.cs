@@ -32,11 +32,6 @@ public class Sauvegarde : MonoBehaviour
     private GameObject canvas_jeu;
     private GameObject jauges;
     public static GameObject dices;
-    //private GameObject canvas_resume;
-
-
-    // private highest score for each quizz ?
-
 
     void Start()
     {
@@ -57,8 +52,6 @@ public class Sauvegarde : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    //void Update() { }
 
     public void Save_Parameters()
     {
@@ -249,7 +242,6 @@ public class Sauvegarde : MonoBehaviour
         SceneManager.UnloadSceneAsync(scene);
 
         if (nextmove == 0)
-            //StartCoroutine(Load_scenes(2f));
             dices.SetActive(true);
         else { iTween.Resume(); }
     }

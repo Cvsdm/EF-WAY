@@ -925,7 +925,7 @@ public class Cases : MonoBehaviour
         int i = save.Get_counter();
         CaseDisplay.SetActive(false);
 
-        if (i == 4 || i == 24 || i == 91 || i == 84 || i == 98 || i == 45 || i == 34 || i == 19) // lancer scène quizz
+        if (IsQuizz()) // lancer scène quizz
             SceneManager.LoadScene("Persistent_quizz", LoadSceneMode.Additive);
         else if (i == 16 || i == 40) // lancer scène assos
             SceneManager.LoadScene("Menu Assos", LoadSceneMode.Additive);
@@ -947,6 +947,7 @@ public class Cases : MonoBehaviour
     {
         if (!save.IsIntersection())
         {
+            Debug.Log("counter : " + save.Get_counter());
             save.Save_Parameters();
             int i = save.Get_counter();
             btn1_dilemme.gameObject.SetActive(false);
@@ -1002,10 +1003,29 @@ public class Cases : MonoBehaviour
                 bars.DealAssosMinus(add_jauge * randMinus / 2);
             }
             //StartCoroutine(save.Lancer_scene_dés());
-            Debug.Log("je suis sur right");
+            //Debug.Log("je suis sur right");
             //StartCoroutine(save.Load_scenes(2.0f));
             Sauvegarde.dices.gameObject.SetActive(true);
         }
+    }
+
+    private bool IsQuizz()
+    {
+        int i = save.Get_counter();
+        if (i == 4 ||
+            i == 19 ||
+            i == 24 ||
+            i == 34 ||
+            i == 45 ||
+            i == 51 ||
+            i == 54 ||
+            i == 79 ||
+            i == 84 ||
+            i == 91 || 
+            i == 98 )
+            return true;
+
+        return false;
     }
 }
 

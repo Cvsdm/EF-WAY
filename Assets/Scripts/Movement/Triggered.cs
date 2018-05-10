@@ -45,7 +45,21 @@ public class Triggered : MonoBehaviour {
                                 Move_counter();
                             if (save.Get_nextmove() != 0) // si il reste des cases à bouger
                             {
-                                StartCoroutine(Choice());
+                                if (save.Get_counter() != 46)
+                                    StartCoroutine(Choice());
+                                else
+                                {
+                                    if (save.Get_section().Equals("Prépa Scientifique Section Internationale"))
+                                        Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                                    else
+                                    {
+                                        Movement.pathname = "J1_" + Movement.path_counter + "_RIGHT";
+                                        Move_counter();
+                                    }
+
+                                    Movement.Play_iTween(GameObject.Find("Sphere_path"));
+                                }
+
                             }
                             else
                                 iTween.Pause();
@@ -177,7 +191,7 @@ public class Triggered : MonoBehaviour {
     void Move_counter() // if bool = false it's left. Else its right
     {
         int j = save.Get_counter();
-        Debug.Log(" counter : " + j);
+        //Debug.Log(" counter : " + j);
 
         if (j == 8)       { save.Set_counter(j + 2); } //right
         else if (j == 11) { save.Set_counter(j + 2); } 
