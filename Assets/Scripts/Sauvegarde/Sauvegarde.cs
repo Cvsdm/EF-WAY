@@ -226,7 +226,13 @@ public class Sauvegarde : MonoBehaviour
             if (IsIntersection())
                 StartCoroutine(FindObjectOfType<Triggered>().Choice());
             else
-                iTween.Resume();
+            {
+                //Debug.Log("flag : " + Movement.flag);
+                if (Movement.flag == true)
+                    Movement.Play_iTween(GameObject.Find("Sphere_path"));
+                else 
+                    iTween.Resume();
+            }   
         }
     }
 

@@ -2,13 +2,13 @@
 
 public class Movement : MonoBehaviour
 {
-
     public static string pathname; //pathname format : jPlayerNB_PathNB, 
                                    // Or jPlayerNB_PathNB_RIGHT (/LEFT) 
     public static int path_counter;
     private Sauvegarde save;
     public static int advance;
     public static int j = 0;
+    public static bool flag = false;
 
     void Start()
     {
@@ -17,7 +17,6 @@ public class Movement : MonoBehaviour
         save = FindObjectOfType<Sauvegarde>();
         save.Find_dice();
         advance = save.Get_counter();
-        //Debug.Log("advanced" + advance);
         if (advance != 0)
         {
             Play_iTween(this.gameObject);

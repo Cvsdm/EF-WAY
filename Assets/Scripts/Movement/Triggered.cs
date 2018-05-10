@@ -22,6 +22,7 @@ public class Triggered : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
+        Movement.flag = false;
         if (!was_triggered)
         {
             was_triggered = true;
@@ -34,20 +35,8 @@ public class Triggered : MonoBehaviour {
                     save.Set_nextmove(save.Get_nextmove() - 1);
                 }
 
-                if (save.Get_nextmove() == 0 || save.Get_counter() == 100) /// Avance until the dice number
+                if (this.name.Length >= 10)
                 {
-                    iTween.Pause();
-                    StartCoroutine(Action_Case(0.8f)); //lancer l'action de la case
-                }
-                else if (IsStop())
-                {
-                    iTween.Pause();
-                    StartCoroutine(Action_Case(0.8f));
-                }
-                else
-                {
-                    if (this.name.Length >= 10)
-                    {
                         Movement.path_counter += 1;
 
                         if (this.intersection == 1) //Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
@@ -64,10 +53,25 @@ public class Triggered : MonoBehaviour {
                         else
                         {
                             Movement.pathname = "J1_" + Movement.path_counter;
+
+                        if (save.Get_nextmove() != 0)
                             Movement.Play_iTween(GameObject.Find("Sphere_path"));
+                        else
+                            Movement.flag = true;
+
                             Move_counter();
                         }
                     }
+
+                if (save.Get_nextmove() == 0 || save.Get_counter() == 100) /// Avance until the dice number
+                {
+                    iTween.Pause();
+                    StartCoroutine(Action_Case(0.8f)); //lancer l'action de la case
+                }
+                else if (IsStop())
+                {
+                    iTween.Pause();
+                    StartCoroutine(Action_Case(0.8f));
                 }
             } 
             else // sauvegarde présente 
@@ -173,6 +177,7 @@ public class Triggered : MonoBehaviour {
     void Move_counter() // if bool = false it's left. Else its right
     {
         int j = save.Get_counter();
+        Debug.Log(" counter : " + j);
 
         if (j == 8)       { save.Set_counter(j + 2); } //right
         else if (j == 11) { save.Set_counter(j + 2); } 
@@ -185,7 +190,6 @@ public class Triggered : MonoBehaviour {
 
         else if (j == 56) { save.Set_counter(j + 3); } //right
         else if (j == 60) { save.Set_counter(j + 2); }
-        //else if (j == 70) { save.Set_counter(j + 2); } /// JE SUIS PAS CONVAINCU là !! :D
     }
 
     void Move_advance() // if bool = false it's left. Else its right

@@ -930,7 +930,7 @@ public class Cases : MonoBehaviour
         else if (i == 16 || i == 40) // lancer scène assos
             SceneManager.LoadScene("Menu Assos", LoadSceneMode.Additive);
         else if (i == 62) // lancer les majeurs
-            SceneManager.LoadScene("Choix des majeurs", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Choix des majeures", LoadSceneMode.Additive);
         else if (i == 42) // lancer la scène de choix des destination
             SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
         else if (i != 100)
