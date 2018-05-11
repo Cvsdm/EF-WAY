@@ -1,14 +1,15 @@
-hgj
+ezr
 0
-20
-15
+40
+40
 0
-24
-0
-majeure
-destination
-Prépa Biologie et Numérique
+100
+7
+Imagerie et Réalité Virtuelle
+Canada - Concordia University
+Prépa Scientifique Section Internationale
 False
+Consultant
+EFFOR
 Sepefrei
-none
 none

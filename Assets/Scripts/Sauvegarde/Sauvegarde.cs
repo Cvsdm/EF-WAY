@@ -19,7 +19,6 @@ public class Sauvegarde : MonoBehaviour
     private string path;
 
     private string[] Tab_assos = new string[3] { "none", "none", "none" };
-    //private int majeur_choice = 0;
     private string majeur_choice = "majeure";
     private int nextmove = 0;
     private int langue = 0; //french
@@ -27,6 +26,7 @@ public class Sauvegarde : MonoBehaviour
     private string destination = "destination";
     private string section = "section";
     private bool imm = false;
+    private string secteur;
 
     public GameObject canvas_resume;
 
@@ -54,7 +54,6 @@ public class Sauvegarde : MonoBehaviour
         }
     }
 
-
     public void Save_Parameters()
     {
         TextWriter writer = new StreamWriter(path); //create automaticcally file if not created
@@ -72,6 +71,7 @@ public class Sauvegarde : MonoBehaviour
         writer.WriteLine(destination);
         writer.WriteLine(section);
         writer.WriteLine(imm);
+        writer.WriteLine(secteur);
 
 
         writer.WriteLine(Tab_assos[0]);
@@ -95,11 +95,11 @@ public class Sauvegarde : MonoBehaviour
 
         counter = Int32.Parse(file.ReadLine());
         nb_jetons = Int32.Parse(file.ReadLine());
-        //majeur_choice = Int32.Parse(file.ReadLine());
         majeur_choice = file.ReadLine();
         destination = file.ReadLine();
         section = file.ReadLine();
         imm = Boolean.Parse(file.ReadLine());
+        secteur = file.ReadLine();
 
         Tab_assos[0] = file.ReadLine();
         Tab_assos[1] = file.ReadLine();
@@ -108,6 +108,7 @@ public class Sauvegarde : MonoBehaviour
         file.Close(); //close the stream
     }
 
+    public string Get_player() { return player_name; }
     public float Get_etude() { return jauge_etude; }
     public float Get_assos() { return jauge_assos; }
     public float Get_sociabilite() { return jauge_sociabilité; }
@@ -121,13 +122,13 @@ public class Sauvegarde : MonoBehaviour
     public int Get_bac() { return bac; }
     public bool Get_imm() { return imm; }
     public string Get_majeure() { return majeur_choice; }
+    public string Get_secteur() { return secteur; }
 
     public void Set_player(string name) { player_name = name; }
     public void Set_bac(int genre) { bac = genre; }
     public void Set_etude(float nb) { jauge_etude = nb; }
     public void Set_assos(float nb) { jauge_assos = nb; }
     public void Set_sociabilite(float nb) { jauge_sociabilité = nb; }
-    //public void Set_majeure(int maj) { majeur_choice = maj; }
     public void Set_majeure(string maj) { majeur_choice = maj; }
     public void Set_counter(int count) { counter = count; }
     public void Set_nextmove(int move) { nextmove = move; }
@@ -137,6 +138,7 @@ public class Sauvegarde : MonoBehaviour
     public void Set_section(string choixSection) { section = choixSection; }
     public void Set_langue(int langage) { langue = langage; }
     public void Set_imm (bool im) { imm = im; }
+    public void Set_secteur(string sect) { secteur = sect; }
 
 
 
@@ -243,7 +245,6 @@ public class Sauvegarde : MonoBehaviour
             dices.SetActive(true);
         else { iTween.Resume(); }
     }
-
 
     public bool IsIntersection()
     {

@@ -556,7 +556,6 @@ public class Cases : MonoBehaviour
                     Action_Assos("La Taverne organise un tournoi", "Taverne");
                 else
                     Action_Assos("The \"Taverne\" organizes a tournament", "Taverne");
-
                 break;
 
             case 61:        // vous vantez auprès des L2 la destination que vous avez choisi : jauge sociale
@@ -573,7 +572,6 @@ public class Cases : MonoBehaviour
                     text.text = "C'est l'heure de choisir votre majeure !\nChoisissez bien";
                 else
                     text.text = "It is time to choose your major!\nChoose carefully";
-                ///  SceneManager.LoadScene(5);
                 break;
 
             case 63:            //DE
@@ -933,7 +931,8 @@ public class Cases : MonoBehaviour
             SceneManager.LoadScene("Choix des majeures", LoadSceneMode.Additive);
         else if (i == 42) // lancer la scène de choix des destination
             SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
-        //else if (i == 68)
+        else if (i == 68)
+            SceneManager.LoadScene("Menu-Secteurs", LoadSceneMode.Additive);
         else if (i == 100)
             SceneManager.LoadScene("End Game");
         else

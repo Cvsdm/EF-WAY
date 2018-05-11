@@ -3,14 +3,14 @@ using UnityEngine.UI;
 
 public class Bars : MonoBehaviour
 {
-    private float CurrentAssos { get; set; }
-    private float MaxAssos { get; set; }
+    private float CurrentAssos;
+    private float MaxAssos;
 
-    private float CurrentEtude { get; set; }
-    private float MaxEtude { get; set; }
+    private float CurrentEtude;
+    private float MaxEtude;
 
-    private float CurrentSocial { get; set; }
-    private float MaxSocial { get; set; }
+    private float CurrentSocial;
+    private float MaxSocial;
 
     private Slider assos;
     private Slider etude;
@@ -22,11 +22,11 @@ public class Bars : MonoBehaviour
 
     private Sauvegarde save;
 
-    float temp;
 
     void Start()
     {
         save = FindObjectOfType<Sauvegarde>();
+
         MaxEtude = 100f;
         CurrentEtude = save.Get_etude();
         etude = GameObject.Find("Etude").GetComponent<Slider>();
@@ -66,8 +66,9 @@ public class Bars : MonoBehaviour
     public void DealAssosPlus(float pluspoint)
     {
         CurrentAssos += pluspoint;
-        if (CurrentAssos > 100)
-            CurrentAssos = 100;
+        if (CurrentAssos > MaxAssos)
+            CurrentAssos = MaxAssos;
+        Debug.Log("ive deal with + assos");
         UpdateAssos();
     }
 
@@ -95,8 +96,9 @@ public class Bars : MonoBehaviour
     public void DealEtudePlus(float pluspoint)
     {
         CurrentEtude += pluspoint;
-        if (CurrentEtude > 100)
-            CurrentEtude = 100;
+        if (CurrentEtude > MaxEtude)
+            CurrentEtude = MaxEtude;
+        Debug.Log("ive deal with + etude");
         UpdateEtude();
     }
 
@@ -124,8 +126,9 @@ public class Bars : MonoBehaviour
     public void DealSocialPlus(float pluspoint)
     {
         CurrentSocial += pluspoint;
-        if (CurrentSocial > 100)
-            CurrentSocial = 100;
+        if (CurrentSocial > MaxSocial)
+            CurrentSocial = MaxSocial;
+        Debug.Log("ive deal with + social");
         UpdateSocial();
     }
 
