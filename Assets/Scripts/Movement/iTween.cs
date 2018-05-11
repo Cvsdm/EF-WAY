@@ -5850,7 +5850,8 @@ public class iTween : MonoBehaviour
 			Hashtable currentTween = tweens[i];
 			GameObject target = (GameObject)currentTween["target"];
 			Resume(target);
-		}
+            Movement.isRunning = true;
+        }
 	}	
 	
 	/// <summary>
@@ -5889,7 +5890,8 @@ public class iTween : MonoBehaviour
 			}
 			item.isPaused=true;
 			item.enabled=false;
-		}
+            Movement.isRunning = false;
+        }
 	}
 	
 	/// <summary>
@@ -5900,7 +5902,8 @@ public class iTween : MonoBehaviour
 		if(includechildren){
 			foreach(Transform child in target.transform){
 				Pause(child.gameObject,true);
-			}			
+                Movement.isRunning = false;
+            }			
 		}
 	}	
 	

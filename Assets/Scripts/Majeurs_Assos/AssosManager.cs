@@ -530,6 +530,7 @@ public class AssosManager : MonoBehaviour
             save.Add_assos(choixAssos);
             save.Save_Parameters();
         }
+
         if (langue == 0)
             choixAssos1.text = "Tes associations : ";
         else

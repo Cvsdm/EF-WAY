@@ -130,14 +130,8 @@ public class ManagerMajeures : MonoBehaviour
 
     void Update()
     {
-        if (langue == 1)
-        {
-            MajeuresFR();
-        }
-        else
-        {
-            MajeuresEN();
-        }
+        if (langue == 1)        { MajeuresFR(); }
+        else                    { MajeuresEN(); }
     }
 
     public void ChangeLanguageToEn()
@@ -152,22 +146,20 @@ public class ManagerMajeures : MonoBehaviour
 
     public void ChoixMajeure (int ChoixM)
     {
-        if (ChoixM == 1)            choice.text = "Choice : BI";
-        else if (ChoixM == 2)       choice.text = "Choice : ISCC";
-        else if (ChoixM == 3)       choice.text = "Choice : VR";
-        else if (ChoixM == 4)       choice.text = "Choice : BD";
-        else if (ChoixM == 12)      choice.text = "Choice : F";
-        else if (ChoixM == 5)       choice.text = "Choice : S";
-        else if (ChoixM == 6)       choice.text = "Choice : IL";
-        else if (ChoixM == 7)       choice.text = "Choice : B";
-        else if (ChoixM == 8)       choice.text = "Choice : AE";
-        else if (ChoixM == 9)       choice.text = "Choice : DD";
-        else if (ChoixM == 10)      choice.text = "Choice : NV";
-        else if (ChoixM == 11)      choice.text = "Choice : ENRI";
+        if (ChoixM == 1)            choice.text = "Business Intelligence";
+        else if (ChoixM == 2)       choice.text = "Information System & Cloud Computing";
+        else if (ChoixM == 3)       choice.text = "Imagerie et Réalité Virtuelle";
+        else if (ChoixM == 4)       choice.text = "Big Data";
+        else if (ChoixM == 12)      choice.text = "IT for Finance";
+        else if (ChoixM == 5)       choice.text = "Security";
+        else if (ChoixM == 6)       choice.text = "Software Engineering";
+        else if (ChoixM == 7)       choice.text = "Bio-Informatique";
+        else if (ChoixM == 8)       choice.text = "Avionique et Espaces";
+        else if (ChoixM == 9)       choice.text = "Droids and Drones";
+        else if (ChoixM == 10)      choice.text = "Networks & Virtualisation";
+        else if (ChoixM == 11)      choice.text = "Energies Nouvelles et Réseaux Intelligents";
 
-        //Debug.Log("choix : " + ChoixM);
-        save.Set_majeure(ChoixM);
-        //Debug.Log("choix : " + ChoixM);
+        save.Set_majeure(choice.text);
     }
 
     public void Exit_button()

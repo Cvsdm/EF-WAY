@@ -49,7 +49,7 @@ public class Triggered : MonoBehaviour {
                                     StartCoroutine(Choice());
                                 else
                                 {
-                                    if (save.Get_section().Equals("Prépa Scientifique Section Internationale"))
+                                    if (save.Get_imm())
                                         Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
                                     else
                                     {
@@ -209,8 +209,6 @@ public class Triggered : MonoBehaviour {
     void Move_advance() // if bool = false it's left. Else its right
     {
         int j = Movement.j;
-        //Debug.Log("counter right now : " + j);
-        //Debug.Break();
 
         if (j == 8) { Movement.advance -= 2; Movement.j += 2; } //right
         else if (j == 11) { Movement.advance -= 2; Movement.j += 2; }
@@ -223,7 +221,6 @@ public class Triggered : MonoBehaviour {
 
         else if (j == 56) { Movement.advance -= 3; Movement.j += 3; } //right
         else if (j == 60) { Movement.advance -= 2; Movement.j += 2; }
-        //else if (j == 70) { save.Set_counter(j + 2); } /// JE SUIS PAS CONVAINCU là !! :D
     }
 
     public bool IsStop()

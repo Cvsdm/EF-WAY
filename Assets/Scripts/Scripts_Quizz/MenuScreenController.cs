@@ -14,7 +14,7 @@ public class MenuScreenController : MonoBehaviour
         if (save.Get_counter() == 24 || save.Get_counter() == 84)
         {
             Titletext.text = "Projet Voltaire";
-            Rulestext.text = "Une phrase vous est affichée.\n Répondez VRAI si elle contient une faute.\n Répondez FAUX si elle ne contient PAS de faute.";
+            Rulestext.text = "Une phrase est affichée.\n Répondez VRAI si elle ne contient PAS de faute.\n Répondez FAUX si elle contient une faute.";
         }
         else if (save.Get_counter() == 91)
         {
@@ -43,7 +43,7 @@ public class MenuScreenController : MonoBehaviour
                 Titletext.text = "DE M2";
 
             if (save.Get_langue() == 0)
-                Rulestext.text = "Une affirmation vous est montrée.\n Dites si elle est VRAI ou FAUSSE.";
+                Rulestext.text = "Une affirmation vous est affichée.\n Dites si elle est VRAI ou FAUSSE.";
             else
                 Rulestext.text = "An affirmation is shown.\n Indicate if it is TRUE or FALSE.";
         }

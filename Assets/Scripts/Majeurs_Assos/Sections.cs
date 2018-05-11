@@ -23,8 +23,6 @@ public class Sections : MonoBehaviour
         bio.SetActive(false);
         renforce.SetActive(false);
 
-        //Debug.Log("langue " + langue);
-
         if (bac == 1)
         {
             renforce.SetActive(true);
@@ -66,7 +64,6 @@ public class Sections : MonoBehaviour
         save.Set_section(choixSection);
         save.Set_langue(langue);
         save.Save_Parameters();
-        //StartCoroutine(save.Load_scenes(0.8f));
         save.Disp_after_Stop("Menu Sections");
     }
 }

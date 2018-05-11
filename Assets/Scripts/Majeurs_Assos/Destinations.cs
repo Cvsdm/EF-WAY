@@ -51,72 +51,83 @@ public class Destinations : MonoBehaviour
         encadre.SetActive(!encadre.activeSelf);
     }
 
-    
-
     public void Choice(int temp)
     {
         switch (temp)
         {
             case 1:
                 choixDestination = "Mexico - ITESM Capus Mexico";
+                save.Set_imm(true);
                 break;
 
             case 2:
                 choixDestination = "USA - Stony Brook University";
+                save.Set_imm(true);
                 break;
 
             case 3:
                 choixDestination = "USA - Harrisburg University";
+                save.Set_imm(true);
                 break;
 
             case 4:
                 choixDestination = "Singapore - Nanyang University";
+                save.Set_imm(true);
                 break;
 
             case 5:
                 choixDestination = "Australia - Curtin University";
+                save.Set_imm(true);
                 break;
 
             case 6:
                 choixDestination = "Sweden - Linkoping University";
+                save.Set_imm(true);
                 break;
 
             case 7:
                 choixDestination = "Sweden - Linnaeus University";
+                save.Set_imm(true);
                 break;
 
             case 8:
                 choixDestination = "England - Coventry University";
+                save.Set_imm(true);
                 break;
 
             case 9:
                 choixDestination = "Angleterre - Staffordhire University";
+                save.Set_imm(true);
                 break;
 
             case 10:
                 choixDestination = "Pologne - AGH University";
+                save.Set_imm(false);
                 break;
 
             case 11:
                 choixDestination = "Canada - Concordia University";
+                save.Set_imm(false);
                 break;
 
             case 12:
                 choixDestination = "Inde - Manipal University";
+                save.Set_imm(false);
                 break;
 
             case 13:
                 choixDestination = "Malaisie - Asia Pacific University";
+                save.Set_imm(false);
                 break;
 
             case 14:
                 choixDestination = "Afrique du Sud - Cape Peninsula University";
+                save.Set_imm(false);
                 break;
         }
 
         save.Set_destination(choixDestination);
         save.Save_Parameters();
-        //StartCoroutine(save.Load_scenes(0.8f));
         save.Disp_after_Stop("Menu Destinations");
     }
 

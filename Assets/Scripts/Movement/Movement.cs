@@ -9,9 +9,11 @@ public class Movement : MonoBehaviour
     public static int advance;
     public static int j = 0;
     public static bool flag = false;
+    public static bool isRunning;
 
     void Start()
     {
+        isRunning = false;
         pathname = "j1_1";
         path_counter = 1;
         save = FindObjectOfType<Sauvegarde>();
@@ -26,6 +28,7 @@ public class Movement : MonoBehaviour
 
     public static void Play_iTween(GameObject j1)
     {
+        isRunning = true;
         iTween.MoveTo(j1, iTween.Hash("path", iTweenPath.GetPath(pathname),
                                               "speed", 10,
                                               "easeType", iTween.EaseType.easeInOutSine)

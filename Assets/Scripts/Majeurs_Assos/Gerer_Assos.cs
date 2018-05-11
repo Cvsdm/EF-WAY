@@ -48,6 +48,13 @@ public class Gerer_Assos : MonoBehaviour {
             button2.gameObject.SetActive(false);
             button3.gameObject.SetActive(false);
             button4.GetComponentInChildren<Text>().text = "Continue";
+
+            if (i == 0)
+            FindObjectOfType<AssosManager>().choixAssos2.text = "";
+            else if (i == 1)
+                FindObjectOfType<AssosManager>().choixAssos3.text = "";
+            else if (i == 2)
+                FindObjectOfType<AssosManager>().choixAssos4.text = "";
         }
         else 
         {

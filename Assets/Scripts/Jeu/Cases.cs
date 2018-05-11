@@ -12,7 +12,7 @@ public class Cases : MonoBehaviour
     public Button button, btn1_dilemme, btn2_dilemme;
     public GameObject CaseDisplay;
     public Bars bars;
-    //public GameObject dices;
+    public GameObject dices;
 
     void Start()
     {
@@ -272,15 +272,15 @@ public class Cases : MonoBehaviour
 
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous participer à l'IWeek pour rencontrer des étudiants étrangers ou plutôt vous concentrer sur vos études ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez vous participer à l'IWeek pour rencontrer des étudiants étrangers ou plutôt travailler et vous concentrer sur vos études ?";
                     button.GetComponentInChildren<Text>().text = "Faire l'IWeek";
-                    btn2_dilemme.GetComponentInChildren<Text>().text = "Se concentrer sur les études";
+                    btn2_dilemme.GetComponentInChildren<Text>().text = "Travailler";
                 }
                 else
                 {
                     text.text = "You face a dilemma! \nShould you take part in the IWeek to meet foreign students or concentrate on your studies?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Do the IWeek";
-                    btn2_dilemme.GetComponentInChildren<Text>().text = "Concentrate on studies";
+                    btn2_dilemme.GetComponentInChildren<Text>().text = "Work";
                 }
 
                 btn1_dilemme.gameObject.SetActive(true);
@@ -361,14 +361,14 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                 {
                     text.text = "Vous êtes face à un dilemme !\nDevriez vous aller à un cours de cuisine organisé par Infitah et Efrei Chef ou assister à un amphi d'information sur la mobilité ?";
-                    btn1_dilemme.GetComponentInChildren<Text>().text = "Aller au cours de cuisine";
-                    btn2_dilemme.GetComponentInChildren<Text>().text = "Aller à l'amphi";
+                    btn1_dilemme.GetComponentInChildren<Text>().text = "Cours de cuisine";
+                    btn2_dilemme.GetComponentInChildren<Text>().text = "Amphi d'information";
                 }
                 else
                 {
                     text.text = "You face a dilemma! \nShould you should you go to a cuisine course organized by Infitah and Efrei Chef or go to the information meeting on your next mobility?";
-                    btn1_dilemme.GetComponentInChildren<Text>().text = "Go to the cuisine course";
-                    btn2_dilemme.GetComponentInChildren<Text>().text = "Go to the meeting";
+                    btn1_dilemme.GetComponentInChildren<Text>().text = "Cuisine course";
+                    btn2_dilemme.GetComponentInChildren<Text>().text = "Information meeting";
                 }
                 btn1_dilemme.gameObject.SetActive(true);
                 btn2_dilemme.gameObject.SetActive(true);
@@ -528,13 +528,13 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                 {
                     text.text = "Vous êtes face à un dilemme !\nVotre fillot à besoin de vous, devriez vous vous concentrer sur vos propres difficultés ou l'aider à réviser ?";
-                    btn1_dilemme.GetComponentInChildren<Text>().text = "Travailler pour vous";
+                    btn1_dilemme.GetComponentInChildren<Text>().text = "Travailler";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Aider votre fillot";
                 }
                 else
                 {
                     text.text = "You face a dilemma! \nYour protégé needs your help, should you concentrate yourself on your own difficulties or help him to revise?";
-                    btn1_dilemme.GetComponentInChildren<Text>().text = "Work for yourself";
+                    btn1_dilemme.GetComponentInChildren<Text>().text = "Work";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Help your protégé";
                 }
                 btn1_dilemme.gameObject.SetActive(true);
@@ -933,13 +933,15 @@ public class Cases : MonoBehaviour
             SceneManager.LoadScene("Choix des majeures", LoadSceneMode.Additive);
         else if (i == 42) // lancer la scène de choix des destination
             SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
-        else if (i != 100)
+        //else if (i == 68)
+        else if (i == 100)
+            SceneManager.LoadScene("End Game");
+        else
         {
             if (save.Get_nextmove() != 0)
                 iTween.Resume();
             else
                 Sauvegarde.dices.gameObject.SetActive(true);
-                //StartCoroutine(save.Load_scenes(2.0f));
         }
     }
 
@@ -947,7 +949,6 @@ public class Cases : MonoBehaviour
     {
         if (!save.IsIntersection())
         {
-            Debug.Log("counter : " + save.Get_counter());
             save.Save_Parameters();
             int i = save.Get_counter();
             btn1_dilemme.gameObject.SetActive(false);
@@ -969,8 +970,6 @@ public class Cases : MonoBehaviour
                 bars.DealEtudeMinus(add_jauge * randMinus / 2);
                 bars.DealAssosPlus(add_jauge * randPlus / 2);
             }
-            Debug.Log("je suis sur left");
-            //StartCoroutine(save.Load_scenes(2.0f));
             Sauvegarde.dices.gameObject.SetActive(true);
         }
         
@@ -1002,9 +1001,6 @@ public class Cases : MonoBehaviour
                 bars.DealEtudePlus(add_jauge * randPlus / 2);
                 bars.DealAssosMinus(add_jauge * randMinus / 2);
             }
-            //StartCoroutine(save.Lancer_scene_dés());
-            //Debug.Log("je suis sur right");
-            //StartCoroutine(save.Load_scenes(2.0f));
             Sauvegarde.dices.gameObject.SetActive(true);
         }
     }
@@ -1021,8 +1017,8 @@ public class Cases : MonoBehaviour
             i == 54 ||
             i == 79 ||
             i == 84 ||
-            i == 91 || 
-            i == 98 )
+            i == 91 ||
+            i == 98)
             return true;
 
         return false;

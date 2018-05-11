@@ -19,12 +19,14 @@ public class Sauvegarde : MonoBehaviour
     private string path;
 
     private string[] Tab_assos = new string[3] { "none", "none", "none" };
-    private int majeur_choice = 0;
+    //private int majeur_choice = 0;
+    private string majeur_choice = "majeure";
     private int nextmove = 0;
     private int langue = 0; //french
     private int nb_jetons = 0;
     private string destination = "destination";
     private string section = "section";
+    private bool imm = false;
 
     public GameObject canvas_resume;
 
@@ -69,6 +71,8 @@ public class Sauvegarde : MonoBehaviour
         writer.WriteLine(majeur_choice);
         writer.WriteLine(destination);
         writer.WriteLine(section);
+        writer.WriteLine(imm);
+
 
         writer.WriteLine(Tab_assos[0]);
         writer.WriteLine(Tab_assos[1]);
@@ -91,9 +95,11 @@ public class Sauvegarde : MonoBehaviour
 
         counter = Int32.Parse(file.ReadLine());
         nb_jetons = Int32.Parse(file.ReadLine());
-        majeur_choice = Int32.Parse(file.ReadLine());
+        //majeur_choice = Int32.Parse(file.ReadLine());
+        majeur_choice = file.ReadLine();
         destination = file.ReadLine();
         section = file.ReadLine();
+        imm = Boolean.Parse(file.ReadLine());
 
         Tab_assos[0] = file.ReadLine();
         Tab_assos[1] = file.ReadLine();
@@ -113,13 +119,16 @@ public class Sauvegarde : MonoBehaviour
     public string Get_destination() { return destination; }
     public string Get_section() { return section; }
     public int Get_bac() { return bac; }
+    public bool Get_imm() { return imm; }
+    public string Get_majeure() { return majeur_choice; }
 
     public void Set_player(string name) { player_name = name; }
     public void Set_bac(int genre) { bac = genre; }
     public void Set_etude(float nb) { jauge_etude = nb; }
     public void Set_assos(float nb) { jauge_assos = nb; }
     public void Set_sociabilite(float nb) { jauge_sociabilité = nb; }
-    public void Set_majeure(int maj) { majeur_choice = maj; }
+    //public void Set_majeure(int maj) { majeur_choice = maj; }
+    public void Set_majeure(string maj) { majeur_choice = maj; }
     public void Set_counter(int count) { counter = count; }
     public void Set_nextmove(int move) { nextmove = move; }
     public void Set_jetons(int jeton) { nb_jetons = jeton; }
@@ -127,6 +136,7 @@ public class Sauvegarde : MonoBehaviour
     public void Set_destination(string choixDestination) { destination = choixDestination; }
     public void Set_section(string choixSection) { section = choixSection; }
     public void Set_langue(int langage) { langue = langage; }
+    public void Set_imm (bool im) { imm = im; }
 
 
 
@@ -150,19 +160,8 @@ public class Sauvegarde : MonoBehaviour
         {
             Tab_assos[flag] = newest;
             FindObjectOfType<Bars>().DealAssosPlus(20f);
-            //Debug.Log("Tab_assos[" + flag + "] = " + newest);
         }
 
-    }
-
-    public void Display_attributes()
-    {
-        Debug.Log("counter : " + counter);
-        Debug.Log("jauge_assos : " + jauge_assos);
-        Debug.Log("jauge_etudes : " + jauge_etude);
-        Debug.Log("jauge_social : " + jauge_sociabilité);
-        Debug.Log("nextmove : " + nextmove);
-        Debug.Log("majeure : " + majeur_choice);
     }
 
     public bool Found_assos(string tofind)
@@ -172,7 +171,6 @@ public class Sauvegarde : MonoBehaviour
             if (Tab_assos[i].Equals(tofind))
                 return true;
         }
-
         return false;
     }
 

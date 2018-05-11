@@ -34,7 +34,7 @@ public class DataController : MonoBehaviour
     {
         allRoundData = new RoundData
         {
-            timeLimitInSeconds = 50,
+            timeLimitInSeconds = 60,
             pointsAddedForCorrectAnswer = 20,
             questions = database.allquestions
         };
