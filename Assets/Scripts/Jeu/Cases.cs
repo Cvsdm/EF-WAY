@@ -43,8 +43,9 @@ public class Cases : MonoBehaviour
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
-            case 3:
-                //préparation au concours - objectif
+            case 3:  //préparation au concours - objectif
+                text.text = "C'est la journée de préparation au concours !\n Vous avez gagné un jeton !";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
             case 4:         // Concours entrée
@@ -52,7 +53,10 @@ public class Cases : MonoBehaviour
                 break;
 
             case 5:
-                text.text = "Vous avez participé à la Journée Portes Ouvertes !\n Vous avez gagné un jeton !";
+                if (save.Get_langue() == 0)
+                    text.text = "Vous avez participé à la Journée Portes Ouvertes !\n Vous avez gagné un jeton !";
+                else
+                    text.text = "You have participated at the open day!\n You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -186,10 +190,14 @@ public class Cases : MonoBehaviour
                     Action_Assos("Une soirée patinoire est organisée par Hock'Efrei", "Hock'Efrei");
                 else
                     Action_Assos("Hock'Efrei organizes an outling to the ice rink", "Hock'Efrei");
-
                 break;
 
             case 23:       //campagne BDE
+                if (save.Get_langue() == 0)
+                    text.text = "C'est la campagne BDE\n\n\n Vous avez gagné un jeton !";
+                else
+                    text.text = "It's the Students Bureau campaign !\n\n You've earned a chip";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
             case 24:          // Projet Voltaire
@@ -225,7 +233,6 @@ public class Cases : MonoBehaviour
 
                 btn1_dilemme.gameObject.SetActive(true);
                 btn2_dilemme.gameObject.SetActive(true);
-
                 break;
 
             case 27:          //4.1_assos
@@ -236,7 +243,12 @@ public class Cases : MonoBehaviour
                     Action_Assos("Ye Mistikrik organizes a show gathering humorists", "Ye Mistikrik");
                 break;
 
-            case 28:        //passez un tour
+            case 28:        //Grand Discours
+                if (save.Get_langue() == 0)
+                    text.text = "Vous avez participé à la Journée Portes Ouvertes !\n Vous avez gagné un jeton !";
+                else
+                    text.text = "You have participated at the open day!\n You've earned a chip!";
+                bars.DealEtudePlus(add_jauge);
                 break;
 
             case 29:        ///JPO
@@ -247,7 +259,12 @@ public class Cases : MonoBehaviour
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
-            case 30:        ///convoqué car trop d'absence
+            case 30:        ///exclu bavardage
+                if (save.Get_langue() == 0)
+                    text.text = "Vous êtes exclu de cours pour cause de bavardage en cours !\n";
+                else
+                    text.text = "You are excluded from class because of chatting !\n";
+                bars.DealEtudeMinus(add_jauge);
                 break;
 
             case 31:        /// salon - objetif
@@ -352,7 +369,6 @@ public class Cases : MonoBehaviour
                 else
                     text.text = "Association: Choose new associations or quit some if you want!";
                 //appel vers la même fonction que celle du stop choix d'assos, modification des jauges dans la fonction direct
-
                 break;
 
             case 41:        //4_dilemme     
@@ -404,6 +420,10 @@ public class Cases : MonoBehaviour
                 break;
 
             case 46:        //départ mobilité
+                if (save.Get_langue() == 0)
+                    text.text = "L'heure est arrivée !\n Choisissez votre destination !";
+                else
+                    text.text = "The time has come !\n Choose you mobility !";
                 break;
 
             case 47:        // vous rencontrez vos nouveaux colocs : jauge sociale
@@ -543,7 +563,7 @@ public class Cases : MonoBehaviour
 
             case 59:        // Vous rêvez beaucoup de votre mobilité et vous impliquez moins dans votre travail : vos notes baisses, jauge étude diminue
                 if (save.Get_langue() == 0)
-                    text.text = "Vous rêvez beaucoup de votre mobilité et vous impliquez moins dans votre travail : vos notes baisses\n\n\n -10 dans votre jauge étude et assiduité!";
+                    text.text = "Vous rêvez beaucoup de votre mobilité et vous vous impliquez moins dans votre travail : vos notes baisses\n\n\n -10 dans votre jauge étude et assiduité!";
                 else
                     text.text = "You praise to second year's students the destination you choose for your mobility\n\n\n -10 in your study and diligence's gauge!";
 
@@ -582,6 +602,11 @@ public class Cases : MonoBehaviour
                 break;
 
             case 64:            // Rentrée M1 remise des licences - Objectif
+                if (save.Get_langue() == 0)
+                    text.text = "C'est la rentrée de 1ère année Ingénieur.\nOn vous remet votre licence.\n\n Vous avez gagné un jeton !";
+                else
+                    text.text = "Back to school in the first year of Master\n\n You've earned a chip";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
             case 65:            // rencontre avec les nouveaux entrants en M1 : jauge sociale
@@ -611,6 +636,10 @@ public class Cases : MonoBehaviour
                 break;
 
             case 68:            //parcours métier - STOP
+                if (save.Get_langue() == 0)
+                    text.text = "Vous devez choisir le parcours métier qui vous sera enseigné afin de vous former à la vie active !";
+                else
+                    text.text = "You have to choose our career path, which will prepare you to the active life !";
                 break;
 
             case 69:        //8_dilemme
@@ -739,6 +768,11 @@ public class Cases : MonoBehaviour
                 break;
 
             case 81:        //Rentrée M2, amphi de présentation : Objectif
+                if (save.Get_langue() == 0)
+                    text.text = "Vous rentrez en M2 et assistez à un amphi de présentation !\n Vous avez gagné un jeton !";
+                else
+                    text.text = "You are in M2 and you have a presentation course!\n You've earned a chip!";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
             case 82:        //10_dilemme
@@ -820,6 +854,11 @@ public class Cases : MonoBehaviour
                 break;
 
             case 90:        // Concours Tous HanScène
+                if (save.Get_langue() == 0)
+                    text.text = "C'est le concours Tous HanScène\n\n Vous avez gagné un jeton !";
+                else
+                    text.text = "It's the Tous HanScène contest !\n\n You've earned a chip";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
 
@@ -848,6 +887,11 @@ public class Cases : MonoBehaviour
                 break;
 
             case 94:            //Gagne un jeton grâce au recyclage d'un gobelet à la machine symbioz - Objectif
+                if (save.Get_langue() == 0)
+                    text.text = "Vous avez recyclez un gobelet à la machine symbioz !\n Vous avez gagné un jeton !";
+                else
+                    text.text = "You have recycled your paper cup thanks to symbioz machine!\n You've earned a chip!";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
             case 95:            //POD
@@ -906,13 +950,19 @@ public class Cases : MonoBehaviour
     {
         if (save.Found_assos(assos_Name)) //fait partie de l'assos
         {
-            text.text = action + "\n\n\n+10 dans votre jauge associations !";
+            if (save.Get_langue()== 0)
+                text.text = action + "\n\n\n+10 dans votre jauge associations !";
+            else
+                text.text = action + "\n\n\n+10 in your association's gauge !";
             bars.DealAssosPlus(add_jauge);
         }
 
         else
         {
-            text.text = action + "\n\n\n+10 dans votre jauge sociabilité !";
+            if (save.Get_langue() == 0)
+                text.text = action + "\n\n\n+10 dans votre jauge sociabilité !";
+            else
+                text.text = action + "\n\n\n+10 in your sociability's gauge!";
             bars.DealSocialPlus(add_jauge);
         }
     }

@@ -68,7 +68,6 @@ public class Bars : MonoBehaviour
         CurrentAssos += pluspoint;
         if (CurrentAssos > MaxAssos)
             CurrentAssos = MaxAssos;
-        Debug.Log("ive deal with + assos");
         UpdateAssos();
     }
 
@@ -98,7 +97,6 @@ public class Bars : MonoBehaviour
         CurrentEtude += pluspoint;
         if (CurrentEtude > MaxEtude)
             CurrentEtude = MaxEtude;
-        Debug.Log("ive deal with + etude");
         UpdateEtude();
     }
 
@@ -128,13 +126,11 @@ public class Bars : MonoBehaviour
         CurrentSocial += pluspoint;
         if (CurrentSocial > MaxSocial)
             CurrentSocial = MaxSocial;
-        Debug.Log("ive deal with + social");
         UpdateSocial();
     }
 
     float CalculateSocial()
     {
-        //Per centage
         return CurrentSocial / MaxSocial;
     }
 }
