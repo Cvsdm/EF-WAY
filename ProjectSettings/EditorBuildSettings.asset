@@ -47,3 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End Game.unity
     guid: 22a6ca4d999dd7648aa414fe5cefe42e
+  - enabled: 1
+    path: Assets/Scenes/Menu-Secteurs.unity
+    guid: ef183944a8a6c894c8b0afb3f7748d91
