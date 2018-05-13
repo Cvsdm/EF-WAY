@@ -7,19 +7,18 @@ public class MusicManager : MonoBehaviour {
     public Image Sound;
     public Sprite spriteMute, spriteUnmute;
     private AudioSource music;
-    public static bool instance = false;
+    public static MusicManager instance;
 
 	void Start ()
     {
-        if (!instance)
+        music = FindObjectOfType<AudioSource>();
+
+        if (instance == null) //Check if there is already an instance of SoundManager            
         {
-            instance = true;
-            music = GetComponent<AudioSource>();
+            instance = this; //if not, set it to this.
+            music.Play();
             DontDestroyOnLoad(gameObject);
-            Debug.Log("music :D");
-        }
-        else
-            music = FindObjectOfType<AudioSource>();
+        }        
     }
 
     public void ToggleMuteMusic()

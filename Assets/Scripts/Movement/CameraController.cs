@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        /*
         // ------------------------------------------------------------------
         // TRANSLATION (with 3 fingers)
         // ------------------------------------------------------------------
@@ -37,13 +38,14 @@ public class CameraController : MonoBehaviour
             if (DeltaZ != 0)
                 camera.transform.Translate(Vector3.down * DeltaZ);
         }
+        */
 
         // ------------------------------------------------------------------
         // ROTATION (with 1 finger)
         // ------------------------------------------------------------------
 
         // If there are 1 touches on the device...
-        else if (Input.touchCount == 1)
+        if (Input.touchCount == 1)
         {
 
             Touch touch = Input.GetTouch(0);
@@ -80,9 +82,9 @@ public class CameraController : MonoBehaviour
             float DeltaZ = touch.deltaPosition.y;
 
             if (Mathf.Abs(DeltaX) > Mathf.Abs(DeltaZ))
-                camera.transform.Rotate(0, 0.5f * DeltaX, 0);
+                camera.transform.Rotate(0, 0.1f * DeltaX, 0);
             else
-                camera.transform.Rotate(0.5f * DeltaZ, 0, 0);
+                camera.transform.Rotate(0.1f * DeltaZ, 0, 0);
 
             /* Addempt to clamp the 1 finger rotations. Do not work.
             float x = camera.transform.rotation.eulerAngles.x;
@@ -116,8 +118,8 @@ public class CameraController : MonoBehaviour
             // Translation (with 2 fingers)
             // ------------------------------------------------------------------
 
-            if (Vector3.Dot(vectZero, vectOne) > MultMag - 1000 &&
-                 Vector3.Dot(vectZero, vectOne) < MultMag + 1000)
+            if (Vector3.Dot(vectZero, vectOne) > MultMag - 10000 &&
+                Vector3.Dot(vectZero, vectOne) < MultMag + 10000)
             {
 
                 Touch touch = Input.GetTouch(0);
@@ -131,17 +133,28 @@ public class CameraController : MonoBehaviour
                 //camera.transform.position = new Vector3(camera.transform.position.x + DeltaX,
                 //                                        camera.transform.position.y,
                 //                                        camera.transform.position.z + DeltaZ);
-                if (DeltaX != 0) camera.transform.Translate(Vector3.left * DeltaX);
-                if (DeltaZ != 0) camera.transform.Translate(Vector3.down * DeltaZ);
+                if (DeltaX != 0) camera.transform.Translate(Vector3.left * 0.1f * DeltaX);
+                if (DeltaZ != 0) camera.transform.Translate(Vector3.down * 0.1f * DeltaZ);
 
                 float x = camera.transform.position.x;
+                float y = camera.transform.position.y;
                 float z = camera.transform.position.z;
 
-                // To limit camera position on y axis [10; 150]  
+                // To limit camera position on x y and z axes                     
+                if (camera.transform.position.x < 0f)
+                    camera.transform.position = new Vector3(  0f, y, z);
+                else if (camera.transform.position.x > 100f)
+                    camera.transform.position = new Vector3(100f, y, z);
+
                 if (camera.transform.position.y < 10f)
-                    camera.transform.position = new Vector3(x, 10f, z);
-                if (camera.transform.position.y > 150f)
+                    camera.transform.position = new Vector3(x,  10f, z);
+                else if(camera.transform.position.y > 150f)
                     camera.transform.position = new Vector3(x, 150f, z);
+
+                if (camera.transform.position.z < -10f)
+                    camera.transform.position = new Vector3(x, y, -10f);
+                else if(camera.transform.position.z > 100f)
+                    camera.transform.position = new Vector3(x, y, 100f);
             }
 
             else
