@@ -129,15 +129,16 @@ public class Rotation2 : MonoBehaviour
 
     void EnableButton()
     {
-        GameObject.Find("Drop").SetActive(false);
+        GameObject.Find("Stop Dices").SetActive(false);
 
-       
         Dice1 = Random.Range(0, 5);
         Dice2 = Random.Range(0,5);
         TotalValue = Dice1 + Dice2;
+        if (TotalValue == 0)
+        { Dice1 = Random.Range(1, 5); TotalValue = Dice1 + Dice2; }
 
-        //save.Set_nextmove(100); //pour tester
-        save.Set_nextmove(TotalValue);
+         //save.Set_nextmove(10); //pour tester
+         save.Set_nextmove(TotalValue);
     }
 
     int GetRotation()

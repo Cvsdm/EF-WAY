@@ -217,13 +217,28 @@ public class Sauvegarde : MonoBehaviour
         else
         {
             if (IsIntersection())
-                StartCoroutine(FindObjectOfType<Triggered>().Choice());
+            {
+                if (counter != 46) // si ce n'est pas la case immersion
+                    StartCoroutine(FindObjectOfType<Triggered>().Choice());
+                else
+                {
+                    if (imm)
+                        Movement.pathname = "J1_" + Movement.path_counter + "_LEFT";
+                    else
+                    {
+                        Movement.pathname = "J1_" + Movement.path_counter + "_RIGHT";
+                        FindObjectOfType<Triggered>().Move_counter();
+                    }
+
+                    Movement.Play_iTween(GameObject.Find("Sphere_path"));
+                }
+            }
             else
             {
                 //Debug.Log("flag : " + Movement.flag);
                 if (Movement.flag == true)
                     Movement.Play_iTween(GameObject.Find("Sphere_path"));
-                else 
+                else
                     iTween.Resume();
             }   
         }
@@ -240,6 +255,7 @@ public class Sauvegarde : MonoBehaviour
     public void Disp_after_Stop(string scene)
     {
         SceneManager.UnloadSceneAsync(scene);
+        Movement.isRunning = false;
 
         if (nextmove == 0)
             dices.SetActive(true);

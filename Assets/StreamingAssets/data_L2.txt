@@ -1,10 +1,4 @@
-﻿Soit F1 et F2 deux vecteurs : F1 . F2 = x1 * x2 - y1 * y2
-0
-Soit F1 et F2 deux vecteurs : F1 . F2 = F1 * F2 * cos⁡(F1,F2)
-1
-Soit F1 et F2 deux vecteurs : F1 ∧ F2 = F1 * F2 * sin⁡(F1,F2)
-1
-Les lignes d'un champ magnétique vont toujours du pôle sud vers le pôle nord
+﻿Les lignes d'un champ magnétique vont toujours du pôle sud vers le pôle nord
 0
 La mécanique quantique est la science du très grand.
 0
@@ -23,4 +17,84 @@ En language C ++, deux méthodes peuvent avoir le même nom dans deux classes di
 En language C ++, le constructeur et destructeur d'une variable sont présent par défaut.
 1
 En language C ++, une classe ne peut pas être dérivée d'une autre classe.
+0
+Sur Excel, la formule SOMMEPROD() sert à multiplier deux matrices.
+0
+Sur Excel, la fonction SOMME() permet d'additionner les numéros présent sur une plage donnée.
+1
+Les éclairs ne tombent pas deux fois au même endroit.
+0
+Les humains peuvent sentir jusqu'à un trillion d'odeur différente.
+1
+In binary, 101 + 101 = 1010.
+1
+Red has a higher frequency light than blue.
+0
+Les monotrèmes sont des mammifères qui pondent des oeufs.
+1
+Une particule alpha est différente du noyau d'hélium.
+0
+Pour éviter toute confusion de langues, les éléments du 1er tableau périodique étaient classés par ordre alphabétique des noms latins.
+0
+Archimède est reconnu pour sa découverte de l’effet de levier.
+1
+L’ADN a été découvert dans les laboratoires secrets du FBI en 1953.
+0
+Johannes Kepler a découvert les trous noirs en 1630.
+0
+Louis Pasteur a d’abord mis au point son procédé de pasteurisation pour conserver le vin.
+1
+Pour ses travaux, Albert Einstein a gagné le prix Nobel de mathématiques.
+0
+En 1932, Charles Richter parvient à forer presque jusqu’au centre de la Terre pour analyser les mouvements sismiques sur notre planète.
+0
+Les découvertes de Marie et Pierre Curie ont remis en cause l’hypothèse selon laquelle le nombre d’atomes sur Terre était fixe.
+1
+Léonard de Vinci a découvert les anneaux de Saturne à l’aide d’une lunette astronomique qu’il avait inventée.
+0
+Elon Musk a nommé sa voiture Tesla en l’honneur de Nikola Tesla, un grand ingénieur du début du 20e siècle.
+1
+Isaac Newton a marqué la physique avec sa célèbre formule E = mc².
+0
+En 1782, les frères Montgolfier parviennent à faire s’envoler un coq, un mouton et un canard.
+1
+Eurêka est le nom d’un des plus grands mathématiciens de l’Antiquité grecque.
+0
+En 1926, John Logie Baird réussit à transmettre les 1ère images télévisées à une distance de 3 m.
+1
+Alfred Nobel, le créateur des prix Nobel, dont celui de la Paix, a aussi inventé la dynamite.
+1
+Edwin Hubble a découvert Neptune grâce au premier télescope infrarouge.
+0
+Nicolas Copernic a placé le Soleil au centre de notre système solaire.
+1
+James Watt a donné son nom à l'unité d'intensité du courant électrique.
+0
+Alessandro Volta a inventé la pile électrique à la fin des années 1700.
+1
+La célèbre équation E = mc² d'Einstein calcule la vitesse de la lumière.
+0
+Avec son pendule, Léon Foucault a réalisé la première horloge dont la précision était d’une demi-seconde par jour.
+0
+Marie Curie a reçu un prix Nobel en physique et un autre en chimie.
+1
+René Laennec a inventé le stéthoscope.
+1
+En plus d'avoir développé la théorie de la gravitation universelle, Isaac Newton a excellé en optique.
+1
+En faisant des expériences sur les rayons X, Wilhelm Röntgen a mis la vie de sa femme en danger.
+1
+Urbain Le Verrier a découvert la planète Neptune par des calculs mathématiques.
+1
+Carl von Linné a mis au point le premier véritable système de classification des éléments chimiques.
+0
+La mathématicienne Sophie Germain a longtemps utilisé le pseudonyme Antoine Auguste Le Blanc.
+1
+Le philosophe et mathématicien français Blaise Pascal a inventé une machine à calculer mécanique en 1642.
+1
+Nikola Tesla a inventé la première voiture électrique, baptisée La jamais contente.
+0
+Robert Oppenheimer est considéré comme le père de la bombe atomique.
+1
+L’aphorisme « rien ne se perd, rien ne se crée, tout se transforme » est attribuée à Pythagore.
 0

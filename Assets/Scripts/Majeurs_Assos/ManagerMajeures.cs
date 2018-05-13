@@ -39,7 +39,7 @@ public class ManagerMajeures : MonoBehaviour
     public Text text_ENRI1;     // Energies nouvelles et réseaux intelligents
     public Text text_ENRI2;
     
-    private int langue = 0;
+    private int langue = 1;
     public Text choice;
     private Sauvegarde save;
 

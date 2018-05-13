@@ -1,1 +1,100 @@
-﻿
+﻿Overcloking is about increasing the performance of a microprocessor.
+1
+To create a comment on an online on-line line //.
+1
+The literal 13.3f is float type.
+1
+Niels Bohr has published layer level theory in an atom.
+1
+The Meissner effect refers to the levitation effect of a magnet on a superconducting metal.
+1
+The approximate mass of the Higgs boson is 80 KeV.
+0
+An alpha particle is stopped at the simplest by a block of lead.
+0
+A light year is a unit of time.
+0
+The 'brain' of the computer is the CPU.
+1
+CPU The CPU stands for.
+1
+Computer program unit The CPU stands for.
+0
+The permanent memory built into the computer is called RAM.
+0
+ROM means Read Only Memory.
+1
+Ten thousand bytes form a megabyte.
+0
+Strong interactions prevent your hand from crossing a wall.
+0
+The violet energy poses a problem in the equation of the expansion of the universe.
+0
+Dark energy poses a problem in the equation of the expansion of the universe.
+1
+Stephen Hawking elaborated the theory of universal gravitation.
+0
+Stephen Hawking developed the theory of quantum gravity.
+1
+Quantitative mechanics was born around 1856-1900.
+0
+De Broglie proposed the idea of ​​wave-particle duality.
+1
+An address expressed on 24 bits allows to designate 1 memory case among 16 million.
+1
+The assembly language is not portable.
+0
+The Modem allows PC to talk with other PCs via a phone line.
+1
+The BIOS is the first program to run when you turn on a computer.
+1
+The BIOS is an acronym for Basic Input / Output System.
+1
+DOS is an acronym for Dual Operating System.
+0
+RAM is an acronym for Remote Authorization Mechanism.
+0
+The .DLL under Windows or .SO under UNIX system are dynamic libraries.
+1
+In computing, to connect 2 hubs between them we can use the RJ11.
+0
+The CNIL law prohibits making copies of software or any other program.
+0
+The Hadopi law prohibits making copies of software or any other program.
+0
+Free software is free software available.
+1
+The hexadecimal number system contains digits from 1 to 15.
+0
+The octal number system contains numbers from 0 to 7.
+1
+The CPU only controls the input data of the computer.
+0
+The language that the PC understands the machine language.
+1
+Worms and Trojans are easily detected and removed by antivirus.
+1
+Linux and GNU are open source operating systems.
+1
+The first traffic light was installed on Wall Street, New York, in 1898.
+0
+CERN's huge particle accelerator is underground, on the border of the US and Canada.
+0
+It takes ten hours to charge the battery of the first mobile phone.
+1
+The word "robot" originates from a Czech play written in 1920.
+1
+The musical piracy begins with the invention of the cassette.
+1
+The first primate to reach an altitude of more than 134 km, died after a failed landing.
+1
+The first airbags were installed in the small fighter planes of the 2nd world war.
+0
+The first submarine with mechanical propulsion, had the function to sink the enemy ships.
+0
+It took 8 minutes of exposure to fix the first photo.
+0
+It took 8 hours of exposure to fix the first photo.
+1
+The first sentence said on the phone in the summer: "Mr. Watson, are you here? I need your help ".
+1

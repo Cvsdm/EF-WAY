@@ -14,7 +14,7 @@ Le protocole HTTP utilise le port 21.
 0
 Un Firewall est un mur de feu.
 0
-Le protocole FTP utilise le port 21
+Le protocole FTP utilise le port 21.
 1
 Le protocole sécurisé le plus rencontré sur les sites de vente en ligne est SSL.
 1
@@ -27,4 +27,74 @@ Un hoax est un virus destructeur.
 Un hoax est un faux antivirus.
 0
 IP signifie Informations Personnelles.
+0
+Le language compris par le processeur est le binaire.
+1
+Le language compris par le processeur est le C#.
+0
+Le matériel qui permet de visualiser sur un écran est la carte mère.
+0
+Le matériel qui permet de visualiser sur un écran est la carte graphique.
+1
+Un antivirus me permet d’être protégé contre les attaques de ransomware.
+0
+Une attaque informatique est capable de détruire du matériel physique.
+1
+Les Wifi publics hotspot proposés dans les restaurants, aéroports, bibliothèque etc. ne sont pas protégés.
+1
+Une sauvegarde "entière" enregistre l’ensemble des données sans faire de comparaison avec les données précédentes.
+1
+L'overcloking consiste a mesurer les performances d'un microprocesseur.
+0
+La société leader sur le marché des microprocesseurs pour ordinateur est Windows.
+0
+Windows est un Hardware.
+0
+Le mot Informatique provient de la contraction de Information & Electronique.
+0
+La carte mère est le socle d'interconnexion des composants du PC.
+1
+Pour améliorer les performances d'un ordinateur, il faut diminuer sa mémoire vive RAM.
+0
+Le Trojan est un virus permettant à un hacker de prendre le contrôle de votre ordinateur.
+1
+Le HTTP est un langage conçu pour représenter des pages web.
+0
+Les cookies sont de la nourriture envoyer par la page web.
+0
+Les cookies permettent la conservation de forumulaire, identifiants et mots de passe sur son navigateur web.
+1
+L'adresse IP sert à identifier chaque ordinateur connecté à Internet.
+1
+La mémoire RAM sont conservés lors de la mise hors tension du PC.
+0
+Les 3Ghz d'un microprocesseur représente le nombre de transistors.
+0
+Les 3Ghz d'un microprocesseur représente la fréquence du signal d'horloge.
+1
+Le système d'exploitation sert à stocker les photos, les vidéos, et les données.
+0
+Le système d'exploitation sert à effectuer des calculs mathématiques.
+0
+Le système d'exploitation est une interface virtuelle.
+1
+Le protocole FTP est utilisé pour transférer des fichiers sur Internet.
+1
+Le protocole FPS est utilisé pour transférer des fichiers sur Internet.
+0
+Le A de ADSL signifie asynchrone.
+0
+Le A de ADSL signifie asymétrique.
+1
+Le Firewall sert à bloquer les connexions non autorisées.
+1
+Le Firewall sert à scanner les logiciels téléchargés.
+0
+La puissance d'un microprocesseur est le critère essentiel pour les jeux vidéos musclés.
+0
+Le système d'exploitation est le composant qui exécute les programmes.
+0
+Le processeur est le composant qui exécute les programmes.
+1
+« C:\Mes documents\efrei-2018.jpg » l’extension de ce fichier est efrei-2018.
 0

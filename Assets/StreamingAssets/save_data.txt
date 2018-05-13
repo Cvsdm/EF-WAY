@@ -1,15 +1,15 @@
-dsg
+dht
 0
-0
-0
-0
-0
+70
+25
+20
+62
 0
 majeure
-destination
-section
+Pologne - AGH University
+Prépa Scientifique Section Internationale
 False
 
-none
-none
-none
+EFFOR
+Piste
+AI efrei

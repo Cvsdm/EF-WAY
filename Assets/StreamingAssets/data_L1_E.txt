@@ -1,50 +1,100 @@
-﻿The smallest element that keeps its properties is the electron.
+﻿The smallest element that retains its properties is electro.
 0
-Oppostition to current is called conductivity.
+The opposition to current is called conductivity.
 0
-Resistance to current is called Resistance.
+Current resistance is called resistance.
 1
-A material that blocks current is called an insulator.
+A material that blocks the current is called an insulator.
 1
-Ohm's Law states that the current is proportionnal to voltage and inversely proportionnal to resistance. I = V/R
+Ohm's law states that the current is proportional to the voltage and inversely proportional to the resistance. I = V / R
 1
 Power is the amount of energy per unit of time.
 1
-La loi des mailles pose que la somme des voltages d'une boucle fermé est égale à 1.
+The law of meshes poses that the sum of the voltages of a closed loop is equal to 1.
 0
-The frequency equals to the period divided by 2. f = T/2
+The frequency is equal to the period divided by 2. f = T / 2
 0
-L'inductance est la capacité d'un matériau de s'opposer aux changements de courant.
+Inductance is the ability of a material to oppose current changes.
 1
-In C, the variable type int represents an integer.
+In C, the variable type int represents integers.
 1
-In C, the variable type string represents clothes.
+In C language, the string variable type represents garments.
 0
-In C, you can use a variable that was not declared previously.
+In C, you can use a variable not declared before.
 0
-In C, the variable type bool (boolean) exists.
+In C language, the type of variable bool (boolean) exists.
 0
-In C, to give a value to a variable we use the sign =
-1 
-The international unit of volume is the m³
+In C language, to assign a value to a variable we use the sign =
 1
-The international unit of energy is kg.m.s⁻²
+The international unit of volume is m³.
+1
+The international unit of energy is kg.m.s⁻².
 0
-The international unit of the magnetic field is kg.s⁻².A⁻¹
+The international unit of the magnetic field is kg.s⁻².A⁻¹.
 1
-An operation is said commutative if a * b = b * a
+An operation is commutative if a * b = b * a.
 1
-An operation is said associative if we can't move brackets
+An operation is called associative if we can not move parentheses.
 0
 Light is an electromagnetic wave.
 1
-Les ondes électromagnétiques sont composés d'un champ électrique et d'un champ kinétique
+Electromagnetic waves are composed of an electric field and a kinetic field.
 0
-The approximate speed of light in vacuum is 3 x 10⁶ m.s⁻¹
+The approximate speed of light in a vacuum is 3 x 10⁶ m.s⁻¹.
 0
-The wavelength (λ) equals to λ = c/f	with c the celerity of the wave and f its frequency sa fréquence.
+The wavelength (λ) is equal to λ = c / f with c the speed of the wave and f its frequency.
 1
-The refractive index of water is : n = 1.33
+The index of refraction of water is about n = 1.33
 1
-The refractive index of glass is : n = 2.5
-0  
+The index of refraction of the glass is about n = 2.5
+0
+PC stands for Personal Computer.
+1
+The 'CPU' is synonymous with graphics card.
+0
+Spam is the French name for spam.
+1
+The cable that usually connects the screen to the CPU is called the VGA cable.
+1
+The goldfish have a memory of 3 seconds.
+0
+The pirates wore eye-patch to see better in the dark.
+1
+An octopus has 3 hearts.
+1
+The Great Wall of China can be seen from space with the eye.
+0
+For every man on Earth, there are 1.6 million ants.
+1
+The mammoths were extinct when the Great Pyramid was built.
+0
+Bananas grow on trees.
+0
+Black holes are black.
+0
+It's raining diamonds on Saturn and Jupiter.
+1
+There are fewer stars in the sky than sand grains on all the beaches of the world.
+0
+Approximately a quarter of the human bones are in the feet.
+1
+The blood of a slug is green.
+1
+The longest bone in the human body is the femur.
+1
+The international unit of power is the Joules.
+0
+The chemical symbol of Tin is T.
+0
+A muon has a negative electric charge.
+1
+sin²θ + cos²θ = 0
+0
+Earth's atmosphere is mostly Nitrogen.
+1
+The chemical formula of Ethanol is C₂H₅OH.
+1
+The Avogadro constant is greater than the Planck constant.
+1
+In binary, 101 + 101 = 202.
+0

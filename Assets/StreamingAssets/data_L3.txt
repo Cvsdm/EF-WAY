@@ -1,5 +1,100 @@
-﻿En Java, 
-
-En Java, 
-
-???
+﻿Giordano Bruno est le scientifique qui a réussi à convaincre l'Église catholique que l’Univers est infini.
+0
+Dans Excel, la fonction NB.SI permet de compter le nombre de cellules ayant un critère prédéfini. 
+1
+Le logiciel Microsoft PowerPoint est un tableur.
+0
+Les deux premiers personnages de la télévision étaient les marionnettes James et Stooky Bill.
+1
+Un robot a été installé en 1383 sur l’une des tours de l’église Notre-Dame de Dijon, France.
+1
+En 1899, « La Jamais Contente » innovait en utilisant du diesel (gazole) comme carburant.
+0
+Les verres fumés ont été inventés par erreur.
+1
+L'écriture a été inventée vers 3400 ans av. J.-C., pour enregistrer des transactions commerciales.
+1
+Le premier stéthoscope a été inventé en partie pour des raisons de pudeur
+1
+Pour transformer un code lisible en code compréhensible par la machine on utilise un traducteur.
+0
+Pour transformer un code lisible en code compréhensible par la machine on utilise un compilateur.
+1
+Pour créer un commentaire sur une ligne on place en début de ligne le caractère #.
+0
+Le littéral 31.3f est de type double.
+0
+En Java, un retour à la ligne est un caractère.
+1
+Pour compiler en language Java on utilise JDK.
+1
+En Java, l'identificateurs 2noms est correct.
+0
+Le droit d'accès le plus restrictif en Java est public.
+0
+En Java, le droit d'accès protected permet aux membres d'une autre classe de même package un accès.
+1
+En Java, on peut comparer un boolean à un entier.
+1
+Une interface en Java peut contenir des déclarations de méthodes et de constantes.
+1
+En Java, On indique qu'une classe A hérite d'une classe B de cette façon : A :: B.
+0
+En Java, On indique qu'une classe A hérite d'une classe B de cette façon : class A extends B.
+1
+En Java, On utilise la séquence try-catch-finally pour sortir du programme.
+0
+En Java, On utilise la séquence try-catch-finally pour traiter les exceptions.
+1
+On ne peux pas utiliser plusieurs blocs catch après un bloc try.
+0
+Le chat de Schrödinger caractérise les probabilités quantiques de désintégration atomique.
+1
+E=mc² signifie que l'entropie est égale au produit de la masse par une autre masse connue au carré.
+0
+Le gluon est la particule qui est à l'origine de la vision, de la télécommunication, de la radiographie.
+0
+Le quark est la particule élémentaire qui permet la cohésion du noyau atomqiue.
+0
+Le gluon est la particule élémentaire qui permet la cohésion du noyau atomqiue.
+1
+La force à l'origine de la capillarité entre un liquide et un solide est la force newtonienne.
+0
+La force à l'origine de la capillarité entre un liquide et un solide est la force de Van Der Waals.
+1
+L'unité internationale pour quantifier la masse ou l'énergie d'une particules est le coulomb.
+0
+L'unité internationale pour quantifier la masse ou l'énergie d'une particules est l'électron-volt.
+1
+Les interactions faibles permettent que les électrons ne retombent pas sur le noyau.
+0
+Les interactions électromagnétiques permettent que les électrons ne retombent pas sur le noyau.
+1
+Un électron-volt quantifie environ 1.60 x 10⁻¹⁹ J.
+1
+Un proton stable est constitué d'un méson + un quark down.
+0
+Un proton stable est constitué d'un quark up + un quark up + un quark down.
+1
+Paul Dirac a émit la théorie des couches de niveaux énergétiques dans un atome.
+0
+L'effet Dopler désigne l'effet de lévitation d'un aimant sur un métal supraconducteur.
+0
+La vitesse de propagation précise d'une onde électromagnétique ou photon dans le vide est 298 899 479 m/s.
+0
+La masse approximative du boson de Higgs est 125 GeV.
+1
+La désintégration bêta + est accompagnée d'une émission d'un positon et d'un neutrino.
+1
+La désintégration radioactive primaire est accompagnée d'une émission d'un positon et d'un neutrino.
+0
+Avast est l'anti-virus gratuit le plus réputé.
+1
+Une creepypasta est une histoire drôle diffusée sur internet.
+0
+Une particule alpha est composée de trois protons et un neutron.
+0
+Une particule alpha est composée de deux protons et un neutron.
+1
+Une particule alpha est arrêtée au plus simple par une feuille de papier.
+1

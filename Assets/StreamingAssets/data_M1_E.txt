@@ -1,1 +1,100 @@
-﻿
+﻿The most popular operating system is Linux.
+0
+The first operating system created by Microsoft is Vista.
+0
+One byte is 8 bits.
+1
+The French standard for computer keyboard layout is Azerty.
+1
+The standard English layout of the computer keyboard is Azerty.
+0
+Google is created by 2 Stanford students.
+1
+The HTTP protocol uses port 21.
+0
+A firewall is a wall of fire.
+0
+The FTP protocol uses port 21.
+1
+The most secure protocol encountered on online retail sites is SSL.
+1
+SSL security protocol means Secure Sockets Layer
+1
+TSL security protocol means Total Layer Security
+0
+A hoax is a destructive virus.
+0
+A hoax is a fake antivirus.
+0
+IP stands for Personal Information.
+0
+The language understood by the processor is the binary.
+1
+The language understood by the processor is the C #.
+0
+The material that can be viewed on a screen is the motherboard.
+0
+The material that can be viewed on a screen is the graphics card.
+1
+An antivirus allows me to be protected against ransomware attacks.
+0
+A computer attack is capable of destroying physical material.
+1
+Wifi public hotspot offered in restaurants, airports, library etc. are not protected.
+1
+An "entire" backup saves all data without comparison with previous data.
+1
+Overcloking is about measuring the performance of a microprocessor.
+0
+The leading company in the computer microprocessor market is Windows.
+0
+Windows is a Hardware.
+0
+The word Computer comes from the contraction of Information & Electronics.
+0
+The motherboard is the base of interconnection of the components of the PC.
+1
+To improve the performance of a computer, you need to reduce its RAM memory.
+0
+The Trojan is a virus that allows a hacker to take control of your computer.
+1
+HTTP is a language designed to represent web pages.
+0
+Cookies are food sent by the web page.
+0
+Cookies allow the retention of forumular, identifiers and passwords on its web browser.
+1
+The IP address is used to identify each computer connected to the Internet.
+1
+The RAM memory is retained when the PC is turned off.
+0
+The 3Ghz of a microprocessor represents the number of transistors.
+0
+The 3Ghz of a microprocessor represents the frequency of the clock signal.
+1
+The operating system is used to store photos, videos, and data.
+0
+The operating system is used to perform mathematical calculations.
+0
+The operating system is a virtual interface.
+1
+FTP is used to transfer files over the Internet.
+1
+FPS is used to transfer files over the Internet.
+0
+ADSL A means asynchronous.
+0
+ADSL A means asymmetrical.
+1
+The Firewall is used to block unauthorized connections.
+1
+The Firewall is used to scan downloaded software.
+0
+The power of a microprocessor is the essential criterion for muscular video games.
+0
+The operating system is the component that runs the programs.
+0
+The processor is the component that runs the programs.
+1
+"C: \ My Documents \ efrei-2018.jpg" extension of this file is efrei-2018.
+0

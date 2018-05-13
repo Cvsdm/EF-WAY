@@ -45,7 +45,8 @@ public class Triggered : MonoBehaviour {
                                 Move_counter();
                             if (save.Get_nextmove() != 0) // si il reste des cases à bouger
                             {
-                                if (save.Get_counter() != 46)
+                                //Debug.Log("case n° " + save.Get_counter());
+                                if (save.Get_counter() != 46) // si ce n'est pas la case immersion
                                     StartCoroutine(Choice());
                                 else
                                 {
@@ -59,7 +60,6 @@ public class Triggered : MonoBehaviour {
 
                                     Movement.Play_iTween(GameObject.Find("Sphere_path"));
                                 }
-
                             }
                             else
                                 iTween.Pause();
@@ -188,7 +188,7 @@ public class Triggered : MonoBehaviour {
         cases.Case_action();
     }
 
-    void Move_counter() // if bool = false it's left. Else its right
+    public void Move_counter() // if bool = false it's left. Else its right
     {
         int j = save.Get_counter();
         //Debug.Log(" counter : " + j);

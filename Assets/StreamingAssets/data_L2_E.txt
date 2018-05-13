@@ -1,26 +1,100 @@
-﻿Soit F1 et F2 deux vecteurs : F1 . F2 = x1 * x2 - y1 * y2
+﻿The lines of a magnetic field always go from the South Pole to the North Pole
 0
-Soit F1 et F2 deux vecteurs : F1 . F2 = F1 * F2 * cos⁡(F1,F2)
-1
-Soit F1 et F2 deux vecteurs : F1 ∧ F2 = F1 * F2 * sin⁡(F1,F2)
-1
-Les lignes d'un champ magnétique vont toujours du pôle sud vers le pôle nord
+Quantum mechanics is the science of the very big.
 0
-La mécanique quantique est la science du très grand.
+Rays with a wavelength of less than 400 m are UltraViolets
 0
-Les rayons ayant une longueur d'onde inférieur à 400 m sont des UltraViolets
+Rays with a wavelength greater than 800 nm are InfraRouges
+1
+A photon is the smallest observable element of an electromagnetic field
+1
+De Broglie is at the origin of the quantum theory of energy E = hv where h = 6.63 x 10⁻³⁴ J.s
 0
-Les rayons ayant une longueur d'onde supérieur à 800 nm sont des InfraRouges
+In 1905, Einstein describes the phenomenon of photoelectric effect
 1
-Un photon est le plus petit élément observable d'un champ électromagnétique
+In C ++, two methods can have the same name in two different classes.
 1
-De Broglie est à l'origine de la theory quantique de l'énergie E = hv où h = 6.63 × 10^(-34) J.s
+In C ++, the constructor and destructor of a variable are present by default.
+1
+In C ++, one class can not be derived from another class.
 0
-En 1905, Einstein décrit le phénomène d'effet photoélectrique
+In Excel, the formula SUMPRODUCT () is used to multiply two matrices.
+0
+In Excel, the SUM () function is used to add the numbers present on a given range.
 1
-En language C ++, deux méthodes peuvent avoir le même nom
+Lightning does not fall twice in the same place.
+0
+Humans can smell up to a trillion of different smell.
 1
-En language C ++, le constructeur et destructeur d'une variable sont présent par défaut
+In binary, 101 + 101 = 1010.
 1
-En language C ++, une classe ne peut pas être dérivée d'une autre classe
+Red has a higher frequency light than blue.
+0
+Monotremes are mammals that lay eggs.
+1
+An alpha particle is different from the helium nucleus.
+0
+To avoid any confusion of languages, the elements of the 1st periodic table were arranged in alphabetical order of the Latin names.
+0
+Archimedes is known for his discovery of leverage.
+1
+DNA was discovered in the secret FBI laboratories in 1953.
+0
+Johannes Kepler discovered black holes in 1630.
+0
+Louis Pasteur first developed his process of pasteurization to preserve the wine.
+1
+For his work, Albert Einstein won the Nobel Prize in Mathematics.
+0
+In 1932, Charles Richter managed to drill almost to the center of the Earth to analyze seismic movements on our planet.
+0
+The discoveries of Marie and Pierre Curie challenged the hypothesis that the number of atoms on Earth was fixed.
+1
+Leonardo da Vinci discovered the rings of Saturn with the help of an astronomical telescope he had invented.
+0
+Elon Musk named his Tesla car in honor of Nikola Tesla, a great engineer of the early 20th century.
+1
+Isaac Newton marked physics with his famous formula E = mc².
+0
+In 1782, the Montgolfier brothers manage to fly a rooster, a sheep and a duck.
+1
+Eureka is the name of one of the greatest mathematicians of Greek antiquity.
+0
+In 1926, John Logie Baird managed to transmit the first television images at a distance of 3 m.
+1
+Alfred Nobel, the creator of the Nobel Prizes, including Peace, also invented dynamite.
+1
+Edwin Hubble discovered Neptune thanks to the first infrared telescope.
+0
+Nicolas Copernicus placed the Sun at the center of our solar system.
+1
+James Watt gave his name to the unit of intensity of electric current.
+0
+Alessandro Volta invented the battery in the late 1700s.
+1
+Einstein's famous E = mc² equation calculates the speed of light.
+0
+With his clock, Léon Foucault created the first clock whose precision was half a second a day.
+0
+Marie Curie received a Nobel Prize in Physics and another in Chemistry.
+1
+René Laennec invented the stethoscope.
+1
+In addition to developing the theory of universal gravitation, Isaac Newton has excelled in optics.
+1
+By experimenting on X-rays, Wilhelm Röntgen put his wife's life in danger.
+1
+Urban The Verrier discovered the planet Neptune by mathematical calculations.
+1
+Carl von Linné has developed the first real classification system for chemical elements.
+0
+The mathematician Sophie Germain has long used the pseudonym Antoine Auguste Le Blanc.
+1
+The French philosopher and mathematician Blaise Pascal invented a mechanical calculating machine in 1642.
+1
+Nikola Tesla invented the first electric car, called The Never Glad.
+0
+Robert Oppenheimer is considered the father of the atomic bomb.
+1
+The aphorism "nothing is lost, nothing is created, everything is transformed" is attributed to Pythagoras.
 0

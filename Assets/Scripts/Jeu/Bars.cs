@@ -27,20 +27,20 @@ public class Bars : MonoBehaviour
     {
         save = FindObjectOfType<Sauvegarde>();
 
-        MaxEtude = 100f;
+        MaxEtude = 200f;
         CurrentEtude = save.Get_etude();
         etude = GameObject.Find("Etude").GetComponent<Slider>();
         textEtude = GameObject.Find("TextEtude").GetComponent<Text>();
         UpdateEtude();
 
-        MaxAssos = 100f;
+        MaxAssos = 200f;
         CurrentAssos = save.Get_assos();
         assos = GameObject.Find("Assos").GetComponent<Slider>();
         textAssos = GameObject.Find("TextAssos").GetComponent<Text>();
         UpdateAssos();
 
 
-        MaxSocial = 100f;
+        MaxSocial = 200f;
         CurrentSocial = save.Get_sociabilite();
         social = GameObject.Find("Sociability").GetComponent<Slider>();
         textSocial = GameObject.Find("TextSocial").GetComponent<Text>();
@@ -51,8 +51,8 @@ public class Bars : MonoBehaviour
     {
         save.Set_assos(CurrentAssos);
         assos.value = CalculateAssos();
-        float temp = CalculateAssos() * 100;
-        textAssos.text = temp.ToString();
+        //float temp = CalculateAssos() * 100;
+        textAssos.text = CurrentAssos.ToString();
     }
 
     public void DealAssosMinus(float minuspoint)
@@ -80,8 +80,8 @@ public class Bars : MonoBehaviour
     {
         save.Set_etude(CurrentEtude);
         etude.value = CalculateEtude();
-        float temp = CalculateEtude() * 100;
-        textEtude.text = temp.ToString();
+        //float temp = CalculateEtude() * 100;
+        textEtude.text = CurrentEtude.ToString();
     }
 
     public void DealEtudeMinus(float minuspoint)
@@ -109,8 +109,8 @@ public class Bars : MonoBehaviour
     {
         save.Set_sociabilite(CurrentSocial);
         social.value = CalculateSocial();
-        float temp = CalculateSocial() * 100;
-        textSocial.text = temp.ToString();
+        //float temp = CalculateSocial() * 100;
+        textSocial.text = CurrentSocial.ToString();
     }
 
     public void DealSocialMinus(float minuspoint)

@@ -8,7 +8,7 @@ Un matériau qui bloque le courant est appelé un isolateur.
 1
 La loi d'Ohm pose que le courant est proportionnel au voltage et inversement proportionnel à la résistance. I = V/R
 1
-La puissance est montant d'énergie par unité de temps.
+La puissance est le montant d'énergie par unité de temps.
 1
 La loi des mailles pose que la somme des voltages d'une boucle fermé est égale à 1.
 0
@@ -56,3 +56,45 @@ Un pourriel est l'appellation française d'un spam.
 1
 Le câble reliant généralement l'écran à l'UC est appelé câble VGA.
 1
+Les poissons rouges ont une mémoire de 3 secondes.
+0
+Les pirates portaient des cache-oeils pour mieux voir dans le noir.
+1
+Une pieuvre possède 3 coeurs.
+1
+On peut observer la grande muraille de Chine de l'espace à l'oeil nu.
+0
+Pour chaque homme sur Terre, il y a 1.6 million de fourmi.
+1
+Les mammouths étaient éteints lorsque la Pyramide de Khéops a été construite.
+0
+Les bananes poussent sur des arbres.
+0
+Les trous noirs sont noirs.
+0
+Il pleut des diamands sur Saturne et Jupiter.
+1
+Il y a moins d'étoiles dans le ciel que de grains de sables sur toutes les plages du monde.
+0
+Approximativement un quart des os humains se situent dans les pieds.
+1
+Le sang d'une limace est vert.
+1
+L'os le plus long du corps humain est le fémur.
+1
+L'unité internationale de la puissance est les Joules.
+0
+Le symbole chimique du Tin est T.
+0
+Un muon possède une charge électrique négative.
+1
+sin²θ + cos²θ = 0
+0
+L'atmosphère de la Terre est principalement constituée d'Azote.
+1
+La formule chimique de l'éthanol est C₂H₅OH.
+1
+La constante d'Avogadro est plus grande que la constante de Planck.
+1
+In binary, 101 + 101 = 202.
+0

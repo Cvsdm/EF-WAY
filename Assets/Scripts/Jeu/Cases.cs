@@ -974,17 +974,17 @@ public class Cases : MonoBehaviour
         CaseDisplay.SetActive(false);
 
         if (IsQuizz()) // lancer scène quizz
-            SceneManager.LoadScene("Persistent_quizz", LoadSceneMode.Additive);
+        { SceneManager.LoadScene("Persistent_quizz", LoadSceneMode.Additive); Movement.isRunning = true; }
         else if (i == 16 || i == 40) // lancer scène assos
-            SceneManager.LoadScene("Menu Assos", LoadSceneMode.Additive);
+        { SceneManager.LoadScene("Menu Assos", LoadSceneMode.Additive); Movement.isRunning = true; }
         else if (i == 62) // lancer les majeurs
-            SceneManager.LoadScene("Choix des majeures", LoadSceneMode.Additive);
+        {   SceneManager.LoadScene("Choix des majeures", LoadSceneMode.Additive);Movement.isRunning = true; }
         else if (i == 42) // lancer la scène de choix des destination
-            SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);
+        {   SceneManager.LoadScene("Menu Destinations", LoadSceneMode.Additive);Movement.isRunning = true; }
         else if (i == 68)
-            SceneManager.LoadScene("Menu-Secteurs", LoadSceneMode.Additive);
+        {   SceneManager.LoadScene("Menu-Secteurs", LoadSceneMode.Additive);Movement.isRunning = true; }
         else if (i == 100)
-            SceneManager.LoadScene("End Game");
+        {   SceneManager.LoadScene("End Game");Movement.isRunning = true; }
         else
         {
             if (save.Get_nextmove() != 0)

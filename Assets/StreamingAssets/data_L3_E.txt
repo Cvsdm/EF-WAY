@@ -1,5 +1,100 @@
-﻿En Java, 
-
-En Java, 
-
-???
+﻿Giordano Bruno is the scientist who managed to convince the Catholic Church that the Universe is infinite.
+0
+In Excel, the NB.SI function counts the number of cells with a predefined criterion.
+1
+The Microsoft PowerPoint software is a spreadsheet.
+0
+The first two characters on the television were James Puppet and Stooky Bill.
+1
+A robot was installed in 1383 on one of the towers of Notre-Dame church in Dijon, France.
+1
+In 1899, "La Jamais Contente" innovated using diesel (diesel fuel) as fuel.
+0
+Smoked glasses were invented by mistake.
+1
+The writing was invented around 3400 BC. J. - C., to record commercial transactions.
+1
+The first stethoscope was invented partly for reasons of modesty
+1
+To transform readable code into understandable code by the machine we use a translator.
+0
+To transform readable code into code understandable by the machine we use a compiler.
+1
+To create a comment on a line, place the character # at the beginning of the line.
+0
+The literal 31.3f is of double type.
+0
+In Java, a line break is a character.
+1
+To compile in Java language we use JDK.
+1
+In Java, the 2names identifier is correct.
+0
+The most restrictive access right in Java is public.
+0
+In Java, the protected access right allows members of another class in the same package access.
+1
+In Java, we can compare a boolean to an integer.
+1
+An interface in Java can contain declarations of methods and constants.
+1
+In Java, we indicate that a class A inherits a class B in this way: A :: B.
+0
+In Java, we indicate that a class A inherits a class B in this way: class A extends B.
+1
+In Java, we use the try-catch-finally sequence to exit the program.
+0
+In Java, we use the try-catch-finally sequence to handle exceptions.
+1
+You can not use more than one catch block after a try block.
+0
+Schrödinger's cat characterizes the quantum probabilities of atomic disintegration.
+1
+E = mc² means that the entropy is equal to the product of the mass by another known mass squared.
+0
+The gluon is the particle that is at the origin of vision, telecommunication, radiography.
+0
+The quark is the elementary particle that allows the cohesion of the atomic nucleus.
+0
+The gluon is the elementary particle that allows the cohesion of the atomic nucleus.
+1
+The force at the origin of the capillarity between a liquid and a solid is the Newtonian force.
+0
+The force behind the capillarity between a liquid and a solid is the strength of Van Der Waals.
+1
+The international unit for quantifying the mass or energy of a particle is coulomb.
+0
+The international unit for quantifying the mass or energy of a particle is the electron-volt.
+1
+The weak interactions allow the electrons do not fall back on the nucleus.
+0
+Electromagnetic interactions allow electrons to not fall back on the nucleus.
+1
+An electronvolt quantifies about 1.60 x 10⁻¹⁹ J.
+1
+A stable proton consists of a meson + a quark down.
+0
+A stable proton consists of an up quark + an up quark + a down quark.
+1
+Paul Dirac emitted the theory of layers of energetic levels in an atom.
+0
+The Dopler effect refers to the levitation effect of a magnet on a superconducting metal.
+0
+The precise propagation speed of an electromagnetic wave or photon in a vacuum is 298,899,479 m / s.
+0
+The approximate mass of the Higgs boson is 125 GeV.
+1
+The beta + decay is accompanied by a emission of a positron and a neutrino.
+1
+Primary radioactive decay is accompanied by emission of a positron and a neutrino.
+0
+Avast is the most popular free anti-virus.
+1
+A creepypasta is a funny story on the internet.
+0
+An alpha particle is composed of three protons and one neutron.
+0
+An alpha particle is composed of two protons and one neutron.
+1
+A particle alpha is stopped at the simplest by a sheet of paper.
+1

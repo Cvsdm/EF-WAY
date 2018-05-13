@@ -1,1 +1,100 @@
-﻿
+﻿L'overcloking consiste a augmenter les performances d'un microprocesseur.
+1
+Pour créer un commentaire sur une ligne on place en début de ligne le caractère //.
+1
+Le littéral 13.3f est de type float.
+1
+Niels Bohr a émit la théorie des couches de niveaux énergétiques dans un atome.
+1
+L'effet Meissner désigne l'effet de lévitation d'un aimant sur un métal supraconducteur.
+1
+La masse approximative du boson de Higgs est 80 KeV.
+0
+Une particule alpha est arrêtée au plus simple par un bloc de plomb.
+0
+Une année lumière est une unité de temps.
+0
+Le 'cerveau' de l'ordinateur est le CPU.
+1
+Le CPU signifie Central Processing Unit.
+1
+Le CPU signifie Computer Program Unit.
+0
+La mémoire permanente intégrée dans l'ordinateur est appelé RAM.
+0
+Le ROM signifie Read Only Memory.
+1
+Dix mille octet forme un méga-octet.
+0
+Les interactions fortes empêchent votre main de traverser un mur.
+0
+L'énergie violette est pose un problème dans l'équation de l'expansion de l'univers.
+0 
+L'énergie noire est pose un problème dans l'équation de l'expansion de l'univers.
+1
+Stephen Hawking a élaborée la théorie de la gravitation universelle.
+0
+Stephen Hawking a élaborée la théorie de la gravité quantique.
+1
+La mécanique quantiques est née vers 1856-1900.
+0
+De Broglie a proposé l'idée de la dualité onde-corpuscule.
+1
+Une adresse exprimée sur 24 bits permet de désigner 1 case mémoire parmi 16 millions.
+1
+Le langage d'assemblage n’est pas portable.
+0
+Le Modem permet à au PC de parler avec d'autres PC via une ligne téléphonique.
+1
+Le BIOS est le premier programme à s'exécuter lors de l'allumage d'un ordinateur.
+1
+Le BIOS est un acronyme pour Basic Input / Output System.
+1
+DOS est un acronyme pour Dual Operating System. 
+0
+RAM est un acronyme pour Remote Authorization Mechanism.
+0
+La .DLL sous Windows ou .SO sous système Unix sont des bibliothèques dynamiques.
+1
+En informatique, pour relier 2 hubs entre eux on peut utiliser le RJ11.
+0
+La loi CNIL interdit de faire de la copie de logiciels ou tout autre programme.
+0
+La loi Hadopi interdit de faire de la copie de logiciels ou tout autre programme.
+0
+Un Freeware est un logiciel disponible gratuitement.
+1
+Le système de nombre hexadecimal contient les chiffres de 1 à 15.
+0
+Le système de nombre octal contient les chiffres de 0 à 7.
+1
+Le CPU contrôle seulement les données d'entrée de l'ordinateur.
+0
+Le langage que le PC comprend est appelé le langage machine.
+1
+Les vers et chevaux de Troie sont facilement détectés et éliminés par les antivirus.
+1
+Linux et GNU sont des systèmes d'exploitation open source.
+1
+Le premier feu de circulation a été installé sur Wall Street, New York, en 1898.
+0
+L’immense accélérateur de particules du CERN se trouve sous terre, à la frontière des USA et du Canada.
+0
+Il fallait dix heures pour recharger la batterie du premier téléphone portable.
+1
+Le mot « robot » tire son origine d’une pièce de théâtre tchèque écrite en 1920.
+1
+Le piratage musical a commencé avec l’invention de la cassette.
+1
+Le 1er primate à atteindre une altitude de plus de 134 km, est décédé après un atterrissage raté.
+1
+Les 1er coussins gonflables ont été installés dans les petits avions de chasse de la 2nde Guerre mondiale.
+0
+Le 1er sous-marin à propulsion mécanique, avait pour fonction de couler les navires ennemis.
+0
+Il a fallu 8 minutes d’exposition pour fixer la première photo.
+0
+Il a fallu 8 heures d’exposition pour fixer la première photo.
+1
+La 1ère phrase dite au téléphone a été : « Monsieur Watson, est-ce vous pourriez venir? J’ai besoin de votre aide ».
+1
