@@ -119,7 +119,7 @@ public class ManagerMajeures : MonoBehaviour
         text_AE2.text = "Mobile and spatial communication \nGeolocation \nNavigation ";
 
         text_DD1.text = "Droids and Drones (French)";
-        text_DD2.text = "Elbedded intelligence \nAutonomous systems ";
+        text_DD2.text = "Humanoids \nEmbedded intelligence \nAutonomous systems ";
 
         text_NV1.text = "Networks and Virtualisation (English)";
         text_NV2.text = "Data centers \nCloud computing ";

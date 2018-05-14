@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Triggered : MonoBehaviour {
 
@@ -90,6 +91,9 @@ public class Triggered : MonoBehaviour {
             } 
             else // sauvegarde présente 
             {
+                if (Movement.advance == 100)
+                    SceneManager.LoadScene("End Game");
+
                 Movement.advance --;
                 Movement.j++;
                 if (Movement.advance == 0) { iTween.Pause(); Sauvegarde.dices.gameObject.SetActive(true); }

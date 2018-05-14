@@ -19,7 +19,7 @@ public class MenuScreenController : MonoBehaviour
         else if (save.Get_counter() == 91)
         {
             Titletext.text = "TOEIC";
-            Rulestext.text = "Toeic rules";
+            Rulestext.text = "A sentence is displayed.\n Answer TRUE if it does NOT contains a fault.\n Answer FALSE if it contains a fault.";
         }
         else
         {

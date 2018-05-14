@@ -984,7 +984,7 @@ public class Cases : MonoBehaviour
         else if (i == 68)
         {   SceneManager.LoadScene("Menu-Secteurs", LoadSceneMode.Additive);Movement.isRunning = true; }
         else if (i == 100)
-        {   SceneManager.LoadScene("End Game");Movement.isRunning = true; }
+           SceneManager.LoadScene("End Game");
         else
         {
             if (save.Get_nextmove() != 0)
