@@ -2149,10 +2149,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<b>Credits</b>\n\n<b>Chef de projet</b>\nC\xE9lia Bunouf\n\n<b>Responsable
-    Communication</b>\nEmilie Tavernier\n\n<b>Responsable Technique</b>\nC\xE9line
-    El Haddad\n\n<b>Responsable Design</b>\nC\xE9line Cornet\n\n<b>Sous-responsable
-    Design</b>\nEmeline Do\n"
+  m_Text: "Credits\n\nChef de projet\nC\xE9lia Bunouf\n\nResponsable Communication\nEmilie
+    Tavernier\n\nResponsable Technique\nC\xE9line El Haddad\n\nResponsable Design\nC\xE9line
+    Cornet\n\nSous-responsable Design\nEmeline Do\n"
 --- !u!222 &1323554824
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.IO;
 
 public class EndGame : MonoBehaviour {
 
-    public Text diplome_Titre, diplome_text, job_titre, job_text, jet_text_1, jet_text_2, jet_title;
+    public Text diplome_Titre, diplome_text, job_titre, job_text, jet_text_1, jet_text_2, jet_title, menu_btn;
     public GameObject diplome, job, jetons, jet_btn;
     private Sauvegarde save;
     private int jet = 0;
@@ -29,6 +31,7 @@ public class EndGame : MonoBehaviour {
 
             job_titre.text = "Les métiers qui te correspondent sont : ";
             job_text.text = "A completer !! :D";
+            menu_btn.text = "Retourner au Menu";
 
             jet_title.text = "Vous avez gagné " + jet + " jetons !";
             jet_text_1.text = "Il vous en reste : " + save.Get_jetons();
@@ -46,7 +49,8 @@ public class EndGame : MonoBehaviour {
 
             job_titre.text = "Jobs that would fit you : ";
             job_text.text = "A completer !! :D";
-            jet_title.text = "You have earned " + jet + " jetons !";
+            menu_btn.text = " Go to the Main Menu"; 
+            jet_title.text = "You have earned " + jet + " chips !";
             jet_text_1.text = "You have " + save.Get_jetons() + " left.";
             StartCoroutine(Update_Jeton());
         }
@@ -56,15 +60,18 @@ public class EndGame : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
 
-        save.Set_jetons(save.Get_jetons() - 1);
+        if (save.Get_jetons() != 0)
+        {
+            save.Set_jetons(save.Get_jetons() - 1);
 
-        if (save.Get_langue() == 0)
-            jet_text_1.text = "Il vous en reste :  " + save.Get_jetons();
-        else
-            jet_text_1.text = "You have " + save.Get_jetons() + " left.";
+            if (save.Get_langue() == 0)
+                jet_text_1.text = "Il vous en reste :  " + save.Get_jetons();
+            else
+                jet_text_1.text = "You have " + save.Get_jetons() + " left.";
 
-        jet_text_2.text = Random_aug();
-        jet_text_2.color = Nice_color();
+            jet_text_2.text = Random_aug();
+            jet_text_2.color = Nice_color();
+        }
 
         if (save.Get_jetons() != 0)
             StartCoroutine(Update_Jeton());
@@ -77,11 +84,11 @@ public class EndGame : MonoBehaviour {
         string toreturn = "";
 
         if (!save.Get_Tab_assos(0).Equals("none"))
-            toreturn = "\t" + save.Get_Tab_assos(0) +"\n";
+            toreturn = "\t\t" + save.Get_Tab_assos(0) +"\n";
         if (!save.Get_Tab_assos(1).Equals("none"))
-            toreturn = toreturn + "\t" + save.Get_Tab_assos(1) + "\n";
+            toreturn = toreturn + "\t\t" + save.Get_Tab_assos(1) + "\n";
         if (!save.Get_Tab_assos(2).Equals("none"))
-            toreturn = toreturn + "\t" + save.Get_Tab_assos(2) + "\n";
+            toreturn = toreturn + "\t\t" + save.Get_Tab_assos(2) + "\n";
 
         return toreturn; 
     }
@@ -111,7 +118,7 @@ public class EndGame : MonoBehaviour {
 
         if (jauge == 0)
         {
-            //bars.DealAssosPlus(aug);
+            bars.DealAssosPlus(aug);
             if (save.Get_langue() == 0)
                 toreturn = "+" + aug + " dans votre jauge association !";
             else
@@ -119,7 +126,7 @@ public class EndGame : MonoBehaviour {
         }
         else if (jauge == 1)
         {
-            //bars.DealEtudePlus(aug);
+            bars.DealEtudePlus(aug);
             if (save.Get_langue() == 0)
                 toreturn = "+" + aug + " dans votre jauge étude !";
             else
@@ -127,7 +134,7 @@ public class EndGame : MonoBehaviour {
         }
         else if (jauge == 2)
         {
-            //bars.DealSocialPlus(aug);
+            bars.DealSocialPlus(aug);
             if (save.Get_langue() == 0)
                 toreturn = "+" + aug + " dans votre jauge sociabilité !";
             else
@@ -160,4 +167,36 @@ public class EndGame : MonoBehaviour {
 
         return toreturn;
     }
+
+    public void Return_MainMenu()
+    {
+        File.Delete(FindObjectOfType<Sauvegarde>().Get_path());
+        Destroy(GameObject.Find("SauvegardeController"));
+        SceneManager.LoadScene("MainMenu");
+    }
+
+
+    /*string Get_job ()
+    {
+        string toreturn = "";
+        string i = save.Get_majeure();
+
+        if (i.Equals("Business Intelligence")
+            toreturn = "";
+        "Information System & Cloud Computing";
+        else if (ChoixM == 3) choice.text = "Imagerie et Réalité Virtuelle";
+        else if (ChoixM == 4) choice.text = "Big Data";
+        else if (ChoixM == 12) choice.text = "IT for Finance";
+        else if (ChoixM == 5) choice.text = "Security";
+        else if (ChoixM == 6) choice.text = "Software Engineering";
+        else if (ChoixM == 7) choice.text = "Bio-Informatique";
+        else if (ChoixM == 8) choice.text = "Avionique et Espaces";
+        else if (ChoixM == 9) choice.text = "Droids and Drones";
+        else if (ChoixM == 10) choice.text = "Networks & Virtualisation";
+        else if (ChoixM == 11) choice.text = "Energies Nouvelles et Réseaux Intelligents";
+
+
+
+        return toreturn;
+    }*/
 }

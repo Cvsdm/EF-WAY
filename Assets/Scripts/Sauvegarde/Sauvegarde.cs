@@ -26,7 +26,7 @@ public class Sauvegarde : MonoBehaviour
     private string destination = "destination";
     private string section = "section";
     private bool imm = false;
-    private string secteur;
+    private string secteur = "secteur";
 
     public GameObject canvas_resume;
 
@@ -73,13 +73,11 @@ public class Sauvegarde : MonoBehaviour
         writer.WriteLine(imm);
         writer.WriteLine(secteur);
 
-
         writer.WriteLine(Tab_assos[0]);
         writer.WriteLine(Tab_assos[1]);
         writer.WriteLine(Tab_assos[2]);
 
         writer.Close();
-
     }
 
     void ChargefromFile()
@@ -123,6 +121,7 @@ public class Sauvegarde : MonoBehaviour
     public bool Get_imm() { return imm; }
     public string Get_majeure() { return majeur_choice; }
     public string Get_secteur() { return secteur; }
+    public string Get_path() { return path; }
 
     public void Set_player(string name) { player_name = name; }
     public void Set_bac(int genre) { bac = genre; }
@@ -198,8 +197,8 @@ public class Sauvegarde : MonoBehaviour
     public IEnumerator Load_scenes(float waitTime)
     {
         yield return new WaitForSecondsRealtime(waitTime);
-        Disp_Dice();
         SceneManager.LoadScene("lancé de dés", LoadSceneMode.Additive);
+        Disp_Dice();
     }
 
     public void Disp_game()
@@ -235,7 +234,6 @@ public class Sauvegarde : MonoBehaviour
             }
             else
             {
-                //Debug.Log("flag : " + Movement.flag);
                 if (Movement.flag == true)
                     Movement.Play_iTween(GameObject.Find("Sphere_path"));
                 else

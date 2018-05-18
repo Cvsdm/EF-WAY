@@ -137,7 +137,7 @@ public class Rotation2 : MonoBehaviour
         if (TotalValue == 0)
         { Dice1 = Random.Range(1, 5); TotalValue = Dice1 + Dice2; }
 
-         //save.Set_nextmove(10); //pour tester
+         //save.Set_nextmove(100); //pour tester
          save.Set_nextmove(TotalValue);
     }
 
