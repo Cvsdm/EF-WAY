@@ -421,9 +421,9 @@ public class Cases : MonoBehaviour
 
             case 46:        //départ mobilité
                 if (save.Get_langue() == 0)
-                    text.text = "L'heure est arrivée !\n Choisissez votre destination !";
+                    text.text = "L'heure est arrivée !\n Vous partez dans votre destination !";
                 else
-                    text.text = "The time has come !\n Choose you mobility !";
+                    text.text = "The time has come !\n You are leaving for your mobility !";
                 break;
 
             case 47:        // vous rencontrez vos nouveaux colocs : jauge sociale
@@ -565,7 +565,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous rêvez beaucoup de votre mobilité et vous vous impliquez moins dans votre travail : vos notes baisses\n\n\n -10 dans votre jauge étude et assiduité!";
                 else
-                    text.text = "You praise to second year's students the destination you choose for your mobility\n\n\n -10 in your study and diligence's gauge!";
+                    text.text = "You praise to second year's students the destination you chose for your mobility\n\n\n -10 in your study and diligence's gauge!";
 
                 bars.DealSocialPlus(add_jauge);
                 break;
@@ -582,7 +582,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous vantez auprès des L2 la destination que vous avez choisi pour votre mobilité\n\n\n +10 dans votre jauge sociabilité !";
                 else
-                    text.text = "You praise to second year's students the destination you choose for your mobility\n\n\n +10 in your sociability's gauge!";
+                    text.text = "You praise to second year's students the destination you chose for your mobility\n\n\n +10 in your sociability's gauge!";
 
                 bars.DealSocialPlus(add_jauge);
                 break;

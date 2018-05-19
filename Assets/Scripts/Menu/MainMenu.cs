@@ -5,13 +5,9 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     public RectTransform menuContainer; //menu that contains all 3 panels
+    public GameObject panel_music;
 
     private Vector3 desiredMenuPosition;
-
-    private void Start()
-    {
-
-    }
 
     private void Update()
     {
@@ -93,7 +89,17 @@ public class MainMenu : MonoBehaviour
     public void ReturnToMenu ()
     {
         NavigationOnClick(0);
-        //Debug.Log("Return button has been clicked !");
+    }
+
+    public void Credit_music()
+    {
+        Debug.Log("coucou");
+        panel_music.gameObject.SetActive(true);
+    }
+
+    public void Credit_music_off()
+    {
+        panel_music.gameObject.SetActive(false);
     }
 
 }

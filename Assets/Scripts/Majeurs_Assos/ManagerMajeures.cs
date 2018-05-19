@@ -154,7 +154,7 @@ public class ManagerMajeures : MonoBehaviour
         else if (ChoixM == 5)       choice.text = "Security";
         else if (ChoixM == 6)       choice.text = "Software Engineering";
         else if (ChoixM == 7)       choice.text = "Bio-Informatique";
-        else if (ChoixM == 8)       choice.text = "Avionique et Espaces";
+        else if (ChoixM == 8)       choice.text = "Avionique et Espace";
         else if (ChoixM == 9)       choice.text = "Droids and Drones";
         else if (ChoixM == 10)      choice.text = "Networks & Virtualisation";
         else if (ChoixM == 11)      choice.text = "Energies Nouvelles et Réseaux Intelligents";
