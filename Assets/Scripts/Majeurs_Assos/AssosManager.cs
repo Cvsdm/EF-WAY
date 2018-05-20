@@ -32,7 +32,7 @@ public class AssosManager : MonoBehaviour
 
     public Text bureauBDS;
     public Text choixAssos1, choixAssos2, choixAssos3, choixAssos4;
-
+    public Text explanation;
 
     private string choixAssos;
     private int langue;
@@ -57,6 +57,8 @@ public class AssosManager : MonoBehaviour
 
     void IniFrench()
     {
+        explanation.text = "Catégories";
+        
         // Menu
         text_2.text = "Professionnel";
         text_2_2.text = "Junior Entreprise\nFormation aux entreprises\nOrganisation d'événements\nEntreprenariat";
@@ -154,6 +156,8 @@ public class AssosManager : MonoBehaviour
 
     void IniEnglish()
     {
+        explanation.text = "Categories";
+
         // Menu
         text_2.text = "Professionnal";
         text_2_2.text = "Junior Entreprise\nTraining to firms\nEvents organisations\nEntrepreneurship";

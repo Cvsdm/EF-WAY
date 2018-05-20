@@ -1412,7 +1412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Musique : \nMusic promoted by La Musique Libre\r\nPeyruis - Swing: https://youtu.be/fTwuX1kffdM\r\nPeyruis:
+  m_Text: "\nMusic promoted by La Musique Libre\r\nPeyruis - Swing: https://youtu.be/fTwuX1kffdM\r\nPeyruis:
     https://soundcloud.com/peyruis\n\nMusic promoted by La Musique Libre\r\nIkson
     - Journey: https://youtu.be/3eO9nozmON4\r\nIkson: https://soundcloud.com/ikson\n\nMusic
     promoted by La Musique Libre\r\nFredji - Happy Life: https://youtu.be/XDW4sWXF8S4\r\nFredji:
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 920241887}
   - component: {fileID: 920241886}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1652,11 +1652,11 @@ RectTransform:
   m_Father: {fileID: 1835003708}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 218, y: 235}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -10}
   m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &920241886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2498,7 +2498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cr\xE9dits\n\nChef de projet\nC\xE9lia Bunouf\n\nResponsable Communication\nEmilie
+  m_Text: "Cr\xE9dits :\n\nChef de projet\nC\xE9lia Bunouf\n\nResponsable Communication\nEmilie
     Tavernier\n\nResponsable Technique\nC\xE9line El Haddad\n\nResponsable Design\nC\xE9line
     Cornet\n\nSous-responsable Design\nEmeline Do\n\nCr\xE9dits Musique :              \n"
 --- !u!222 &1323554824
@@ -3726,12 +3726,12 @@ GameObject:
   - component: {fileID: 1835003710}
   - component: {fileID: 1835003709}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Credits_music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1835003708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3749,8 +3749,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.8, y: -50}
-  m_SizeDelta: {x: -733.5, y: -100}
+  m_AnchoredPosition: {x: -8.8, y: -35}
+  m_SizeDelta: {x: -733.5, y: -90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835003709
 MonoBehaviour:
