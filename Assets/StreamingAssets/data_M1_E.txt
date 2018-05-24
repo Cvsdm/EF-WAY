@@ -4,11 +4,11 @@ The first operating system created by Microsoft is Vista.
 0
 One byte is 8 bits.
 1
-The French standard for computer keyboard layout is Azerty.
+The French standard for a computer keyboard layout is Azerty.
 1
 The standard English layout of the computer keyboard is Azerty.
 0
-Google is created by 2 Stanford students.
+Google was created by 2 Stanford students.
 1
 The HTTP protocol uses port 21.
 0
@@ -62,15 +62,15 @@ HTTP is a language designed to represent web pages.
 0
 Cookies are food sent by the web page.
 0
-Cookies allow the retention of forumular, identifiers and passwords on its web browser.
+Cookies allow the retention of formular, identifiers and passwords on its web browser.
 1
 The IP address is used to identify each computer connected to the Internet.
 1
 The RAM memory is retained when the PC is turned off.
 0
-The 3Ghz of a microprocessor represents the number of transistors.
+The 3Ghz of a microprocessor represent the number of transistors.
 0
-The 3Ghz of a microprocessor represents the frequency of the clock signal.
+The 3Ghz of a microprocessor represent the frequency of the clock signal.
 1
 The operating system is used to store photos, videos, and data.
 0
@@ -94,7 +94,7 @@ The power of a microprocessor is the essential criterion for muscular video game
 0
 The operating system is the component that runs the programs.
 0
-The processor is the component that runs the programs.
+The processor is the component that runs programs.
 1
 "C: \ My Documents \ efrei-2018.jpg" extension of this file is efrei-2018.
 0

@@ -7,6 +7,7 @@ public class Game : MonoBehaviour {
 
     public Canvas question_mark;
     private Sauvegarde save;
+    public Text btn_throw, btn_continue;
 
     private void Start()
     {
@@ -27,6 +28,10 @@ public class Game : MonoBehaviour {
         StartCoroutine(save.Load_scenes(0.8f));
     }
 
-
-
+    public void Modify_dice()
+    {
+        btn_throw.text = "Throw dices";
+        btn_continue.text = "Continue";
+        //Debug.Log("I'm here");
+    }
 }

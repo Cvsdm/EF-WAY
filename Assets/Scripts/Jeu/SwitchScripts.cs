@@ -23,6 +23,7 @@ public class SwitchScripts : MonoBehaviour
     public void Return_MainMenu()
     {
         Destroy(GameObject.Find("SauvegardeController"));
+        iTween.Stop();
         SceneManager.LoadScene("MainMenu");
     }
 }

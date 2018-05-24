@@ -28,7 +28,8 @@ public class Rotation2 : MonoBehaviour
     {
         Result.gameObject.SetActive(false);
         save = FindObjectOfType<Sauvegarde>();
-
+        if (save.Get_langue() == 1)
+            GameObject.Find("Stop Dices").GetComponentInChildren<Text>().text = "Stop dices";
         isTurning = true;
     }
 

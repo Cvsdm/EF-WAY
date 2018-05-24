@@ -2,9 +2,9 @@
 0
 La mécanique quantique est la science du très grand.
 0
-Les rayons ayant une longueur d'onde inférieur à 400 m sont des UltraViolets
+Les rayons ayant une longueur d'onde inférieure à 400 m sont des UltraViolets
 0
-Les rayons ayant une longueur d'onde supérieur à 800 nm sont des InfraRouges
+Les rayons ayant une longueur d'onde supérieure à 800 nm sont des InfraRouges
 1
 Un photon est le plus petit élément observable d'un champ électromagnétique
 1
@@ -14,21 +14,21 @@ En 1905, Einstein décrit le phénomène d'effet photoélectrique
 1
 En language C ++, deux méthodes peuvent avoir le même nom dans deux classes différentes.
 1
-En language C ++, le constructeur et destructeur d'une variable sont présent par défaut.
+En language C ++, le constructeur et destructeur d'une classe sont présents par défaut.
 1
 En language C ++, une classe ne peut pas être dérivée d'une autre classe.
 0
 Sur Excel, la formule SOMMEPROD() sert à multiplier deux matrices.
 0
-Sur Excel, la fonction SOMME() permet d'additionner les numéros présent sur une plage donnée.
+Sur Excel, la fonction SOMME() permet d'additionner les numéros présents sur une plage de donnée.
 1
 Les éclairs ne tombent pas deux fois au même endroit.
 0
-Les humains peuvent sentir jusqu'à un trillion d'odeur différente.
+Les humains peuvent sentir jusqu'à un trillion d'odeurs différentes.
 1
-In binary, 101 + 101 = 1010.
+En binaire, 101 + 101 = 1010.
 1
-Red has a higher frequency light than blue.
+Le rouge a une plus grande fréquence que le bleu.
 0
 Les monotrèmes sont des mammifères qui pondent des oeufs.
 1
@@ -58,7 +58,7 @@ Isaac Newton a marqué la physique avec sa célèbre formule E = mc².
 0
 En 1782, les frères Montgolfier parviennent à faire s’envoler un coq, un mouton et un canard.
 1
-Eurêka est le nom d’un des plus grands mathématiciens de l’Antiquité grecque.
+Eurêka est le nom de l'un des plus grands mathématiciens de l’Antiquité grecque.
 0
 En 1926, John Logie Baird réussit à transmettre les 1ère images télévisées à une distance de 3 m.
 1
@@ -72,7 +72,7 @@ James Watt a donné son nom à l'unité d'intensité du courant électrique.
 0
 Alessandro Volta a inventé la pile électrique à la fin des années 1700.
 1
-La célèbre équation E = mc² d'Einstein calcule la vitesse de la lumière.
+Dans la célèbre équation E = mc² d'Einstein, c correspond à la conductivité.
 0
 Avec son pendule, Léon Foucault a réalisé la première horloge dont la précision était d’une demi-seconde par jour.
 0

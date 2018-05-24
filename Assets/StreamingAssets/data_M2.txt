@@ -1,6 +1,6 @@
-﻿L'overcloking consiste a augmenter les performances d'un microprocesseur.
+﻿L'overcloking consiste à augmenter les performances d'un microprocesseur.
 1
-Pour créer un commentaire sur une ligne on place en début de ligne le caractère //.
+En c++, pour créer un commentaire sur une ligne on place en début de ligne le caractère //.
 1
 Le littéral 13.3f est de type float.
 1
@@ -10,7 +10,7 @@ L'effet Meissner désigne l'effet de lévitation d'un aimant sur un métal supra
 1
 La masse approximative du boson de Higgs est 80 KeV.
 0
-Une particule alpha est arrêtée au plus simple par un bloc de plomb.
+Pour arrêter une particule alpha il faut au minimum un bloc de plomb.
 0
 Une année lumière est une unité de temps.
 0
@@ -20,21 +20,21 @@ Le CPU signifie Central Processing Unit.
 1
 Le CPU signifie Computer Program Unit.
 0
-La mémoire permanente intégrée dans l'ordinateur est appelé RAM.
+La mémoire permanente intégrée dans l'ordinateur est appelée RAM.
 0
 Le ROM signifie Read Only Memory.
 1
-Dix mille octet forme un méga-octet.
+Dix mille octets forment un méga-octet.
 0
 Les interactions fortes empêchent votre main de traverser un mur.
 0
-L'énergie violette est pose un problème dans l'équation de l'expansion de l'univers.
+L'énergie violette pose un problème dans l'équation de l'expansion de l'univers.
 0 
-L'énergie noire est pose un problème dans l'équation de l'expansion de l'univers.
+L'énergie noire pose un problème dans l'équation de l'expansion de l'univers.
 1
-Stephen Hawking a élaborée la théorie de la gravitation universelle.
+Stephen Hawking a élaboré la théorie de la gravitation universelle.
 0
-Stephen Hawking a élaborée la théorie de la gravité quantique.
+Stephen Hawking a élaboré la théorie de la gravité quantique.
 1
 La mécanique quantiques est née vers 1856-1900.
 0
@@ -44,7 +44,7 @@ Une adresse exprimée sur 24 bits permet de désigner 1 case mémoire parmi 16 m
 1
 Le langage d'assemblage n’est pas portable.
 0
-Le Modem permet à au PC de parler avec d'autres PC via une ligne téléphonique.
+Le Modem permet à un PC de parler avec d'autres PC via une ligne téléphonique.
 1
 Le BIOS est le premier programme à s'exécuter lors de l'allumage d'un ordinateur.
 1
@@ -54,7 +54,7 @@ DOS est un acronyme pour Dual Operating System.
 0
 RAM est un acronyme pour Remote Authorization Mechanism.
 0
-La .DLL sous Windows ou .SO sous système Unix sont des bibliothèques dynamiques.
+La .DLL sous Windows ou .SO sous le système Unix sont des bibliothèques dynamiques.
 1
 En informatique, pour relier 2 hubs entre eux on peut utiliser le RJ11.
 0
@@ -88,7 +88,7 @@ Le piratage musical a commencé avec l’invention de la cassette.
 1
 Le 1er primate à atteindre une altitude de plus de 134 km, est décédé après un atterrissage raté.
 1
-Les 1er coussins gonflables ont été installés dans les petits avions de chasse de la 2nde Guerre mondiale.
+Les 1ers coussins gonflables ont été installés dans les petits avions de chasse de la 2nde Guerre mondiale.
 0
 Le 1er sous-marin à propulsion mécanique, avait pour fonction de couler les navires ennemis.
 0

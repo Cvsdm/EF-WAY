@@ -56,7 +56,7 @@ public class Sauvegarde : MonoBehaviour
 
     public void Save_Parameters()
     {
-        TextWriter writer = new StreamWriter(path); //create automaticcally file if not created
+        TextWriter writer = new StreamWriter(path); //create automatically file if not created
 
         writer.WriteLine(player_name);
         writer.WriteLine(bac);
@@ -65,6 +65,7 @@ public class Sauvegarde : MonoBehaviour
         writer.WriteLine(jauge_etude);
         writer.WriteLine(jauge_sociabilité);
 
+        writer.WriteLine(langue);
         writer.WriteLine(counter);
         writer.WriteLine(nb_jetons);
         writer.WriteLine(majeur_choice);
@@ -91,6 +92,7 @@ public class Sauvegarde : MonoBehaviour
         jauge_etude = Int32.Parse(file.ReadLine());
         jauge_sociabilité = Int32.Parse(file.ReadLine());
 
+        langue = Int32.Parse(file.ReadLine());
         counter = Int32.Parse(file.ReadLine());
         nb_jetons = Int32.Parse(file.ReadLine());
         majeur_choice = file.ReadLine();

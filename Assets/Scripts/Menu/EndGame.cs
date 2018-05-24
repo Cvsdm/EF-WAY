@@ -8,7 +8,7 @@ using System.IO;
 public class EndGame : MonoBehaviour {
 
     public Text diplome_Titre, diplome_text, job_titre, job_text, jet_text_1, jet_text_2, jet_title, menu_btn;
-    public GameObject diplome, job, jetons, jet_btn;
+    public GameObject diplome, job, jetons, jet_btn, high;
     private Sauvegarde save;
     private int jet = 0;
     private Bars bars;
@@ -95,7 +95,7 @@ public class EndGame : MonoBehaviour {
 
     private float Get_points()
     {
-        return save.Get_assos() + save.Get_etude() + save.Get_sociabilite();
+        return save.Get_assos() + 2*save.Get_etude() + save.Get_sociabilite();
     }
 
     public void Jet_btn()
@@ -108,6 +108,12 @@ public class EndGame : MonoBehaviour {
     {
         diplome.gameObject.SetActive(false);
         job.gameObject.SetActive(true);
+    }
+
+    public void Go_Highest()
+    {
+        diplome.gameObject.SetActive(false);
+        high.gameObject.SetActive(true);
     }
 
     private string Random_aug()
@@ -194,9 +200,6 @@ public class EndGame : MonoBehaviour {
         else if (ChoixM == 9) choice.text = "Droids and Drones";
         else if (ChoixM == 10) choice.text = "Networks & Virtualisation";
         else if (ChoixM == 11) choice.text = "Energies Nouvelles et Réseaux Intelligents";
-
-
-
         return toreturn;
     }*/
 }

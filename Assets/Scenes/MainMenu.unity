@@ -1412,7 +1412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nMusic promoted by La Musique Libre\r\nPeyruis - Swing: https://youtu.be/fTwuX1kffdM\r\nPeyruis:
+  m_Text: "Music promoted by La Musique Libre\r\nPeyruis - Swing: https://youtu.be/fTwuX1kffdM\r\nPeyruis:
     https://soundcloud.com/peyruis\n\nMusic promoted by La Musique Libre\r\nIkson
     - Journey: https://youtu.be/3eO9nozmON4\r\nIkson: https://soundcloud.com/ikson\n\nMusic
     promoted by La Musique Libre\r\nFredji - Happy Life: https://youtu.be/XDW4sWXF8S4\r\nFredji:
@@ -3771,8 +3771,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f970d18f70cef334b84d5907793b7574, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

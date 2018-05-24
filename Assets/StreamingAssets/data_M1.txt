@@ -1,6 +1,6 @@
 ﻿Le système d'exploitation le plus commercialisé est Linux.
 0
-Le 1er système d'exploitation crée par Microsoft est Vista.
+Le 1er système d'exploitation créé par Microsoft est Vista.
 0
 Un octet vaut 8 bits.
 1
@@ -8,7 +8,7 @@ La norme française de la disposition du clavier d'ordinateur est Azerty.
 1
 La norme anglaise de la disposition du clavier d'ordinateur est Azerty.
 0
-Google est créé par 2 étudiants de Stanford. 
+Google a été créé par 2 étudiants de Stanford. 
 1
 Le protocole HTTP utilise le port 21.
 0
@@ -32,9 +32,9 @@ Le language compris par le processeur est le binaire.
 1
 Le language compris par le processeur est le C#.
 0
-Le matériel qui permet de visualiser sur un écran est la carte mère.
+Le matériel qui permet de visualiser des informations sur un écran est la carte mère.
 0
-Le matériel qui permet de visualiser sur un écran est la carte graphique.
+Le matériel qui permet de visualiser des informations sur un écran est la carte graphique.
 1
 Un antivirus me permet d’être protégé contre les attaques de ransomware.
 0
@@ -60,17 +60,17 @@ Le Trojan est un virus permettant à un hacker de prendre le contrôle de votre 
 1
 Le HTTP est un langage conçu pour représenter des pages web.
 0
-Les cookies sont de la nourriture envoyer par la page web.
+Les cookies sont de la nourriture envoyé par la page web.
 0
 Les cookies permettent la conservation de forumulaire, identifiants et mots de passe sur son navigateur web.
 1
 L'adresse IP sert à identifier chaque ordinateur connecté à Internet.
 1
-La mémoire RAM sont conservés lors de la mise hors tension du PC.
+La mémoire RAM est conservée lors de la mise hors tension du PC.
 0
-Les 3Ghz d'un microprocesseur représente le nombre de transistors.
+Les 3Ghz d'un microprocesseur représentent le nombre de transistors.
 0
-Les 3Ghz d'un microprocesseur représente la fréquence du signal d'horloge.
+Les 3Ghz d'un microprocesseur représentent la fréquence du signal d'horloge.
 1
 Le système d'exploitation sert à stocker les photos, les vidéos, et les données.
 0

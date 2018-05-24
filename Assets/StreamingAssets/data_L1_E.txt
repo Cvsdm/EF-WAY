@@ -1,4 +1,4 @@
-﻿The smallest element that retains its properties is electro.
+﻿The smallest element that retains its properties is the electron.
 0
 The opposition to current is called conductivity.
 0
@@ -10,7 +10,7 @@ Ohm's law states that the current is proportional to the voltage and inversely p
 1
 Power is the amount of energy per unit of time.
 1
-The law of meshes poses that the sum of the voltages of a closed loop is equal to 1.
+The Kirchhoff's voltage law poses that the sum of the voltages of a closed loop is equal to 1.
 0
 The frequency is equal to the period divided by 2. f = T / 2
 0
@@ -20,7 +20,7 @@ In C, the variable type int represents integers.
 1
 In C language, the string variable type represents garments.
 0
-In C, you can use a variable not declared before.
+In C, you can use a variable whithout declaring it before.
 0
 In C language, the type of variable bool (boolean) exists.
 0
@@ -50,19 +50,19 @@ The index of refraction of the glass is about n = 2.5
 0
 PC stands for Personal Computer.
 1
-The 'CPU' is synonymous with graphics card.
+The 'CPU' is a synonyme of a graphic card.
 0
-Spam is the French name for spam.
+Spam means 'Pourriel' in French.
 1
 The cable that usually connects the screen to the CPU is called the VGA cable.
 1
 The goldfish have a memory of 3 seconds.
 0
-The pirates wore eye-patch to see better in the dark.
+Pirates wore eye-patch to see better in the dark.
 1
 An octopus has 3 hearts.
 1
-The Great Wall of China can be seen from space with the eye.
+The Great Wall of China can be seen from space to the naked eye.
 0
 For every man on Earth, there are 1.6 million ants.
 1
@@ -82,7 +82,7 @@ The blood of a slug is green.
 1
 The longest bone in the human body is the femur.
 1
-The international unit of power is the Joules.
+The international unit of power is the Joule.
 0
 The chemical symbol of Tin is T.
 0

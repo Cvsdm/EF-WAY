@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: a64ad1a2e1b1d5e429c74af2516b2250
+timeCreated: 1527192691
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000200000003000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 8ed9b645973e88cb58d2571d08de3d1f
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 33.613422, y: 6.5470686, z: 29.742306}
+      lookAt: {x: -2.0208204, y: 2.2701895, z: -7.398581}
+      up: {x: -0.05732952, y: 0.9965655, z: -0.059753455}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Josh
+    400000: //RootNode
+    400002: Josh
+    2100000: _defaultMat
+    2100002: '[Color M07]'
+    2100004: '[Translucent Glass Gray]'
+    2100006: '[Translucent Glass Tinted]'
+    2100008: '[Color M06]'
+    2100010: '[Color M03]'
+    2100012: 19511048_915933265213658_6275770726505563865_n
+    2100014: 32222394_1110446359095680_8734549615484862464_o
+    2100016: '[Color E04]'
+    2100018: '[Translucent Glass Blue]'
+    2100020: 13246172_677887975684856_3148036016008405397_o
+    2100022: '[Josh_Pants]'
+    2100024: Josh_Shirt_01
+    2100026: '[Josh_Boots]'
+    2100028: '[Josh_Hair]'
+    2100030: '[Josh_Skin]'
+    2100032: '[Josh_Shirt_02]'
+    2100034: '[Josh_Boots_Sole]'
+    2100036: '[Josh_Beard]'
+    2300000: //RootNode
+    2300002: Josh
+    3300000: //RootNode
+    3300002: Josh
+    4300000: Mesh Simple Template - Feet and Inches
+    4300002: Mesh Josh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

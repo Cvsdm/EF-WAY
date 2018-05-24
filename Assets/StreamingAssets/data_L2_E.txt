@@ -2,9 +2,9 @@
 0
 Quantum mechanics is the science of the very big.
 0
-Rays with a wavelength of less than 400 m are UltraViolets
+Rays with a wavelength of less than 400 m are UltraViolets.
 0
-Rays with a wavelength greater than 800 nm are InfraRouges
+Rays with a wavelength greater than 800 nm are InfraReds.
 1
 A photon is the smallest observable element of an electromagnetic field
 1
@@ -14,7 +14,7 @@ In 1905, Einstein describes the phenomenon of photoelectric effect
 1
 In C ++, two methods can have the same name in two different classes.
 1
-In C ++, the constructor and destructor of a variable are present by default.
+In C ++, the constructor and destructor of a class are present by default.
 1
 In C ++, one class can not be derived from another class.
 0
@@ -24,7 +24,7 @@ In Excel, the SUM () function is used to add the numbers present on a given rang
 1
 Lightning does not fall twice in the same place.
 0
-Humans can smell up to a trillion of different smell.
+Humans can smell up to a trillion of different smells.
 1
 In binary, 101 + 101 = 1010.
 1
@@ -32,9 +32,9 @@ Red has a higher frequency light than blue.
 0
 Monotremes are mammals that lay eggs.
 1
-An alpha particle is different from the helium nucleus.
+An alpha particle is different from an helium nucleus.
 0
-To avoid any confusion of languages, the elements of the 1st periodic table were arranged in alphabetical order of the Latin names.
+To avoid any confusion of languages, the elements of the 1st periodic table were arranged in the alphabetical order of the Latin names.
 0
 Archimedes is known for his discovery of leverage.
 1
@@ -72,7 +72,7 @@ James Watt gave his name to the unit of intensity of electric current.
 0
 Alessandro Volta invented the battery in the late 1700s.
 1
-Einstein's famous E = mc² equation calculates the speed of light.
+In the Einstein's famous E = mc² equation, c corresponds to the conductivity.
 0
 With his clock, Léon Foucault created the first clock whose precision was half a second a day.
 0
@@ -88,7 +88,7 @@ Urban The Verrier discovered the planet Neptune by mathematical calculations.
 1
 Carl von Linné has developed the first real classification system for chemical elements.
 0
-The mathematician Sophie Germain has long used the pseudonym Antoine Auguste Le Blanc.
+The mathematician Sophie Germain has during a long time used the pseudonym Antoine Auguste Le Blanc.
 1
 The French philosopher and mathematician Blaise Pascal invented a mechanical calculating machine in 1642.
 1
@@ -96,5 +96,5 @@ Nikola Tesla invented the first electric car, called The Never Glad.
 0
 Robert Oppenheimer is considered the father of the atomic bomb.
 1
-The aphorism "nothing is lost, nothing is created, everything is transformed" is attributed to Pythagoras.
+The aphorism "nothing is lost, nothing is created, everything is transformed" is attributed to Pythagore.
 0

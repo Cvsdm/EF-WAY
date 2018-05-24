@@ -9,6 +9,7 @@ public class DataController : MonoBehaviour
     private Database database;
     private Quizz_data quizz_data;
     private string fileName;
+    private int attempt = 1; 
 
     void Start()
     {
@@ -39,4 +40,8 @@ public class DataController : MonoBehaviour
             questions = database.allquestions
         };
     }
+
+    public int Get_attempt() { return attempt; }
+    public void Set_attempt(int att) { attempt = att; }
+
 }

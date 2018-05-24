@@ -63,6 +63,8 @@ public class Sections : MonoBehaviour
 
         save.Set_section(choixSection);
         save.Set_langue(langue);
+        if (langue == 1)
+            FindObjectOfType<Game>().Modify_dice();
         save.Save_Parameters();
         save.Disp_after_Stop("Menu Sections");
     }

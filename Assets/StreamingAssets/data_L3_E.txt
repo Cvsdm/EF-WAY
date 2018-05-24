@@ -1,6 +1,6 @@
 ﻿Giordano Bruno is the scientist who managed to convince the Catholic Church that the Universe is infinite.
 0
-In Excel, the NB.SI function counts the number of cells with a predefined criterion.
+In Excel, the NB.SI() function counts the number of cells with a predefined criterion.
 1
 The Microsoft PowerPoint software is a spreadsheet.
 0
@@ -20,7 +20,7 @@ To transform readable code into understandable code by the machine we use a tran
 0
 To transform readable code into code understandable by the machine we use a compiler.
 1
-To create a comment on a line, place the character # at the beginning of the line.
+To create a comment on a line in c, we place the character # at the beginning of the line.
 0
 The literal 31.3f is of double type.
 0
@@ -66,9 +66,9 @@ The international unit for quantifying the mass or energy of a particle is coulo
 0
 The international unit for quantifying the mass or energy of a particle is the electron-volt.
 1
-The weak interactions allow the electrons do not fall back on the nucleus.
+Weak interactions allow the electrons not to fall back on the nucleus.
 0
-Electromagnetic interactions allow electrons to not fall back on the nucleus.
+Electromagnetic interactions allow electrons not to fall back on the nucleus.
 1
 An electronvolt quantifies about 1.60 x 10⁻¹⁹ J.
 1
@@ -96,5 +96,5 @@ An alpha particle is composed of three protons and one neutron.
 0
 An alpha particle is composed of two protons and one neutron.
 1
-A particle alpha is stopped at the simplest by a sheet of paper.
+A particle alpha can be stopped by a sheet of paper.
 1

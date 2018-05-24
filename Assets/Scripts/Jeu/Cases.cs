@@ -19,12 +19,10 @@ public class Cases : MonoBehaviour
         save = FindObjectOfType<Sauvegarde>();
         bars = FindObjectOfType<Bars>();
 
-        if (save.Get_langue() == 0)
-            button.GetComponentInChildren<Text>().text = "Continuer";
-        else
-            button.GetComponentInChildren<Text>().text = "Continue";
+        button.GetComponentInChildren<Text>().text = "Continuer";
+        if (save.Get_langue() == 1)
+            FindObjectOfType<Game>().Modify_dice();
     }
-
 
 
     public void Case_action()
@@ -56,7 +54,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous avez participé à la Journée Portes Ouvertes !\n Vous avez gagné un jeton !";
                 else
-                    text.text = "You have participated at the open day!\n You've earned a chip!";
+                    text.text = "You took part in the open day!\n You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -64,7 +62,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous avez participé à l'événement : MONBAC @ Efrei Paris !\n Vous avez gagné un jeton !";
                 else
-                    text.text = "You have participated at the event : MONBAC @ Efrei Paris!\n You've earned a chip!";
+                    text.text = "You took part in the event : MONBAC @ Efrei Paris!\n You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -96,7 +94,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous participez au POD d'intégration et rencontrez de nombreuses personnes\n\n\n +10 dans votre jauge sociabilité !";
                 else
-                    text.text = "You take part in the integration POD and you meet lots of people\n\n\n +10 in the sociability's gauge!";
+                    text.text = "You take part in the integration POD and meet lots of people\n\n\n +10 in the sociability's gauge!";
                 bars.DealSocialPlus(add_jauge);
                 break;
 
@@ -104,7 +102,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous avez participé à l'évènement : Sidaction !\n Vous avez gagné un jeton !";
                 else
-                    text.text = "You've participated at the event : Sidaction!\n You've earned a chip!";
+                    text.text = "You took part in the event : Sidaction!\n You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -421,9 +419,10 @@ public class Cases : MonoBehaviour
 
             case 46:        //départ mobilité
                 if (save.Get_langue() == 0)
-                    text.text = "L'heure est arrivée !\n Vous partez dans votre destination !";
+                    text.text = "L'heure est arrivée !\n Vous partez dans votre destination ! Vous avez gagné un jeton !";
                 else
-                    text.text = "The time has come !\n You are leaving for your mobility !";
+                    text.text = "The time has come !\n You are leaving for your mobility ! You've earned a chip !";
+                save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
             case 47:        // vous rencontrez vos nouveaux colocs : jauge sociale
@@ -941,6 +940,7 @@ public class Cases : MonoBehaviour
                     text.text = "Félicitations ! Vous avez réussi !\nVous venez de recevoir votre diplôme d'ingénieur de EF'WAY !";
                 else
                     text.text = "Congratulations! You did it!\nYou have been awarded your very own EF'WAY diploma!";
+                iTween.Stop();
                 break;
 
         }

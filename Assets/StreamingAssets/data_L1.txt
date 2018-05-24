@@ -1,53 +1,101 @@
 ﻿Le plus petit élément qui conserve ses propriétés est l'éléctron.
+
 0
-L'opposition au courant est appelé la conductivité.
+
+L'opposition au courant est appelée la conductivité.
+
 0
-La résistance au courant est appelé la résistance.
+
+La résistance au courant est appelée la résistance.
+
 1
-Un matériau qui bloque le courant est appelé un isolateur.
+
+Un matériau qui bloque le courant est appelé un isolant.
+
 1
+
 La loi d'Ohm pose que le courant est proportionnel au voltage et inversement proportionnel à la résistance. I = V/R
+
 1
+
 La puissance est le montant d'énergie par unité de temps.
+
 1
-La loi des mailles pose que la somme des voltages d'une boucle fermé est égale à 1.
+
+La loi des mailles pose que la somme des voltages d'une boucle fermée est égale à 1.
+
 0
-La fréquence est égale à la période divisé par 2. f = T/2
+
+La fréquence est égale à la période divisée par 2. f = T/2
+
 0
-L'inductance est la capacité d'un matériau de s'opposer aux changements de courant.
+
+L'inductance est la capacité d'un matériau à s'opposer aux changements de courant.
+
 1
+
 En langage C, le type de variable int représente des entiers.
+
 1
+
 En langage C, le type  de variable string représente des habits.
+
 0
-En langage C, vous pouvez utiliser une variable non déclaré auparavant.
+
+En langage C, vous pouvez utiliser une variable non déclarée auparavant.
+
 0
+
 En langage C, le type de variable bool (boolean) existe.
+
 0
+
 En langage C, pour attribuer une valeur à une variable on utilise le signe =
-1 
+
+1
+
 L'unité internationale du volume est le m³.
+
 1
+
 L'unité internationale de l'énergie est kg.m.s⁻².
+
 0
+
 L'unité internationale du champ magnétique est kg.s⁻².A⁻¹.
+
 1
+
 Une opération est dite commutative si a * b = b * a.
+
 1
+
 Une opération est dite associative si on ne peut pas bouger les parenthèses.
+
 0
+
 La lumière est une onde électromagnétique.
+
 1
-Les ondes électromagnétiques sont composés d'un champ électrique et d'un champ kinétique.
+
+Les ondes électromagnétiques sont composées d'un champ électrique et d'un champ kinétique.
 0
+
 La vitesse approximative de la lumière dans le vide est 3 x 10⁶ m.s⁻¹.
+
 0
+
 La longueur d'onde (λ) est égale à λ = c/f	avec c la célérité de l'onde et f sa fréquence.
+
 1
+
 L'index de refraction de l'eau est d'environ n = 1.33
+
 1
+
 L'index de réfraction du verre est d'environ n = 2.5
-0  
+
+0
 PC signifie Personal Computer.
 1
 Le 'CPU' est le synonyme de carte graphique.
@@ -64,7 +112,7 @@ Une pieuvre possède 3 coeurs.
 1
 On peut observer la grande muraille de Chine de l'espace à l'oeil nu.
 0
-Pour chaque homme sur Terre, il y a 1.6 million de fourmi.
+Pour chaque Homme sur Terre, il y a 1.6 million de fourmis.
 1
 Les mammouths étaient éteints lorsque la Pyramide de Khéops a été construite.
 0
@@ -82,7 +130,7 @@ Le sang d'une limace est vert.
 1
 L'os le plus long du corps humain est le fémur.
 1
-L'unité internationale de la puissance est les Joules.
+L'unité internationale de la puissance est le Joule.
 0
 Le symbole chimique du Tin est T.
 0
@@ -96,5 +144,5 @@ La formule chimique de l'éthanol est C₂H₅OH.
 1
 La constante d'Avogadro est plus grande que la constante de Planck.
 1
-In binary, 101 + 101 = 202.
+En binaire, 101 + 101 = 202.
 0

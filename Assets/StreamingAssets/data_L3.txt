@@ -1,6 +1,6 @@
 ﻿Giordano Bruno est le scientifique qui a réussi à convaincre l'Église catholique que l’Univers est infini.
 0
-Dans Excel, la fonction NB.SI permet de compter le nombre de cellules ayant un critère prédéfini. 
+Dans Excel, la fonction NB.SI() permet de compter le nombre de cellules ayant un critère prédéfini. 
 1
 Le logiciel Microsoft PowerPoint est un tableur.
 0
@@ -20,7 +20,7 @@ Pour transformer un code lisible en code compréhensible par la machine on utili
 0
 Pour transformer un code lisible en code compréhensible par la machine on utilise un compilateur.
 1
-Pour créer un commentaire sur une ligne on place en début de ligne le caractère #.
+Pour créer, en C, un commentaire sur une ligne on place en début de ligne le caractère #.
 0
 Le littéral 31.3f est de type double.
 0
@@ -28,11 +28,11 @@ En Java, un retour à la ligne est un caractère.
 1
 Pour compiler en language Java on utilise JDK.
 1
-En Java, l'identificateurs 2noms est correct.
+En Java, l'identificateur 2noms est correct.
 0
 Le droit d'accès le plus restrictif en Java est public.
 0
-En Java, le droit d'accès protected permet aux membres d'une autre classe de même package un accès.
+En Java, le droit d'accès protected permet un accès aux membres d'une autre classe du même package.
 1
 En Java, on peut comparer un boolean à un entier.
 1
@@ -62,9 +62,9 @@ La force à l'origine de la capillarité entre un liquide et un solide est la fo
 0
 La force à l'origine de la capillarité entre un liquide et un solide est la force de Van Der Waals.
 1
-L'unité internationale pour quantifier la masse ou l'énergie d'une particules est le coulomb.
+L'unité internationale pour quantifier la masse ou l'énergie d'une particule est le coulomb.
 0
-L'unité internationale pour quantifier la masse ou l'énergie d'une particules est l'électron-volt.
+L'unité internationale pour quantifier la masse ou l'énergie d'une particule est l'électron-volt.
 1
 Les interactions faibles permettent que les électrons ne retombent pas sur le noyau.
 0
@@ -84,9 +84,9 @@ La vitesse de propagation précise d'une onde électromagnétique ou photon dans
 0
 La masse approximative du boson de Higgs est 125 GeV.
 1
-La désintégration bêta + est accompagnée d'une émission d'un positon et d'un neutrino.
+La désintégration bêta + est accompagnée d'une émission d'un positron et d'un neutrino.
 1
-La désintégration radioactive primaire est accompagnée d'une émission d'un positon et d'un neutrino.
+La désintégration radioactive primaire est accompagnée d'une émission d'un positron et d'un neutrino.
 0
 Avast est l'anti-virus gratuit le plus réputé.
 1
@@ -96,5 +96,5 @@ Une particule alpha est composée de trois protons et un neutron.
 0
 Une particule alpha est composée de deux protons et un neutron.
 1
-Une particule alpha est arrêtée au plus simple par une feuille de papier.
+Une particule alpha peut être arrêtée par une feuille de papier.
 1

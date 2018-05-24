@@ -1,6 +1,6 @@
 ﻿Overcloking is about increasing the performance of a microprocessor.
 1
-To create a comment on an online on-line line //.
+In C++, to create a comment on a line we use //.
 1
 The literal 13.3f is float type.
 1
@@ -10,15 +10,15 @@ The Meissner effect refers to the levitation effect of a magnet on a superconduc
 1
 The approximate mass of the Higgs boson is 80 KeV.
 0
-An alpha particle is stopped at the simplest by a block of lead.
+To stop an alpha particle you at least need a block of lead.
 0
 A light year is a unit of time.
 0
 The 'brain' of the computer is the CPU.
 1
-CPU The CPU stands for.
+The CPU stands for Central Processing Unit.
 1
-Computer program unit The CPU stands for.
+The CPU stands for Computer Program Unit.
 0
 The permanent memory built into the computer is called RAM.
 0
@@ -58,11 +58,11 @@ The .DLL under Windows or .SO under UNIX system are dynamic libraries.
 1
 In computing, to connect 2 hubs between them we can use the RJ11.
 0
-The CNIL law prohibits making copies of software or any other program.
+The CNIL law prohibits making copies of softwares or any other program.
 0
-The Hadopi law prohibits making copies of software or any other program.
+The Hadopi law prohibits making copies of softwares or any other program.
 0
-Free software is free software available.
+A freeware is a free software available.
 1
 The hexadecimal number system contains digits from 1 to 15.
 0
@@ -70,7 +70,7 @@ The octal number system contains numbers from 0 to 7.
 1
 The CPU only controls the input data of the computer.
 0
-The language that the PC understands the machine language.
+The language that the PC understands is called the machine language.
 1
 Worms and Trojans are easily detected and removed by antivirus.
 1
@@ -78,15 +78,15 @@ Linux and GNU are open source operating systems.
 1
 The first traffic light was installed on Wall Street, New York, in 1898.
 0
-CERN's huge particle accelerator is underground, on the border of the US and Canada.
+CERN's huge particle accelerator is located underground, on the border of the US and Canada.
 0
-It takes ten hours to charge the battery of the first mobile phone.
+It took ten hours to charge the battery of the first mobile phone.
 1
-The word "robot" originates from a Czech play written in 1920.
+The word "robot" comes from a Czech play written in 1920.
 1
 The musical piracy begins with the invention of the cassette.
 1
-The first primate to reach an altitude of more than 134 km, died after a failed landing.
+The first primate which reached an altitude of more than 134 km, died after a failed landing.
 1
 The first airbags were installed in the small fighter planes of the 2nd world war.
 0
@@ -96,5 +96,5 @@ It took 8 minutes of exposure to fix the first photo.
 0
 It took 8 hours of exposure to fix the first photo.
 1
-The first sentence said on the phone in the summer: "Mr. Watson, are you here? I need your help ".
+The first sentence said on the phone was: "Mr. Watson, are you here? I need your help ".
 1
