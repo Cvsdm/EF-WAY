@@ -18,16 +18,22 @@ public class HighScore : MonoBehaviour {
             path = Path.Combine(Application.persistentDataPath, fileName);
         else
             path = Path.Combine(Application.streamingAssetsPath, fileName);
-
-        text.text = " Statistics : \n\n\n ";
         if (File.Exists(path) == false) { Save_Highest(); }
         else  {  ChargefromFile(); }
-
         NbGamePlayed ++;
         float now = save.Get_assos() + 2*save.Get_etude() + save.Get_sociabilite();
+
+        if (save.Get_langue() == 0)
+            text.text = " Statistics : \n\n\n ";
+        else
+            text.text = " Statistiques : \n\n\n ";
+
         if (now > HighestScore)
         {
             HighestScore = now;
+            if (save.Get_langue() == 0)
+                text.text = text.text + " Félicitations ! Tu as battu ton meilleur score :D \n";
+            else 
             text.text = text.text +  " Congratulations ! You've beated your Highest Score :D \n";
         }
 
@@ -36,7 +42,10 @@ public class HighScore : MonoBehaviour {
 
     void Display_text()
     {
-        text.text = text.text + "\nHighest Score " + HighestScore + "\n\n Number of Game played : " + NbGamePlayed;
+        if (save.Get_langue() == 0)
+            text.text = text.text + "\nHighest Score " + HighestScore + "\n\n Number of Game played : " + NbGamePlayed;
+        else
+            text.text = text.text + "\nMeilleur Score " + HighestScore + "\n\n Nombre de parties jouées : " + NbGamePlayed;
     }
 
     public void Save_Highest()
