@@ -1,0 +1,17 @@
+ih
+0
+0
+20
+0
+1
+4
+0
+majeure
+destination
+Prépa Scientifique Section Internationale
+False
+False
+secteur
+none
+none
+none

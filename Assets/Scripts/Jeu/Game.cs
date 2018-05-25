@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Game : MonoBehaviour {
 
     public Canvas question_mark;
+    public GameObject lex;
     private Sauvegarde save;
     public Text btn_throw, btn_continue;
 
@@ -32,6 +33,18 @@ public class Game : MonoBehaviour {
     {
         btn_throw.text = "Throw dices";
         btn_continue.text = "Continue";
-        //Debug.Log("I'm here");
     }
+
+    public void On_Lexique()
+    {
+        question_mark.gameObject.SetActive(false);
+        lex.gameObject.SetActive(true);
+    }
+
+    public void Off_Lexique()
+    {
+        lex.gameObject.SetActive(false);
+    }
+
+
 }

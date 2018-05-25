@@ -8,7 +8,7 @@ public class HighScore : MonoBehaviour {
     private float HighestScore = 0;
     private int NbGamePlayed = 0;
     private Sauvegarde save;
-    private Text text;
+    public Text text;
     private string fileName = "statistics.txt";
     private string path;
 

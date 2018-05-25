@@ -28,6 +28,8 @@ public class EndGame : MonoBehaviour {
                         "\nTa destination : " + save.Get_destination() +
                         "\nTes associations : \n" + Get_sub_assos() +
                         "Tes points accumulés : " + Get_points();
+            if (save.Get_bde())
+                diplome_text.text = diplome_text.text + "\nTu as fais partie du BDE\n";
 
             job_titre.text = "Les métiers qui te correspondent sont : ";
             job_text.text = "A completer !! :D";
@@ -46,6 +48,9 @@ public class EndGame : MonoBehaviour {
                                 "\nYour destination : " + save.Get_destination()+
                                 "\nYour associations : \n" + Get_sub_assos() +
                                 "\nYour cumulated points : " + Get_points();
+
+            if (save.Get_bde())
+                diplome_text.text = diplome_text.text + "\nYou've been a part of the Student Association.\n";
 
             job_titre.text = "Jobs that would fit you : ";
             job_text.text = "A completer !! :D";

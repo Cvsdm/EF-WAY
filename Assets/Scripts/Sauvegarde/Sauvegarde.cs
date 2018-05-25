@@ -26,13 +26,14 @@ public class Sauvegarde : MonoBehaviour
     private string destination = "destination";
     private string section = "section";
     private bool imm = false;
+    private bool bde = false;
     private string secteur = "secteur";
 
     public GameObject canvas_resume;
-
     private GameObject terrain;
     private GameObject canvas_jeu;
     private GameObject jauges;
+    private GameObject pawn;
     public static GameObject dices;
 
     void Start()
@@ -72,6 +73,7 @@ public class Sauvegarde : MonoBehaviour
         writer.WriteLine(destination);
         writer.WriteLine(section);
         writer.WriteLine(imm);
+        writer.WriteLine(bde);
         writer.WriteLine(secteur);
 
         writer.WriteLine(Tab_assos[0]);
@@ -99,6 +101,7 @@ public class Sauvegarde : MonoBehaviour
         destination = file.ReadLine();
         section = file.ReadLine();
         imm = Boolean.Parse(file.ReadLine());
+        bde = Boolean.Parse(file.ReadLine());
         secteur = file.ReadLine();
 
         Tab_assos[0] = file.ReadLine();
@@ -121,6 +124,7 @@ public class Sauvegarde : MonoBehaviour
     public string Get_section() { return section; }
     public int Get_bac() { return bac; }
     public bool Get_imm() { return imm; }
+    public bool Get_bde() { return bde; }
     public string Get_majeure() { return majeur_choice; }
     public string Get_secteur() { return secteur; }
     public string Get_path() { return path; }
@@ -140,6 +144,7 @@ public class Sauvegarde : MonoBehaviour
     public void Set_langue(int langage) { langue = langage; }
     public void Set_imm (bool im) { imm = im; }
     public void Set_secteur(string sect) { secteur = sect; }
+    public void Set_bde(bool bd) { bde = bd; }
 
 
 
@@ -194,6 +199,7 @@ public class Sauvegarde : MonoBehaviour
         terrain.gameObject.SetActive(false);
         jauges.gameObject.SetActive(false);
         canvas_jeu.gameObject.SetActive(false);
+        pawn.gameObject.SetActive(false);
     }
 
     public IEnumerator Load_scenes(float waitTime)
@@ -208,6 +214,7 @@ public class Sauvegarde : MonoBehaviour
         terrain.gameObject.SetActive(true);
         jauges.gameObject.SetActive(true);
         canvas_jeu.gameObject.SetActive(true);
+        pawn.gameObject.SetActive(true);
         SceneManager.UnloadSceneAsync("lancé de dés");
 
         if (nextmove == 0)
@@ -250,6 +257,7 @@ public class Sauvegarde : MonoBehaviour
         terrain = GameObject.Find("Terrain");
         jauges = GameObject.Find("Jauges");
         canvas_jeu = GameObject.Find("Canvas_Jeu");
+        pawn = GameObject.Find("pion");
     }
 
     public void Disp_after_Stop(string scene)

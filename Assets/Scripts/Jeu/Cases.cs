@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-//using System;
-using System.Collections;
 
 public class Cases : MonoBehaviour
 {
@@ -536,7 +534,7 @@ public class Cases : MonoBehaviour
                 else
                     text.text = "You take part in a list for the next student's association of Efrei Paris\n\n\n +10 in your association's gauge!";
 
-                save.Add_assos("BDE");
+                save.Set_bde(true);
                 bars.DealAssosPlus(add_jauge);
                 break;
 
