@@ -1,0 +1,17 @@
+erg
+0
+0
+15
+0
+1
+6
+1
+majeure
+destination
+Prépa Scientifique Section Internationale
+False
+False
+secteur
+none
+none
+none

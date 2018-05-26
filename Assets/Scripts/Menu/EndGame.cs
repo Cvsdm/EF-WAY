@@ -47,8 +47,8 @@ public class EndGame : MonoBehaviour {
                                 "\nMajeure : " + save.Get_majeure() +
                                 "\nYour destination : " + save.Get_destination()+
                                 "\nYour associations : \n" + Get_sub_assos() +
-                                "\nYour cumulated points : " + Get_points();
-
+                                "Your cumulated points : " + Get_points();
+ 
             if (save.Get_bde())
                 diplome_text.text = diplome_text.text + "\nYou've been a part of the Student Association.\n";
 

@@ -38,6 +38,7 @@ public class HighScore : MonoBehaviour {
         }
 
         Display_text();
+        Save_Highest();
 	}
 
     void Display_text()
