@@ -32,7 +32,7 @@ public class HighScore : MonoBehaviour {
         {
             HighestScore = now;
             if (save.Get_langue() == 0)
-                text.text = text.text + " Félicitations ! Tu as battu ton meilleur score :D \n";
+                text.text = text.text + " Félicitations ! Tu as battu ton meilleur score\n";
             else 
             text.text = text.text +  " Congratulations ! You've beated your Highest Score :D \n";
         }
@@ -43,9 +43,9 @@ public class HighScore : MonoBehaviour {
     void Display_text()
     {
         if (save.Get_langue() == 0)
-            text.text = text.text + "\nHighest Score " + HighestScore + "\n\n Number of Game played : " + NbGamePlayed;
+            text.text = text.text + "\nHighest Score : " + HighestScore + "\n\n Number of Game played : " + NbGamePlayed;
         else
-            text.text = text.text + "\nMeilleur Score " + HighestScore + "\n\n Nombre de parties jouées : " + NbGamePlayed;
+            text.text = text.text + "\nMeilleur Score : " + HighestScore + "\n\n Nombre de parties jouées : " + NbGamePlayed;
     }
 
     public void Save_Highest()
