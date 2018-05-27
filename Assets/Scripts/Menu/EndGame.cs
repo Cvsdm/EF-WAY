@@ -124,7 +124,7 @@ public class EndGame : MonoBehaviour {
     private string Random_aug()
     {
         string toreturn = "";
-        float aug = Random.Range(5, 25);
+        float aug = Random.Range(5, 15);
         int jauge = Random.Range(0, 2);
 
         if (jauge == 0)

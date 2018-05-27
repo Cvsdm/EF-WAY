@@ -59,6 +59,8 @@ public class Game : MonoBehaviour {
                 "\n\nAkii Partie : Venez découvrir la culture asiatique lors d'un événement nocturne organisé par Asian Efrei. Au programme : Karaoké, jeux traditionnels, origami..." +
                 "\n\nInternational Day : Une journée dédiée à la culture des différents pays.\n" +
                 "\n\nBDE : Bureau des étudiants" +
+                "\n\nDE : Devoir écrit" +
+                "\n\nCE : Contrôle écrit" +
                 "\n\nPFE : Projet de fin d'études" +
                 "\n\nIweek : Semaine d'accueil d'étrangers à l'EFREI. Faire découvrir et visiter Paris." +
                 "\n\nFab lab : Laboratoire de fabrication" +
@@ -75,6 +77,8 @@ public class Game : MonoBehaviour {
             "\n\nAkii Partie : Come and discover Asian culture at a night event organized by Asian Efrei, featuring Karaoke, traditional games, origami ..." +
             "\n\nInternational Day : A day dedicated to the culture of foreign countries. " +
             "\n\nBDE : Student Services Office" +
+            "\n\nDE : Written exam" +
+            "\n\nCE : Written test" +
             "\n\nPFE : End of study project" +
             "\n\nIweek : Welcome week for foreigners at EFREI. Discovery and visit of Paris for the foreigners students." +
             "\n\nFab lab : Fabrication laboratory" +

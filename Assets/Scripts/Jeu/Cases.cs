@@ -100,7 +100,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous avez participé à l'évènement : Sidaction !\n Vous avez gagné un jeton !";
                 else
-                    text.text = "You took part in the event : Sidaction!\n You've earned a chip!";
+                    text.text = "You took part in the event: Sidaction!\n You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -124,13 +124,13 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous vous êtes couché trop tard après la soirée des parrains et séchez le premier cours\n\n\n -10 dans votre jauge étude et assiduité";
                 else
-                    text.text = "You went to sleep to late after the proposer night and don't go to the first class\n\n\n -10 in your study and diligence's gauge";
+                    text.text = "You went to sleep to late after the proposer night and skip the first class\n\n\n -10 in your study and diligence's gauge";
                 bars.DealEtudeMinus(add_jauge);
                 break;
 
             case 15:        //WEI : jauge sociale
                 if (save.Get_langue() == 0)
-                    text.text = "Vous allez au week end d'intégration et rencontrez pleins d'étudiants\n\n\n +10 dans votre jauge sociabilité !";
+                    text.text = "Vous allez au weekend d'intégration et rencontrez pleins d'étudiants\n\n\n +10 dans votre jauge sociabilité !";
                 else
                     text.text = "You go to the integration week end and meet lots of people\n\n\n +10 in your sociability's gauge!";
                 bars.DealSocialPlus(add_jauge);
@@ -152,7 +152,7 @@ public class Cases : MonoBehaviour
 
             case 18:        //aide un ami en math : jauge étude
                 if (save.Get_langue() == 0)
-                    text.text = "Vous aidez un ami ayant des difficultés en math\n\n\n +10 dans votre jauge étude et assiduité!";
+                    text.text = "Vous aidez un ami ayant des difficultés en maths\n\n\n +10 dans votre jauge étude et assiduité!";
                 else
                     text.text = "You help a friend having difficulties in mathematics\n\n\n +10 in your study and diligence's gauge!";
                 bars.DealEtudePlus(add_jauge);
@@ -177,7 +177,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous arrivez avec 15 minutes de retard et n'êtes pas accepté en cours\n\n\n -10 dans votre étude et assiduité";
                 else
-                    text.text = "you are 15 mintes late for your course and can't join the class\n\n\n -10 in your study and diligence's gauge!";
+                    text.text = "you are 15 minutes late for your course and can't join the class\n\n\n -10 in your study and diligence's gauge!";
                 bars.DealEtudeMinus(add_jauge);
                 break;
 
@@ -192,7 +192,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "C'est la campagne BDE\n\n\n Vous avez gagné un jeton !";
                 else
-                    text.text = "It's the Students Bureau campaign !\n\n You've earned a chip";
+                    text.text = "It's the Student Office campaign !\n\n You've earned a chip";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -216,13 +216,13 @@ public class Cases : MonoBehaviour
 
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous aller au POD organisé à l'Efrei ou passez votre soirée à réviser pour le prochain contrôle ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous aller au POD organisé à l'Efrei ou passer votre soirée à réviser pour le prochain contrôle ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Aller au POD";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Réviser";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nShould you should you go to the POD organized at Efrei or work all the evening to prepare your next test?";
+                    text.text = "You face a dilemma! \nShould you go to the POD organized at Efrei or work all the evening to prepare your next test?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Go to the POD";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Revise";
                 }
@@ -241,9 +241,9 @@ public class Cases : MonoBehaviour
 
             case 28:        //Grand Discours
                 if (save.Get_langue() == 0)
-                    text.text = "Vous avez participé à la Journée Portes Ouvertes !\n Vous avez gagné un jeton !";
+                    text.text = "Vous brillez par votre éloquence lors du Grand Discours !\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
-                    text.text = "You have participated at the open day!\n You've earned a chip!";
+                    text.text = "You shine with your eloquence during the Grand Discours!\n\n\n +10 in your study and diligence's gauge!";
                 bars.DealEtudePlus(add_jauge);
                 break;
 
@@ -285,7 +285,7 @@ public class Cases : MonoBehaviour
 
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous participer à l'IWeek pour rencontrer des étudiants étrangers ou plutôt travailler et vous concentrer sur vos études ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous participer à l'IWeek pour rencontrer des étudiants étrangers ou plutôt travailler et vous concentrer sur vos études ?";
                     button.GetComponentInChildren<Text>().text = "Faire l'IWeek";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Travailler";
                 }
@@ -355,13 +355,13 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous rencontrez votre fillot pour la première fois !\n\n\n +10 dans votre jauge sociabilité !";
                 else
-                    text.text = "You meet for the time your protégé !\n\n\n +10 in your sociability's gauge!";
+                    text.text = "You meet for the first time your protégé !\n\n\n +10 in your sociability's gauge!";
                 bars.DealSocialPlus(add_jauge);
                 break;
 
             case 40:        //nouveau choix d'assos : jauge association qui augmente ou diminue
                 if (save.Get_langue() == 0)
-                    text.text = "Association: choississez de nouvelles assos ou quittez-en à votre guise !";
+                    text.text = "Association : choississez de nouvelles assos ou quittez-en à votre guise !";
                 else
                     text.text = "Association: Choose new associations or quit some if you want!";
                 //appel vers la même fonction que celle du stop choix d'assos, modification des jauges dans la fonction direct
@@ -372,14 +372,14 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous aller à un cours de cuisine organisé par Infitah et Efrei Chef ou assister à un amphi d'information sur la mobilité ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous aller à un cours de cuisine organisé par Infitah et Efrei Chef ou assister à un amphi d'information sur la mobilité ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Cours de cuisine";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Amphi d'information";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nShould you should you go to a cuisine course organized by Infitah and Efrei Chef or go to the information meeting on your next mobility?";
-                    btn1_dilemme.GetComponentInChildren<Text>().text = "Cuisine course";
+                    text.text = "You face a dilemma! \nShould you go to a cooking course organized by Infitah and Efrei Chef or go to the information meeting on your next mobility?";
+                    btn1_dilemme.GetComponentInChildren<Text>().text = "Cooking course";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Information meeting";
                 }
                 btn1_dilemme.gameObject.SetActive(true);
@@ -419,7 +419,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "L'heure est arrivée !\n Vous partez dans votre destination ! Vous avez gagné un jeton !";
                 else
-                    text.text = "The time has come !\n You are leaving for your mobility ! You've earned a chip !";
+                    text.text = "The time has come!\n You are leaving for your mobility! You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -454,15 +454,15 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous profiter de votre temps libre pour visiter le pays avec vos amis ou réviser pour vos contrôles ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous profiter de votre temps libre pour visiter le pays avec vos amis ou réviser pour vos contrôles ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Visiter";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Réviser";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nShould you should you make the most of you free time to visit the country with your friends or revise for your next tests?";
+                    text.text = "You face a dilemma! \nShould you make the most of your free time to visit the country with your friends or study for your next tests?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Visit";
-                    btn2_dilemme.GetComponentInChildren<Text>().text = "Revise";
+                    btn2_dilemme.GetComponentInChildren<Text>().text = "Study";
                 }
                 btn1_dilemme.gameObject.SetActive(true);
                 btn2_dilemme.gameObject.SetActive(true);
@@ -472,7 +472,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Examen de L3\n Jouez intelligemment";
                 else
-                    text.text = "L3 Exam! \n Play it Smart ";
+                    text.text = "L3 Exam! \n Play it smart ";
                 break;
 
             case 52:        //campus
@@ -497,7 +497,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Examen de L3\n Jouez intelligemment";
                 else
-                    text.text = "L3 Exam! \n Play it Smart ";
+                    text.text = "L3 Exam! \n Play it smart";
                 break;
 
             case 55:        //6_dilemme
@@ -505,13 +505,13 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nLa fin de votre mobilité approche, devriez vous profiter jusqu'au bout et bacler votre rapport d'étonnement ou rentrer pour faire le rapport ?";
+                    text.text = "Vous êtes face à un dilemme !\nLa fin de votre mobilité approche, devriez-vous profiter jusqu'au bout et bacler votre rapport d'étonnement ou rentrer pour faire le rapport ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Rester à l'étranger";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Rentrer en France";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nThe end of your mobility is close, should you go back to France to work on the report ou have to do or stay longer and botch this report?";
+                    text.text = "You face a dilemma! \nThe end of your mobility is close, should you go back to France to work on the report you have to do or stay longer and botch this report?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Stay abroad";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Go back to France";
                 }
@@ -530,7 +530,7 @@ public class Cases : MonoBehaviour
             case 57:          //8.1_assos
                 //On vous propose de faire partie d'une liste BDE (assos) si 3 assos le joueur doit en supprimer 1
                 if (save.Get_langue() == 0)
-                    text.text = "Vous faite partie d'une liste BDE\n\n\n +10 dans votre jauge association !";
+                    text.text = "Vous faites parti d'une liste BDE\n\n\n +10 dans votre jauge association !";
                 else
                     text.text = "You take part in a list for the next student's association of Efrei Paris\n\n\n +10 in your association's gauge!";
 
@@ -544,13 +544,13 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nVotre fillot à besoin de vous, devriez vous vous concentrer sur vos propres difficultés ou l'aider à réviser ?";
+                    text.text = "Vous êtes face à un dilemme !\nVotre fillot à besoin de vous, devriez-vous vous concentrer sur vos propres difficultés ou l'aider à réviser ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Travailler";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Aider votre fillot";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nYour protégé needs your help, should you concentrate yourself on your own difficulties or help him to revise?";
+                    text.text = "You face a dilemma! \nYour protégé needs your help, should you concentrate yourself on your own difficulties or help him studying?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Work";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Help your protégé";
                 }
@@ -560,7 +560,7 @@ public class Cases : MonoBehaviour
 
             case 59:        // Vous rêvez beaucoup de votre mobilité et vous impliquez moins dans votre travail : vos notes baisses, jauge étude diminue
                 if (save.Get_langue() == 0)
-                    text.text = "Vous rêvez beaucoup de votre mobilité et vous vous impliquez moins dans votre travail : vos notes baisses\n\n\n -10 dans votre jauge étude et assiduité!";
+                    text.text = "Vous rêvez beaucoup de votre mobilité et vous vous impliquez moins dans votre travail : vos notes baissent\n\n\n -10 dans votre jauge étude et assiduité!";
                 else
                     text.text = "You praise to second year's students the destination you chose for your mobility\n\n\n -10 in your study and diligence's gauge!";
 
@@ -577,7 +577,7 @@ public class Cases : MonoBehaviour
 
             case 61:        // vous vantez auprès des L2 la destination que vous avez choisi : jauge sociale
                 if (save.Get_langue() == 0)
-                    text.text = "Vous vantez auprès des L2 la destination que vous avez choisi pour votre mobilité\n\n\n +10 dans votre jauge sociabilité !";
+                    text.text = "Vous vantez auprès des L2 la destination que vous avez choisie pour votre mobilité\n\n\n +10 dans votre jauge sociabilité !";
                 else
                     text.text = "You praise to second year's students the destination you chose for your mobility\n\n\n +10 in your sociability's gauge!";
 
@@ -595,12 +595,12 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "C'est l'heure des partiels de L3 ! \n Bon Courage !! ";
                 else
-                    text.text = "It's time for your partials of L3 ! \n Good luck !!";
+                    text.text = "It's time for your partials of L3 ! \n Good luck!!";
                 break;
 
             case 64:            // Rentrée M1 remise des licences - Objectif
                 if (save.Get_langue() == 0)
-                    text.text = "C'est la rentrée de 1ère année Ingénieur.\nOn vous remet votre licence.\n\n Vous avez gagné un jeton !";
+                    text.text = "C'est la rentrée en 1ère année du cycle ingénieur.\nOn vous remet votre licence.\n\n Vous avez gagné un jeton !";
                 else
                     text.text = "Back to school in the first year of Master\n\n You've earned a chip";
                 save.Set_jetons(save.Get_jetons() + 1);
@@ -620,7 +620,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     Action_Assos("C'est L'I Week !", "I week");
                 else
-                    Action_Assos("It's 'I Week' time !", "I week");
+                    Action_Assos("It's 'I Week' time!", "I week");
                 break;
 
             case 67:         //Séminaire animation efficace
@@ -636,7 +636,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous devez choisir le parcours métier qui vous sera enseigné afin de vous former à la vie active !";
                 else
-                    text.text = "You have to choose our career path, which will prepare you to the active life !";
+                    text.text = "You have to choose your career path, which will prepare you for active life!";
                 break;
 
             case 69:        //8_dilemme
@@ -644,13 +644,13 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous aller au POD pour décompresser ou avancer sur votre PA8 ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous aller au POD pour décompresser ou avancer sur votre PA8 ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Aller au POD";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Avancer sur le PA8";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nShould you should you go to the POD to relax or work on your PA8?";
+                    text.text = "You face a dilemma! \nShould you go to the POD to relax or work on your PA8?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Go to the POD";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Work on your PA8";
                 }
@@ -707,13 +707,13 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous passez du temps avec vos ami à la MDA ou mettre à jour votre cv pour préparer le Campus Day ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous passer du temps avec vos amis à la MDA ou mettre à jour votre cv pour préparer le Campus Day ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Aller à la MDA";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Mettre à jour le cv";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nShould you should you spend time with your friends at the MDA or update your resume to prepare the Campus Day?";
+                    text.text = "You face a dilemma! \nShould you spend time with your friends at the MDA or update your resume to prepare the Campus Day?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Go to the MDA";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Update your resume";
                 }
@@ -725,7 +725,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous présentez votre projet de startup au printemps des entrepreneurs\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
-                    text.text = "You meet new students arrived for the 4th year at Efrei\n\n\n +10 in your study and diligence's gauge!";
+                    text.text = "You present your startup project at the entrepreneurs' spring\n\n\n +10 in your study and diligence's gauge!";
 
                 bars.DealEtudePlus(add_jauge);
                 break;
@@ -749,9 +749,9 @@ public class Cases : MonoBehaviour
 
             case 79:        //DE : sanction si jauge étude < 30
                 if (save.Get_langue() == 0)
-                    text.text = "C'est l'heure des partiels ! Faites attention il faut sortir avec une jauge étude > 30\n Bon Courage !! ";
+                    text.text = "C'est l'heure des partiels ! Faites attention, il faut sortir avec une jauge étude > 30\n Bon Courage !! ";
                 else
-                    text.text = "It's time for your partials ! Be careful, you have to have a study bar > 30\n Good luck !!";
+                    text.text = "It's time for your partials! Be careful, you have to have a study bar > 30\n Good luck!!";
                 break;
 
 
@@ -759,7 +759,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous effectuez votre stage technique de 4 mois\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
-                    text.text = "You do your 4 months technical intrenship\n\n\n +10 in your study and diligence's gauge!";
+                    text.text = "You do your 4 months technical internship\n\n\n +10 in your study and diligence's gauge!";
 
                 bars.DealEtudePlus(add_jauge);
                 break;
@@ -768,7 +768,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous rentrez en M2 et assistez à un amphi de présentation !\n Vous avez gagné un jeton !";
                 else
-                    text.text = "You are in M2 and you have a presentation course!\n You've earned a chip!";
+                    text.text = "You are in M2 and you have a presentation meeting!\n You've earned a chip!";
                 save.Set_jetons(save.Get_jetons() + 1);
                 break;
 
@@ -777,13 +777,13 @@ public class Cases : MonoBehaviour
                 button.gameObject.SetActive(false);
                 if (save.Get_langue() == 0)
                 {
-                    text.text = "Vous êtes face à un dilemme !\nDevriez vous aller vous amuser à une soirée Efrei Poker ou prendre du temps pour chercher un stage de fin d'étude ?";
+                    text.text = "Vous êtes face à un dilemme !\nDevriez-vous aller vous amuser à une soirée Efrei Poker ou prendre du temps pour chercher un stage de fin d'étude ?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Aller à la soirée";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Chercher un stage";
                 }
                 else
                 {
-                    text.text = "You face a dilemma! \nShould you should you relax at an Efrei Poker's party or take time to look for your final internship?";
+                    text.text = "You face a dilemma! \nShould you relax at an Efrei Poker's party or take time to look for your final internship?";
                     btn1_dilemme.GetComponentInChildren<Text>().text = "Go to the party";
                     btn2_dilemme.GetComponentInChildren<Text>().text = "Look for an internship";
                 }
@@ -793,7 +793,7 @@ public class Cases : MonoBehaviour
 
             case 83:        //Séminaire métiers
                 if (save.Get_langue() == 0)
-                    text.text = "Vous Paricipez au séminaire des métiers!\n\n\n +10 dans votre jauge étude et assiduité !";
+                    text.text = "Vous Participez au séminaire des métiers!\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
                     text.text = "You take part in the profession's seminar\n\n\n +10 in your study and diligence's gauge!";
 
@@ -804,7 +804,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Projet Voltaire !\nEt oui, il faut le repasser... Bonne chance !";
                 else
-                    text.text = "Projet Voltaire !\nYes, you will need to do it again... Break a leg!";
+                    text.text = "Projet Voltaire!\nYes, you need to do it again... Break a leg!";
                 break;
 
             case 85:          //12_assos
@@ -819,7 +819,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Vous assistez à un réunion de présentation du PFE, le projet que vous allez devoir effectuer\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
-                    text.text = "You go to a presentation meeting about the PFE the project you will have to do\n\n\n +10 in your study and diligence's gauge!";
+                    text.text = "You go to a presentation meeting about the PFE, the project you will have to do\n\n\n +10 in your study and diligence's gauge!";
 
                 bars.DealEtudePlus(add_jauge);
                 break;
@@ -837,7 +837,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "C'est la journée des droits de la femme ! Vous participez à l'évènement organisé par Symbioz en offrant une rose à une femme\n\n\n +10 dans votre jauge sociabilité !";
                 else
-                    text.text = "It is the International Women's Day ! You take part in the event organised by Symbioz offering a rose to a woman\n\n\n +10 in your sociability's gauge!";
+                    text.text = "It is the International Women's Day! You take part in the event organised by Symbioz by offering a rose to a woman\n\n\n +10 in your sociability's gauge!";
 
                 bars.DealSocialPlus(add_jauge);
                 break;
@@ -863,7 +863,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "C'est le TOEIC ! Epreuve d'anglais indispensable pour les futurs ingénieurs";
                 else
-                    text.text = "TOEIC time ! English test essential to futur engineers";
+                    text.text = "TOEIC time! English test essential to futur engineers";
                 break;
 
             case 92:          //14_assos
@@ -878,7 +878,7 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     text.text = "Fatigué par les cours et les activités qui remplissent votre vie d'étudiant, vous vous endormez en cours\n\n\n -10 dans votre jauge étude et assiduité !";
                 else
-                    text.text = "Tired because of the study and all the activities of your student's life, you fall asleep during a course\n\n\n -10 in your study and diligence's gauge!";
+                    text.text = "Tired because of the study and all the activities of your student's life, you fall asleep during a class\n\n\n -10 in your study and diligence's gauge!";
 
                 bars.DealEtudeMinus(add_jauge);
                 break;
@@ -902,7 +902,7 @@ public class Cases : MonoBehaviour
 
             case 96:        //Soutenance PFE
                 if (save.Get_langue() == 0)
-                    text.text = "C'est le jour J ! Vous devez présentez votre PFE\n\n\n +10 dans votre jauge étude et assiduité !";
+                    text.text = "C'est le jour J ! Vous devez présenter votre PFE\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
                     text.text = "It is D-Day! You have to present your PFE\n\n\n +10 in your study and diligence's gauge!";
 
@@ -914,19 +914,19 @@ public class Cases : MonoBehaviour
                 if (save.Get_langue() == 0)
                     Action_Assos("L'Asian Efrei organise l'Aki Party !", "Asian");
                 else
-                    Action_Assos("Asian Efrei organizes The Aki Party !", "Asian");
+                    Action_Assos("Asian Efrei organizes the Aki Party !", "Asian");
                 break;
 
             case 98:         //DE
                 if (save.Get_langue() == 0)
                     text.text = "C'est l'heure de vos derniers partiels ! \n Bon Courage !! ";
                 else
-                    text.text = "It's time for your last partials ! \n Good luck !!";
+                    text.text = "It's time for your last partials! \n Good luck!!";
                 break;
 
             case 99:        //Stage de fin d'étude
                 if (save.Get_langue() == 0)
-                    text.text = "Vous faite votre stage de fin d'étude\n\n\n +10 dans votre jauge étude et assiduité !";
+                    text.text = "Vous faites votre stage de fin d'étude\n\n\n +10 dans votre jauge étude et assiduité !";
                 else
                     text.text = "You do your final internship\n\n\n +10 in your study and diligence's gauge!";
 
@@ -935,7 +935,7 @@ public class Cases : MonoBehaviour
 
             case 100:           //Remise des diplômes
                 if (save.Get_langue() == 0)
-                    text.text = "Félicitations ! Vous avez réussi !\nVous venez de recevoir votre diplôme d'ingénieur de EF'WAY !";
+                    text.text = "Félicitations ! Vous avez réussi !\nVous venez de recevoir votre diplôme d'ingénieur de EF'WAY!";
                 else
                     text.text = "Congratulations! You did it!\nYou have been awarded your very own EF'WAY diploma!";
                 iTween.Stop();
