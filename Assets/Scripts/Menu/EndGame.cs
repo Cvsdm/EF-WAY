@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -22,17 +21,17 @@ public class EndGame : MonoBehaviour {
 		if (save.Get_langue() == 0)
         {
             diplome_Titre.text = "Ton Diplome : ";
-            diplome_text.text = "Name : " + save.Get_player() + 
-                        "\nSection : " + save.Get_section() + 
-                        "\nMajeure : " + save.Get_majeure() + 
+            diplome_text.text = "Name : " + save.Get_player() +
+                        "\nSection : " + save.Get_section() +
+                        "\nMajeure : " + save.Get_majeure() +
                         "\nTa destination : " + save.Get_destination() +
-                        "\nTes associations : \n" + Get_sub_assos() +
-                        "Tes points accumulés : " + Get_points();
+                        "\nTes associations : \n" + Get_sub_assos();
+                        
             if (save.Get_bde())
-                diplome_text.text = diplome_text.text + "\nTu as fais partie du BDE\n";
+                diplome_text.text = diplome_text.text + "Tu as fais partie du BDE\n";
 
-            job_titre.text = "Les métiers qui te correspondent sont : ";
-            job_text.text = "A completer !! :D";
+            //job_titre.text = "Les métiers qui te correspondent sont : ";
+            //job_text.text = "A completer !! :D";
             menu_btn.text = "Retourner au Menu";
 
             jet_title.text = "Vous avez gagné " + jet + " jetons !";
@@ -45,9 +44,8 @@ public class EndGame : MonoBehaviour {
             diplome_Titre.text = "Your Diploma : ";
             diplome_text.text = "Section : " + save.Get_section() +
                                 "\nMajeure : " + save.Get_majeure() +
-                                "\nYour destination : " + save.Get_destination()+
-                                "\nYour associations : \n" + Get_sub_assos() +
-                                "Your cumulated points : " + Get_points();
+                                "\nYour destination : " + save.Get_destination() +
+                                "\nYour associations : \n" + Get_sub_assos();
  
             if (save.Get_bde())
                 diplome_text.text = diplome_text.text + "\nYou've been a part of the Student Association.\n";
@@ -78,10 +76,19 @@ public class EndGame : MonoBehaviour {
             jet_text_2.color = Nice_color();
         }
 
-        if (save.Get_jetons() != 0)
+        if (save.Get_jetons() != 0) // s'il reste des jetons
             StartCoroutine(Update_Jeton());
+        else 
+        { jet_btn.gameObject.SetActive(true);
+            Display_Dip(); }
+    }
+
+    private void Display_Dip()
+    {
+        if (save.Get_langue() == 0)
+            diplome_text.text = diplome_text.text +  "Tes points accumulés : " + Get_points();
         else
-            jet_btn.gameObject.SetActive(true);
+            diplome_text.text = diplome_text.text +  "Your cumulated points : " + Get_points();
     }
 
     private string Get_sub_assos()
@@ -187,7 +194,7 @@ public class EndGame : MonoBehaviour {
     }
 
 
-    /*string Get_job ()
+    /*string Get_job () // A IMPLEMENTER
     {
         string toreturn = "";
         string i = save.Get_majeure();

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class DataController : MonoBehaviour
 {
     private RoundData allRoundData;
-    private PlayerProgress playerProgress;
     private Database database;
     private Quizz_data quizz_data;
     private string fileName;

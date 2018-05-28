@@ -42,7 +42,6 @@ public class Database : MonoBehaviour
         {
             File.Delete(databasePath); //delete the created file
         }
-
     }
 }
 
